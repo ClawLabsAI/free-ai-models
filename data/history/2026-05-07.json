@@ -1,0 +1,481 @@
+{
+  "updated_at": "2026-05-07T13:46:26.775Z",
+  "total_free_models": 33,
+  "sources": [
+    "openrouter.ai/api/v1/models",
+    "pollinations.ai"
+  ],
+  "models": [
+    {
+      "id": "openrouter/owl-alpha",
+      "name": "Owl Alpha",
+      "provider": "Openrouter",
+      "context_window": 1048756,
+      "max_output": 262144,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/openrouter/owl-alpha",
+      "created": 1777398589
+    },
+    {
+      "id": "google/lyria-3-pro-preview",
+      "name": "Google: Lyria 3 Pro Preview",
+      "provider": "Google",
+      "context_window": 1048576,
+      "max_output": 65536,
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/google/lyria-3-pro-preview",
+      "created": 1774907286
+    },
+    {
+      "id": "google/lyria-3-clip-preview",
+      "name": "Google: Lyria 3 Clip Preview",
+      "provider": "Google",
+      "context_window": 1048576,
+      "max_output": 65536,
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/google/lyria-3-clip-preview",
+      "created": 1774907255
+    },
+    {
+      "id": "pollinations/gemini-2.0-flash",
+      "name": "Gemini 2.0 Flash",
+      "provider": "Pollinations AI",
+      "context_window": 1048576,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "rate_limit": "unlimited (no auth)",
+      "notes": "No API key required",
+      "source": "https://pollinations.ai"
+    },
+    {
+      "id": "inclusionai/ling-2.6-1t:free",
+      "name": "inclusionAI: Ling-2.6-1T (free)",
+      "provider": "Inclusionai",
+      "context_window": 262144,
+      "max_output": 32768,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/inclusionai/ling-2.6-1t:free",
+      "created": 1776948238
+    },
+    {
+      "id": "tencent/hy3-preview:free",
+      "name": "Tencent: Hy3 preview (free)",
+      "provider": "Tencent",
+      "context_window": 262144,
+      "max_output": 262144,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/tencent/hy3-preview:free",
+      "created": 1776878150
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "name": "Google: Gemma 4 26B A4B  (free)",
+      "provider": "Google",
+      "context_window": 262144,
+      "max_output": 32768,
+      "modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
+      "created": 1775227989
+    },
+    {
+      "id": "google/gemma-4-31b-it:free",
+      "name": "Google: Gemma 4 31B (free)",
+      "provider": "Google",
+      "context_window": 262144,
+      "max_output": 32768,
+      "modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/google/gemma-4-31b-it:free",
+      "created": 1775148486
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "name": "NVIDIA: Nemotron 3 Super (free)",
+      "provider": "Nvidia",
+      "context_window": 262144,
+      "max_output": 262144,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "40 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
+      "created": 1773245239
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "name": "Qwen: Qwen3 Next 80B A3B Instruct (free)",
+      "provider": "Qwen",
+      "context_window": 262144,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "20 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free",
+      "created": 1757612213
+    },
+    {
+      "id": "qwen/qwen3-coder:free",
+      "name": "Qwen: Qwen3 Coder 480B A35B (free)",
+      "provider": "Qwen",
+      "context_window": 262000,
+      "max_output": 262000,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "20 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/qwen/qwen3-coder:free",
+      "created": 1753230546
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+      "provider": "Nvidia",
+      "context_window": 256000,
+      "max_output": 65536,
+      "modalities": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "rate_limit": "40 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "created": 1777393095
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
+      "provider": "Nvidia",
+      "context_window": 256000,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "40 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free",
+      "created": 1765731275
+    },
+    {
+      "id": "openrouter/free",
+      "name": "Free Models Router",
+      "provider": "Openrouter",
+      "context_window": 200000,
+      "max_output": null,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/openrouter/free",
+      "created": 1769917427
+    },
+    {
+      "id": "minimax/minimax-m2.5:free",
+      "name": "MiniMax: MiniMax M2.5 (free)",
+      "provider": "Minimax",
+      "context_window": 196608,
+      "max_output": 8192,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/minimax/minimax-m2.5:free",
+      "created": 1770908502
+    },
+    {
+      "id": "baidu/cobuddy:free",
+      "name": "Baidu Qianfan: CoBuddy (free)",
+      "provider": "Baidu",
+      "context_window": 131072,
+      "max_output": 65536,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/baidu/cobuddy:free",
+      "created": 1778035480
+    },
+    {
+      "id": "poolside/laguna-xs.2:free",
+      "name": "Poolside: Laguna XS.2 (free)",
+      "provider": "Poolside",
+      "context_window": 131072,
+      "max_output": 8192,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/poolside/laguna-xs.2:free",
+      "created": 1777389604
+    },
+    {
+      "id": "poolside/laguna-m.1:free",
+      "name": "Poolside: Laguna M.1 (free)",
+      "provider": "Poolside",
+      "context_window": 131072,
+      "max_output": 8192,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/poolside/laguna-m.1:free",
+      "created": 1777388504
+    },
+    {
+      "id": "openai/gpt-oss-120b:free",
+      "name": "OpenAI: gpt-oss-120b (free)",
+      "provider": "Openai",
+      "context_window": 131072,
+      "max_output": 131072,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/openai/gpt-oss-120b:free",
+      "created": 1754414231
+    },
+    {
+      "id": "openai/gpt-oss-20b:free",
+      "name": "OpenAI: gpt-oss-20b (free)",
+      "provider": "Openai",
+      "context_window": 131072,
+      "max_output": 8192,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/openai/gpt-oss-20b:free",
+      "created": 1754414229
+    },
+    {
+      "id": "z-ai/glm-4.5-air:free",
+      "name": "Z.ai: GLM 4.5 Air (free)",
+      "provider": "Z ai",
+      "context_window": 131072,
+      "max_output": 96000,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/z-ai/glm-4.5-air:free",
+      "created": 1753471258
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct:free",
+      "name": "Meta: Llama 3.2 3B Instruct (free)",
+      "provider": "Meta llama",
+      "context_window": 131072,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "30 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/meta-llama/llama-3.2-3b-instruct:free",
+      "created": 1727222400
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-405b:free",
+      "name": "Nous: Hermes 3 405B Instruct (free)",
+      "provider": "Nousresearch",
+      "context_window": 131072,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "20 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/nousresearch/hermes-3-llama-3.1-405b:free",
+      "created": 1723766400
+    },
+    {
+      "id": "nvidia/nemotron-nano-12b-v2-vl:free",
+      "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
+      "provider": "Nvidia",
+      "context_window": 128000,
+      "max_output": 128000,
+      "modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "rate_limit": "40 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/nvidia/nemotron-nano-12b-v2-vl:free",
+      "created": 1761675565
+    },
+    {
+      "id": "nvidia/nemotron-nano-9b-v2:free",
+      "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+      "provider": "Nvidia",
+      "context_window": 128000,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "40 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/nvidia/nemotron-nano-9b-v2:free",
+      "created": 1757106807
+    },
+    {
+      "id": "pollinations/mistral-nemo",
+      "name": "Mistral Nemo",
+      "provider": "Pollinations AI",
+      "context_window": 128000,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "unlimited (no auth)",
+      "notes": "No API key required",
+      "source": "https://pollinations.ai"
+    },
+    {
+      "id": "pollinations/mistral-small",
+      "name": "Mistral Small 3.2",
+      "provider": "Pollinations AI",
+      "context_window": 128000,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "unlimited (no auth)",
+      "notes": "No API key required",
+      "source": "https://pollinations.ai"
+    },
+    {
+      "id": "pollinations/openai-large",
+      "name": "GPT-4o",
+      "provider": "Pollinations AI",
+      "context_window": 128000,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "rate_limit": "unlimited (no auth)",
+      "notes": "No API key required",
+      "source": "https://pollinations.ai"
+    },
+    {
+      "id": "baidu/qianfan-ocr-fast:free",
+      "name": "Baidu: Qianfan-OCR-Fast (free)",
+      "provider": "Baidu",
+      "context_window": 65536,
+      "max_output": 28672,
+      "modalities": [
+        "image",
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/baidu/qianfan-ocr-fast:free",
+      "created": 1776707472
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct:free",
+      "name": "Meta: Llama 3.3 70B Instruct (free)",
+      "provider": "Meta llama",
+      "context_window": 65536,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "30 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/meta-llama/llama-3.3-70b-instruct:free",
+      "created": 1733506137
+    },
+    {
+      "id": "liquid/lfm-2.5-1.2b-thinking:free",
+      "name": "LiquidAI: LFM2.5-1.2B-Thinking (free)",
+      "provider": "Liquid",
+      "context_window": 32768,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "10 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/liquid/lfm-2.5-1.2b-thinking:free",
+      "created": 1768927527
+    },
+    {
+      "id": "liquid/lfm-2.5-1.2b-instruct:free",
+      "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)",
+      "provider": "Liquid",
+      "context_window": 32768,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "10 req/min",
+      "notes": "",
+      "source": "https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct:free",
+      "created": 1768927521
+    },
+    {
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "name": "Venice: Uncensored (free)",
+      "provider": "Cognitivecomputations",
+      "context_window": 32768,
+      "max_output": null,
+      "modalities": [
+        "text"
+      ],
+      "rate_limit": "varies",
+      "notes": "",
+      "source": "https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "created": 1752094966
+    }
+  ]
+}

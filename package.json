@@ -1,0 +1,30 @@
+{
+  "name": "free-ai-models",
+  "version": "1.0.0",
+  "description": "Daily-updated list of all currently available free AI models — updated automatically every 24h",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/fetch-models.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "free",
+    "models",
+    "openrouter",
+    "gemini",
+    "llama",
+    "deepseek",
+    "gpt",
+    "claude",
+    "mistral",
+    "qwen",
+    "chatgpt-free",
+    "free-llm",
+    "ai-models"
+  ],
+  "license": "MIT"
+}

@@ -12,10 +12,10 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "24"
       - run: node scripts/fetch-models.js
       - id: diff
         run: git diff --quiet data/models.json README.md || echo "changed=true" >> $GITHUB_OUTPUT

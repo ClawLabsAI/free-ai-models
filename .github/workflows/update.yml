@@ -1,0 +1,29 @@
+name: Update Free AI Models
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: node scripts/fetch-models.js
+      - id: diff
+        run: git diff --quiet data/models.json README.md || echo "changed=true" >> $GITHUB_OUTPUT
+      - if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "free-ai-models[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/models.json data/history/ README.md
+          MODEL_COUNT=$(node -e "const d=require('./data/models.json'); console.log(d.total_free_models)")
+          git commit -m "chore: update models [${MODEL_COUNT} free models] $(date -u +%Y-%m-%d)"
+          git push

@@ -45,23 +45,23 @@ Each model entry includes:
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Thu, 14 May 2026 06:48:40 UTC** · 34 models tracked
+> Last updated: **Fri, 15 May 2026 06:58:04 UTC** · 33 models tracked
 
 | # | Model | Provider | Context | Modalities | Rate Limit | Source |
 |---|-------|----------|---------|------------|------------|--------|
 | 1 | **Owl Alpha** | Openrouter | 1M | 💬 text | varies | [link](https://openrouter.ai/openrouter/owl-alpha) |
-| 2 | **Google: Lyria 3 Pro Preview** | Google | 1M | 💬 text, 🖼️ vision, audio | varies | [link](https://openrouter.ai/google/lyria-3-pro-preview) |
-| 3 | **Google: Lyria 3 Clip Preview** | Google | 1M | 💬 text, 🖼️ vision, audio | varies | [link](https://openrouter.ai/google/lyria-3-clip-preview) |
-| 4 | **Gemini 2.0 Flash** | Pollinations AI | 1M | 💬 text, 🖼️ vision | unlimited (no auth) | [link](https://pollinations.ai) |
-| 5 | **inclusionAI: Ring-2.6-1T (free)** | Inclusionai | 262K | 💬 text | varies | [link](https://openrouter.ai/inclusionai/ring-2.6-1t:free) |
-| 6 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 7 | **Google: Gemma 4 31B (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 8 | **Arcee AI: Trinity Large Thinking (free)** | Arcee ai | 262K | 💬 text | varies | [link](https://openrouter.ai/arcee-ai/trinity-large-thinking:free) |
-| 9 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 262K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
-| 10 | **Qwen: Qwen3 Next 80B A3B Instruct (free)** | Qwen | 262K | 💬 text | 20 req/min | [link](https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free) |
-| 11 | **Qwen: Qwen3 Coder 480B A35B (free)** | Qwen | 262K | 💬 text | 20 req/min | [link](https://openrouter.ai/qwen/qwen3-coder:free) |
-| 12 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 💬 text, audio, 🖼️ vision, video | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
-| 13 | **DeepSeek: DeepSeek V4 Flash (free)** | Deepseek | 256K | 💬 text | 20 req/min | [link](https://openrouter.ai/deepseek/deepseek-v4-flash:free) |
+| 2 | **DeepSeek: DeepSeek V4 Flash (free)** | Deepseek | 1M | 💬 text | 20 req/min | [link](https://openrouter.ai/deepseek/deepseek-v4-flash:free) |
+| 3 | **Google: Lyria 3 Pro Preview** | Google | 1M | 💬 text, 🖼️ vision, audio | varies | [link](https://openrouter.ai/google/lyria-3-pro-preview) |
+| 4 | **Google: Lyria 3 Clip Preview** | Google | 1M | 💬 text, 🖼️ vision, audio | varies | [link](https://openrouter.ai/google/lyria-3-clip-preview) |
+| 5 | **Gemini 2.0 Flash** | Pollinations AI | 1M | 💬 text, 🖼️ vision | unlimited (no auth) | [link](https://pollinations.ai) |
+| 6 | **inclusionAI: Ring-2.6-1T (free)** | Inclusionai | 262K | 💬 text | varies | [link](https://openrouter.ai/inclusionai/ring-2.6-1t:free) |
+| 7 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 8 | **Google: Gemma 4 31B (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 9 | **Arcee AI: Trinity Large Thinking (free)** | Arcee ai | 262K | 💬 text | varies | [link](https://openrouter.ai/arcee-ai/trinity-large-thinking:free) |
+| 10 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 262K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
+| 11 | **Qwen: Qwen3 Next 80B A3B Instruct (free)** | Qwen | 262K | 💬 text | 20 req/min | [link](https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free) |
+| 12 | **Qwen: Qwen3 Coder 480B A35B (free)** | Qwen | 262K | 💬 text | 20 req/min | [link](https://openrouter.ai/qwen/qwen3-coder:free) |
+| 13 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 💬 text, audio, 🖼️ vision, video | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
 | 14 | **NVIDIA: Nemotron 3 Nano 30B A3B (free)** | Nvidia | 256K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free) |
 | 15 | **Free Models Router** | Openrouter | 200K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/openrouter/free) |
 | 16 | **MiniMax: MiniMax M2.5 (free)** | Minimax | 197K | 💬 text | varies | [link](https://openrouter.ai/minimax/minimax-m2.5:free) |
@@ -78,11 +78,10 @@ Each model entry includes:
 | 27 | **Mistral Nemo** | Pollinations AI | 128K | 💬 text | unlimited (no auth) | [link](https://pollinations.ai) |
 | 28 | **Mistral Small 3.2** | Pollinations AI | 128K | 💬 text | unlimited (no auth) | [link](https://pollinations.ai) |
 | 29 | **GPT-4o** | Pollinations AI | 128K | 💬 text, 🖼️ vision | unlimited (no auth) | [link](https://pollinations.ai) |
-| 30 | **Baidu: Qianfan-OCR-Fast (free)** | Baidu | 66K | 🖼️ vision, 💬 text | varies | [link](https://openrouter.ai/baidu/qianfan-ocr-fast:free) |
-| 31 | **Meta: Llama 3.3 70B Instruct (free)** | Meta llama | 66K | 💬 text | 30 req/min | [link](https://openrouter.ai/meta-llama/llama-3.3-70b-instruct:free) |
-| 32 | **LiquidAI: LFM2.5-1.2B-Thinking (free)** | Liquid | 33K | 💬 text | 10 req/min | [link](https://openrouter.ai/liquid/lfm-2.5-1.2b-thinking:free) |
-| 33 | **LiquidAI: LFM2.5-1.2B-Instruct (free)** | Liquid | 33K | 💬 text | 10 req/min | [link](https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct:free) |
-| 34 | **Venice: Uncensored (free)** | Cognitivecomputations | 33K | 💬 text | varies | [link](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free) |
+| 30 | **Meta: Llama 3.3 70B Instruct (free)** | Meta llama | 66K | 💬 text | 30 req/min | [link](https://openrouter.ai/meta-llama/llama-3.3-70b-instruct:free) |
+| 31 | **LiquidAI: LFM2.5-1.2B-Thinking (free)** | Liquid | 33K | 💬 text | 10 req/min | [link](https://openrouter.ai/liquid/lfm-2.5-1.2b-thinking:free) |
+| 32 | **LiquidAI: LFM2.5-1.2B-Instruct (free)** | Liquid | 33K | 💬 text | 10 req/min | [link](https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct:free) |
+| 33 | **Venice: Uncensored (free)** | Cognitivecomputations | 33K | 💬 text | varies | [link](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free) |
 <!-- TABLE_END -->
 
 ---

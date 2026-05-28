@@ -45,7 +45,7 @@ Each model entry includes:
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Wed, 27 May 2026 08:07:05 UTC** · 31 models tracked
+> Last updated: **Thu, 28 May 2026 08:04:42 UTC** · 31 models tracked
 
 | # | Model | Provider | Context | Modalities | Rate Limit | Source |
 |---|-------|----------|---------|------------|------------|--------|
@@ -58,14 +58,14 @@ Each model entry includes:
 | 7 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 1M | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
 | 8 | **Poolside: Laguna XS.2 (free)** | Poolside | 262K | 💬 text | varies | [link](https://openrouter.ai/poolside/laguna-xs.2:free) |
 | 9 | **Poolside: Laguna M.1 (free)** | Poolside | 262K | 💬 text | varies | [link](https://openrouter.ai/poolside/laguna-m.1:free) |
-| 10 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 11 | **Google: Gemma 4 31B (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 12 | **Qwen: Qwen3 Next 80B A3B Instruct (free)** | Qwen | 262K | 💬 text | 20 req/min | [link](https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free) |
-| 13 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 💬 text, audio, 🖼️ vision, video | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
-| 14 | **NVIDIA: Nemotron 3 Nano 30B A3B (free)** | Nvidia | 256K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free) |
-| 15 | **MiniMax: MiniMax M2.5 (free)** | Minimax | 205K | 💬 text | varies | [link](https://openrouter.ai/minimax/minimax-m2.5:free) |
-| 16 | **Free Models Router** | Openrouter | 200K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/openrouter/free) |
-| 17 | **Baidu Qianfan: CoBuddy (free)** | Baidu | 131K | 💬 text | varies | [link](https://openrouter.ai/baidu/cobuddy:free) |
+| 10 | **MoonshotAI: Kimi K2.6 (free)** | Moonshotai | 262K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/moonshotai/kimi-k2.6:free) |
+| 11 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 12 | **Google: Gemma 4 31B (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 13 | **MiniMax: MiniMax M2.5 (free)** | Minimax | 262K | 💬 text | varies | [link](https://openrouter.ai/minimax/minimax-m2.5:free) |
+| 14 | **Qwen: Qwen3 Next 80B A3B Instruct (free)** | Qwen | 262K | 💬 text | 20 req/min | [link](https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free) |
+| 15 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 💬 text, audio, 🖼️ vision, video | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
+| 16 | **NVIDIA: Nemotron 3 Nano 30B A3B (free)** | Nvidia | 256K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free) |
+| 17 | **Free Models Router** | Openrouter | 200K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/openrouter/free) |
 | 18 | **OpenAI: gpt-oss-120b (free)** | Openai | 131K | 💬 text | varies | [link](https://openrouter.ai/openai/gpt-oss-120b:free) |
 | 19 | **OpenAI: gpt-oss-20b (free)** | Openai | 131K | 💬 text | varies | [link](https://openrouter.ai/openai/gpt-oss-20b:free) |
 | 20 | **Z.ai: GLM 4.5 Air (free)** | Z ai | 131K | 💬 text | varies | [link](https://openrouter.ai/z-ai/glm-4.5-air:free) |

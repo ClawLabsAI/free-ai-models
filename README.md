@@ -45,7 +45,7 @@ Each model entry includes:
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Mon, 08 Jun 2026 08:57:17 UTC** · 31 models tracked
+> Last updated: **Tue, 09 Jun 2026 07:53:17 UTC** · 32 models tracked
 
 | # | Model | Provider | Context | Modalities | Rate Limit | Source |
 |---|-------|----------|---------|------------|------------|--------|
@@ -56,30 +56,31 @@ Each model entry includes:
 | 5 | **Gemini 2.0 Flash** | Pollinations AI | 1M | 💬 text, 🖼️ vision | unlimited (no auth) | [link](https://pollinations.ai) |
 | 6 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 7 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 1M | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
-| 8 | **Poolside: Laguna XS.2 (free)** | Poolside | 262K | 💬 text | varies | [link](https://openrouter.ai/poolside/laguna-xs.2:free) |
-| 9 | **Poolside: Laguna M.1 (free)** | Poolside | 262K | 💬 text | varies | [link](https://openrouter.ai/poolside/laguna-m.1:free) |
-| 10 | **MoonshotAI: Kimi K2.6 (free)** | Moonshotai | 262K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/moonshotai/kimi-k2.6:free) |
-| 11 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 12 | **Google: Gemma 4 31B (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 13 | **Qwen: Qwen3 Next 80B A3B Instruct (free)** | Qwen | 262K | 💬 text | 20 req/min | [link](https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free) |
-| 14 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 💬 text, audio, 🖼️ vision, video | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
-| 15 | **NVIDIA: Nemotron 3 Nano 30B A3B (free)** | Nvidia | 256K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free) |
-| 16 | **Free Models Router** | Openrouter | 200K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/openrouter/free) |
-| 17 | **OpenAI: gpt-oss-120b (free)** | Openai | 131K | 💬 text | varies | [link](https://openrouter.ai/openai/gpt-oss-120b:free) |
-| 18 | **OpenAI: gpt-oss-20b (free)** | Openai | 131K | 💬 text | varies | [link](https://openrouter.ai/openai/gpt-oss-20b:free) |
-| 19 | **Z.ai: GLM 4.5 Air (free)** | Z ai | 131K | 💬 text | varies | [link](https://openrouter.ai/z-ai/glm-4.5-air:free) |
-| 20 | **Meta: Llama 3.3 70B Instruct (free)** | Meta llama | 131K | 💬 text | 30 req/min | [link](https://openrouter.ai/meta-llama/llama-3.3-70b-instruct:free) |
-| 21 | **Meta: Llama 3.2 3B Instruct (free)** | Meta llama | 131K | 💬 text | 30 req/min | [link](https://openrouter.ai/meta-llama/llama-3.2-3b-instruct:free) |
-| 22 | **Nous: Hermes 3 405B Instruct (free)** | Nousresearch | 131K | 💬 text | 20 req/min | [link](https://openrouter.ai/nousresearch/hermes-3-llama-3.1-405b:free) |
-| 23 | **NVIDIA: Nemotron 3.5 Content Safety (free)** | Nvidia | 128K | 💬 text, 🖼️ vision | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free) |
-| 24 | **NVIDIA: Nemotron Nano 12B 2 VL (free)** | Nvidia | 128K | 🖼️ vision, 💬 text, video | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-nano-12b-v2-vl:free) |
-| 25 | **NVIDIA: Nemotron Nano 9B V2 (free)** | Nvidia | 128K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-nano-9b-v2:free) |
-| 26 | **Mistral Nemo** | Pollinations AI | 128K | 💬 text | unlimited (no auth) | [link](https://pollinations.ai) |
-| 27 | **Mistral Small 3.2** | Pollinations AI | 128K | 💬 text | unlimited (no auth) | [link](https://pollinations.ai) |
-| 28 | **GPT-4o** | Pollinations AI | 128K | 💬 text, 🖼️ vision | unlimited (no auth) | [link](https://pollinations.ai) |
-| 29 | **LiquidAI: LFM2.5-1.2B-Thinking (free)** | Liquid | 33K | 💬 text | 10 req/min | [link](https://openrouter.ai/liquid/lfm-2.5-1.2b-thinking:free) |
-| 30 | **LiquidAI: LFM2.5-1.2B-Instruct (free)** | Liquid | 33K | 💬 text | 10 req/min | [link](https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct:free) |
-| 31 | **Venice: Uncensored (free)** | Cognitivecomputations | 33K | 💬 text | varies | [link](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free) |
+| 8 | **Nex AGI: Nex-N2-Pro (free)** | Nex agi | 262K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/nex-agi/nex-n2-pro:free) |
+| 9 | **Poolside: Laguna XS.2 (free)** | Poolside | 262K | 💬 text | varies | [link](https://openrouter.ai/poolside/laguna-xs.2:free) |
+| 10 | **Poolside: Laguna M.1 (free)** | Poolside | 262K | 💬 text | varies | [link](https://openrouter.ai/poolside/laguna-m.1:free) |
+| 11 | **MoonshotAI: Kimi K2.6 (free)** | Moonshotai | 262K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/moonshotai/kimi-k2.6:free) |
+| 12 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 13 | **Google: Gemma 4 31B (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 14 | **Qwen: Qwen3 Next 80B A3B Instruct (free)** | Qwen | 262K | 💬 text | 20 req/min | [link](https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct:free) |
+| 15 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 💬 text, audio, 🖼️ vision, video | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
+| 16 | **NVIDIA: Nemotron 3 Nano 30B A3B (free)** | Nvidia | 256K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3-nano-30b-a3b:free) |
+| 17 | **Free Models Router** | Openrouter | 200K | 💬 text, 🖼️ vision | varies | [link](https://openrouter.ai/openrouter/free) |
+| 18 | **OpenAI: gpt-oss-120b (free)** | Openai | 131K | 💬 text | varies | [link](https://openrouter.ai/openai/gpt-oss-120b:free) |
+| 19 | **OpenAI: gpt-oss-20b (free)** | Openai | 131K | 💬 text | varies | [link](https://openrouter.ai/openai/gpt-oss-20b:free) |
+| 20 | **Z.ai: GLM 4.5 Air (free)** | Z ai | 131K | 💬 text | varies | [link](https://openrouter.ai/z-ai/glm-4.5-air:free) |
+| 21 | **Meta: Llama 3.3 70B Instruct (free)** | Meta llama | 131K | 💬 text | 30 req/min | [link](https://openrouter.ai/meta-llama/llama-3.3-70b-instruct:free) |
+| 22 | **Meta: Llama 3.2 3B Instruct (free)** | Meta llama | 131K | 💬 text | 30 req/min | [link](https://openrouter.ai/meta-llama/llama-3.2-3b-instruct:free) |
+| 23 | **Nous: Hermes 3 405B Instruct (free)** | Nousresearch | 131K | 💬 text | 20 req/min | [link](https://openrouter.ai/nousresearch/hermes-3-llama-3.1-405b:free) |
+| 24 | **NVIDIA: Nemotron 3.5 Content Safety (free)** | Nvidia | 128K | 💬 text, 🖼️ vision | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free) |
+| 25 | **NVIDIA: Nemotron Nano 12B 2 VL (free)** | Nvidia | 128K | 🖼️ vision, 💬 text, video | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-nano-12b-v2-vl:free) |
+| 26 | **NVIDIA: Nemotron Nano 9B V2 (free)** | Nvidia | 128K | 💬 text | 40 req/min | [link](https://openrouter.ai/nvidia/nemotron-nano-9b-v2:free) |
+| 27 | **Mistral Nemo** | Pollinations AI | 128K | 💬 text | unlimited (no auth) | [link](https://pollinations.ai) |
+| 28 | **Mistral Small 3.2** | Pollinations AI | 128K | 💬 text | unlimited (no auth) | [link](https://pollinations.ai) |
+| 29 | **GPT-4o** | Pollinations AI | 128K | 💬 text, 🖼️ vision | unlimited (no auth) | [link](https://pollinations.ai) |
+| 30 | **LiquidAI: LFM2.5-1.2B-Thinking (free)** | Liquid | 33K | 💬 text | 10 req/min | [link](https://openrouter.ai/liquid/lfm-2.5-1.2b-thinking:free) |
+| 31 | **LiquidAI: LFM2.5-1.2B-Instruct (free)** | Liquid | 33K | 💬 text | 10 req/min | [link](https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct:free) |
+| 32 | **Venice: Uncensored (free)** | Cognitivecomputations | 33K | 💬 text | varies | [link](https://openrouter.ai/cognitivecomputations/dolphin-mistral-24b-venice-edition:free) |
 <!-- TABLE_END -->
 
 ---

@@ -5,9 +5,11 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
-**A daily-updated, community-maintained list of every free AI model available right now.**
+**A daily-updated, community-maintained list of every free AI model (free LLM API) available right now.**
 
 No paywalls. No API keys required to view. Updated automatically every 24 hours by GitHub Actions pulling from [OpenRouter](https://openrouter.ai), [Pollinations AI](https://pollinations.ai), and other public sources.
+
+> **Just want to call them?** Skip the integration work — there's an [OpenAI-compatible free API](#one-api-for-whichever-model-is-1-today) that auto-routes to the best model on this list.
 
 ---
 
@@ -106,11 +108,35 @@ No scraping, no reverse engineering — only public official APIs.
 
 ---
 
-## Want always-on access to the best free model?
+## One API for whichever model is #1 today
 
-This tracker powers **[ZeroLimitAI's ZeroOptimize™](https://zerolimitai.com)** — an AI assistant that automatically routes your messages to the highest-ranked free model available at any moment. No setup, no API keys, no switching between tools.
+Tracking the list is the easy part — keeping your app pointed at the current
+best free model (as rate limits shift and providers come and go) is the pain.
 
-[![Try ZeroLimitAI free](https://img.shields.io/badge/Try%20ZeroLimitAI-Free%203--day%20trial-7c3aed?style=for-the-badge)](https://zerolimitai.com/register)
+**[ZeroLimitAI](https://www.zerolimitai.com/developers)** does it for you with an
+**OpenAI-compatible** endpoint. Send `model: "auto"` and ZeroOptimize™ routes
+every request to the top-ranked free model from this list — with automatic
+failover when one rate-limits. Change two lines, pay $0:
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://www.zerolimitai.com/api/v1",
+    api_key="YOUR_FREE_KEY",
+)
+
+# ZeroOptimize™ picks the best free model from this tracker, per request
+resp = client.chat.completions.create(
+    model="auto",
+    messages=[{"role": "user", "content": "Hello!"}],
+)
+print(resp.choices[0].message.content)
+```
+
+[![Free API key](https://img.shields.io/badge/Get%20a%20free%20API%20key-OpenAI--compatible-7c3aed?style=for-the-badge)](https://www.zerolimitai.com/developers)
+&nbsp;
+[![Try the chat](https://img.shields.io/badge/Or%20just%20chat-no%20setup-4ade80?style=for-the-badge)](https://www.zerolimitai.com/register)
 
 ---
 

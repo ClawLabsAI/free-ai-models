@@ -47,7 +47,7 @@ Each model entry includes:
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Sun, 26 Jul 2026 06:39:21 UTC** · 22 models tracked
+> Last updated: **Mon, 27 Jul 2026 07:35:51 UTC** · 22 models tracked
 
 | # | Model | Provider | Context | Modalities | Rate Limit | Source |
 |---|-------|----------|---------|------------|------------|--------|

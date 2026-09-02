@@ -13,7 +13,7 @@ No paywalls. No API key required to browse. Updated automatically every 24 hours
 
 > **Don't want to wire up a dozen providers yourself?**
 >
-> [**ZeroLimitAI**](https://www.zerolimitai.com/developers) — built by the people who maintain this list — gives you **one OpenAI-compatible endpoint** that auto-routes every request to whichever model below is best right now, with automatic failover when one hits its rate limit.
+> [**ZeroLimitAI**](https://www.zerolimitai.com/developers) — built by the people who maintain this list — gives you **one OpenAI-compatible endpoint** that auto-routes every request to whichever free model is answering best right now, with automatic failover when one hits its rate limit.
 >
 > [![Get a free API key](https://img.shields.io/badge/Get%20a%20free%20API%20key-OpenAI--compatible-7c3aed?style=for-the-badge)](https://www.zerolimitai.com/developers)
 > &nbsp;
@@ -120,7 +120,7 @@ best free model (as rate limits shift and providers come and go) is the pain.
 
 **[ZeroLimitAI](https://www.zerolimitai.com/developers)** does it for you with an
 **OpenAI-compatible** endpoint. Send `model: "auto"` and ZeroOptimize™ routes
-every request to the top-ranked free model from this list — with automatic
+every request to the top-ranked free model available — with automatic
 failover when one rate-limits. Change two lines, pay $0:
 
 ```python
@@ -142,6 +142,32 @@ print(resp.choices[0].message.content)
 [![Free API key](https://img.shields.io/badge/Get%20a%20free%20API%20key-OpenAI--compatible-7c3aed?style=for-the-badge)](https://www.zerolimitai.com/developers)
 &nbsp;
 [![Try the chat](https://img.shields.io/badge/Or%20just%20chat-no%20setup-4ade80?style=for-the-badge)](https://www.zerolimitai.com/register)
+
+---
+
+## Why the router often answers with a model that isn't on this page
+
+If you use that endpoint and check which model replied, it will regularly be one
+you can't find in the table above. That's expected, and it's the whole point.
+
+**This repo answers "what free models exist?"** It reads the public catalogues —
+the OpenRouter API and Pollinations — once a day and lists everything priced at
+$0. That's a catalogue.
+
+**The router answers "which of them will actually reply, right now?"** It reaches
+providers this list doesn't track at all (Cloudflare Workers AI, Cerebras,
+Together, Groq), scores each candidate across ten dimensions — arena ELO,
+context, latency, recency, availability — and drops any that start failing,
+retrying the next one automatically.
+
+So the two lists diverge for two reasons: **different sources, and different
+questions.** A model can sit on this page and still be unusable today — rate
+limited down to nothing, quietly renamed, or an endpoint that has stopped
+serving. Finding that out is the part that costs you an afternoon, and it's the
+part worth automating.
+
+Use this list to see the landscape. Use the router when you'd rather not
+maintain the plumbing yourself.
 
 ---
 

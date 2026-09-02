@@ -7,9 +7,19 @@
 
 **A daily-updated, community-maintained list of every free AI model (free LLM API) available right now.**
 
-No paywalls. No API keys required to view. Updated automatically every 24 hours by GitHub Actions pulling from [OpenRouter](https://openrouter.ai), [Pollinations AI](https://pollinations.ai), and other public sources.
+No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from [OpenRouter](https://openrouter.ai), [Pollinations AI](https://pollinations.ai), and other public sources.
 
-> **Just want to call them?** Skip the integration work — there's an [OpenAI-compatible free API](#one-api-for-whichever-model-is-1-today) that auto-routes to the best model on this list.
+### [↓ See the full list of free models](#free-models-auto-updated-daily)
+
+> **Don't want to wire up a dozen providers yourself?**
+>
+> [**ZeroLimitAI**](https://www.zerolimitai.com/developers) — built by the people who maintain this list — gives you **one OpenAI-compatible endpoint** that auto-routes every request to whichever model below is best right now, with automatic failover when one hits its rate limit.
+>
+> [![Get a free API key](https://img.shields.io/badge/Get%20a%20free%20API%20key-OpenAI--compatible-7c3aed?style=for-the-badge)](https://www.zerolimitai.com/developers)
+> &nbsp;
+> [![Or just chat](https://img.shields.io/badge/Or%20just%20chat-no%20setup-4ade80?style=for-the-badge)](https://www.zerolimitai.com/register)
+>
+> <sub>Free key · no card · $0 inference — [see how it works ↓](#one-api-for-whichever-model-is-1-today)</sub>
 
 ---
 
@@ -148,14 +158,34 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
+## Who maintains this
+
+This tracker is built and kept current by the team behind
+[**ZeroLimitAI**](https://www.zerolimitai.com), a multi-model AI platform whose
+router — ZeroOptimize™ — runs on exactly this data. Keeping the list accurate
+isn't a side project for us: it's what our own product depends on every day.
+
+The data stays free, MIT-licensed and provider-neutral. If a model belongs here,
+it goes in whether or not we route to it.
+
+---
+
 ## Related projects
 
 - [openrouter.ai](https://openrouter.ai) — API gateway for 200+ models
 - [lmarena.ai](https://lmarena.ai) — LLM battle arena & ELO rankings
-- [ZeroLimitAI](https://zerolimitai.com) — AI assistant powered by this tracker
+- [ZeroLimitAI](https://www.zerolimitai.com) — free AI chat + an OpenAI-compatible API that routes across this list
 
 ---
 
 ## License
 
 MIT — use freely, attribution appreciated.
+
+---
+
+<div align="center">
+<sub>Maintained by <a href="https://www.zerolimitai.com"><b>ZeroLimitAI</b></a> ·
+<a href="https://www.zerolimitai.com/developers">Free API</a> ·
+<a href="https://www.zerolimitai.com/register">Try the chat</a></sub>
+</div>

@@ -70,6 +70,36 @@ async function fetchOpenRouterModels() {
 // ── Additional free providers not on OpenRouter ────────────────────────────────
 const EXTRA_PROVIDERS = [
   {
+  id:             "token-harbor/deepseek-v4.1-flash:free",
+  name:           "DeepSeek V4.1 Flash",
+  provider:       "Token Harbor",
+  context_window: 1_048_576,
+  modalities:     ["text", "image"],
+  rate_limit:     "weekly per-user limit",
+  notes:          "Permanently free; sign-up and API key required; no credit card required; usage limit resets weekly",
+  source:         "https://tokenharbor.ai/models/free",
+},
+{
+  id:             "token-harbor/deepseek-v4-flash:free",
+  name:           "DeepSeek V4 Flash 0731",
+  provider:       "Token Harbor",
+  context_window: 1_048_576,
+  modalities:     ["text"],
+  rate_limit:     "weekly per-user limit",
+  notes:          "Permanently free; sign-up and API key required; no credit card required; usage limit resets weekly",
+  source:         "https://tokenharbor.ai/models/free",
+},
+{
+  id:             "token-harbor/mimo-v2.5:free",
+  name:           "MiMo V2.5",
+  provider:       "Token Harbor",
+  context_window: 1_000_000,
+  modalities:     ["text", "image"],
+  rate_limit:     "weekly per-user limit",
+  notes:          "Permanently free; also supports audio and video; sign-up and API key required; no credit card required; usage limit resets weekly",
+  source:         "https://tokenharbor.ai/models/free",
+},
+  {
     id:             "pollinations/mistral-nemo",
     name:           "Mistral Nemo",
     provider:       "Pollinations AI",

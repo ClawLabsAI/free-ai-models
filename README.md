@@ -1,5 +1,7 @@
 # 🆓 Free AI Models
 
+[🇪🇸 Leer en español](README.es.md)
+
 [![Models](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FClawLabsAI%2Ffree-ai-models%2Fmain%2Fdata%2Fmodels.json&query=%24.total_free_models&label=free%20models&color=7c3aed&style=flat-square)](data/models.json)
 [![Updated daily](https://img.shields.io/badge/updated-daily-4ade80?style=flat-square)](#)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
@@ -57,10 +59,10 @@ Each model entry includes:
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Sat, 19 Sep 2026 08:40:09 UTC** · 29 models tracked
+> Last updated: **Sat, 19 Sep 2026 20:54:17 UTC** · 29 models tracked
 
 | # | Model | Provider | Context | Modalities | Rate Limit | Source |
-|---|-------|----------|---------|------------|------------|--------|
+|---|---|---|---|---|---|---|
 | 1 | **DeepSeek: DeepSeek V4 Flash 0731 (free)** | Deepseek | 1M | 💬 text | 20 req/min | [link](https://openrouter.ai/deepseek/deepseek-v4-flash-0731:free) |
 | 2 | **Thinking Machines: Inkling Small (free)** | Thinkingmachines | 1M | 💬 text, 🖼️ vision, audio | varies | [link](https://openrouter.ai/thinkingmachines/inkling-small:free) |
 | 3 | **Thinking Machines: Inkling (free)** | Thinkingmachines | 1M | 💬 text, 🖼️ vision, audio | varies | [link](https://openrouter.ai/thinkingmachines/inkling:free) |

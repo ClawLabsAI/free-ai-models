@@ -6,7 +6,7 @@
  * (no API key required), enriches with known metadata, and writes:
  *   - data/models.json          — current snapshot
  *   - data/history/YYYY-MM-DD.json — daily archive
- *   - README.md                 — regenerated table section
+ *   - README.md / README.es.md  — regenerated table section (en / es)
  *
  * Run: node scripts/fetch-models.js
  */
@@ -183,41 +183,63 @@ async function main() {
 }
 
 // ── README generation ──────────────────────────────────────────────────────────
-async function updateReadme(models, updatedAt) {
-  const readmePath = join(ROOT, "README.md");
-  const readme     = readFileSync(readmePath, "utf8");
+//
+// Two READMEs share one table: README.md (English) and README.es.md (Spanish,
+// added 2026-09 for "modelos de IA gratis" searches). Only the caption and the
+// column headers differ; model rows are identical.
+const READMES = [
+  {
+    file: "README.md",
+    caption: (date, n) => `> Last updated: **${date}** · ${n} models tracked`,
+    columns: ["#", "Model", "Provider", "Context", "Modalities", "Rate Limit", "Source"],
+    link: "link",
+  },
+  {
+    file: "README.es.md",
+    caption: (date, n) => `> Última actualización: **${date}** · ${n} modelos seguidos`,
+    columns: ["#", "Modelo", "Proveedor", "Contexto", "Modalidades", "Límite de uso", "Fuente"],
+    link: "enlace",
+  },
+];
 
+async function updateReadme(models, updatedAt) {
   const dateLabel = new Date(updatedAt).toUTCString().replace(" GMT", " UTC");
 
-  const header = [
-    `| # | Model | Provider | Context | Modalities | Rate Limit | Source |`,
-    `|---|-------|----------|---------|------------|------------|--------|`,
-  ].join("\n");
+  for (const cfg of READMES) {
+    const readmePath = join(ROOT, cfg.file);
+    if (!existsSync(readmePath)) continue;
+    const readme = readFileSync(readmePath, "utf8");
 
-  const rows = models.map((m, i) => {
-    const ctx         = fmtCtx(m.context_window);
-    const modalities  = (m.modalities ?? ["text"]).map(modalityBadge).join(", ");
-    const rateLimit   = m.rate_limit ?? "varies";
-    const source      = `[link](${m.source})`;
-    return `| ${i + 1} | **${m.name}** | ${m.provider} | ${ctx} | ${modalities} | ${rateLimit} | ${source} |`;
-  });
+    const header = [
+      `| ${cfg.columns.join(" | ")} |`,
+      `|${cfg.columns.map(() => "---").join("|")}|`,
+    ].join("\n");
 
-  const tableBlock = [
-    `<!-- TABLE_START -->`,
-    `> Last updated: **${dateLabel}** · ${models.length} models tracked`,
-    ``,
-    header,
-    rows.join("\n"),
-    `<!-- TABLE_END -->`,
-  ].join("\n");
+    const rows = models.map((m, i) => {
+      const ctx        = fmtCtx(m.context_window);
+      const modalities = (m.modalities ?? ["text"]).map(modalityBadge).join(", ");
+      const rateLimit  = m.rate_limit ?? "varies";
+      const source     = `[${cfg.link}](${m.source})`;
+      return `| ${i + 1} | **${m.name}** | ${m.provider} | ${ctx} | ${modalities} | ${rateLimit} | ${source} |`;
+    });
 
-  const updated = readme.replace(
-    /<!-- TABLE_START -->[\s\S]*?<!-- TABLE_END -->/,
-    tableBlock
-  );
+    const tableBlock = [
+      `<!-- TABLE_START -->`,
+      cfg.caption(dateLabel, models.length),
+      ``,
+      header,
+      rows.join("\n"),
+      `<!-- TABLE_END -->`,
+    ].join("\n");
 
-  writeFileSync(readmePath, updated, "utf8");
-  console.log(`📝 README.md updated`);
+    const updated = readme.replace(
+      /<!-- TABLE_START -->[\s\S]*?<!-- TABLE_END -->/,
+      tableBlock
+    );
+
+    writeFileSync(readmePath, updated, "utf8");
+    console.log(`📝 ${cfg.file} updated`);
+  }
 }
 
 main().catch((err) => {

@@ -67,49 +67,68 @@ async function fetchOpenRouterModels() {
   return data;
 }
 
-// ── Additional free providers not on OpenRouter ────────────────────────────────
-const EXTRA_PROVIDERS = [
-  {
-    id:             "pollinations/mistral-nemo",
-    name:           "Mistral Nemo",
-    provider:       "Pollinations AI",
-    context_window: 128_000,
-    modalities:     ["text"],
-    rate_limit:     "unlimited (no auth)",
-    notes:          "No API key required",
-    source:         "https://pollinations.ai",
-  },
-  {
-    id:             "pollinations/mistral-small",
-    name:           "Mistral Small 3.2",
-    provider:       "Pollinations AI",
-    context_window: 128_000,
-    modalities:     ["text"],
-    rate_limit:     "unlimited (no auth)",
-    notes:          "No API key required",
-    source:         "https://pollinations.ai",
-  },
-  {
-    id:             "pollinations/gemini-2.0-flash",
-    name:           "Gemini 2.0 Flash",
-    provider:       "Pollinations AI",
-    context_window: 1_048_576,
-    modalities:     ["text", "image"],
-    rate_limit:     "unlimited (no auth)",
-    notes:          "No API key required",
-    source:         "https://pollinations.ai",
-  },
-  {
-    id:             "pollinations/openai-large",
-    name:           "GPT-4o",
-    provider:       "Pollinations AI",
-    context_window: 128_000,
-    modalities:     ["text", "image"],
-    rate_limit:     "unlimited (no auth)",
-    notes:          "No API key required",
-    source:         "https://pollinations.ai",
-  },
-];
+// ── Pollinations: read their live list ─────────────────────────────────────────
+//
+// This used to be four hard-coded rows (Mistral Nemo, Mistral Small, Gemini 2.0
+// Flash, GPT-4o — all "unlimited (no auth)"). Pollinations has since cut its
+// anonymous tier to a fraction of that, and the rows stayed, which is exactly
+// the staleness this repo exists to avoid. Now: whatever their API lists for
+// the anonymous tier today, or nothing if the call fails.
+async function fetchPollinationsModels() {
+  try {
+    const res = await fetch("https://text.pollinations.ai/models", {
+      headers: { "User-Agent": "free-ai-models-tracker/1.0 (github.com/ClawLabsAI/free-ai-models)" },
+      signal: AbortSignal.timeout(15_000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const list = await res.json();
+    return list
+      .filter((m) => m.tier === "anonymous")
+      .map((m) => ({
+        id:                `pollinations/${m.name}`,
+        name:              m.description ?? m.name,
+        provider:          "Pollinations AI",
+        context_window:    null,
+        max_output:        null,
+        modalities:        [...new Set([...(m.input_modalities ?? ["text"]), ...(m.output_modalities ?? ["text"])])],
+        output_modalities: m.output_modalities ?? ["text"],
+        rate_limit:        "anonymous tier (no key)",
+        notes:             "No API key required",
+        source:            "https://pollinations.ai",
+      }));
+  } catch (err) {
+    console.warn(`⚠️  Pollinations list unavailable (${err.message}) — skipping`);
+    return [];
+  }
+}
+
+// ── ZeroOptimize ranking + today's health ──────────────────────────────────────
+//
+// Public endpoint of zerolimitai.com (the router built by this repo's
+// maintainers): the same scores and health marks its production routing uses.
+// `zoPct` is the score relative to the best model (0-100); `health` comes from a
+// daily probe plus live failures. Optional: if it is unreachable the table
+// falls back to context-window order and says so.
+async function fetchZoRanking() {
+  try {
+    const res = await fetch("https://www.zerolimitai.com/api/models/free-top?count=20", {
+      headers: { "User-Agent": "free-ai-models-tracker/1.0 (github.com/ClawLabsAI/free-ai-models)" },
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const list = await res.json();
+    const byId = new Map();
+    for (const m of list) {
+      const id = m.battleModelId ?? m.modelId;
+      if (!byId.has(id)) byId.set(id, { score: Math.round(m.zoPct ?? 0), health: m.health ?? "ok" });
+    }
+    console.log(`✅ ZeroOptimize ranking: ${byId.size} models`);
+    return byId;
+  } catch (err) {
+    console.warn(`⚠️  ZeroOptimize ranking unavailable (${err.message}) — ordering by context window`);
+    return new Map();
+  }
+}
 
 // ── Main ───────────────────────────────────────────────────────────────────────
 async function main() {
@@ -141,7 +160,8 @@ async function main() {
       provider:       providerName,
       context_window: m.context_length ?? 0,
       max_output:     m.top_provider?.max_completion_tokens ?? null,
-      modalities:     allModalities.filter((x) => x !== "text" || true),
+      modalities:     allModalities,
+      output_modalities: outputModalities,
       rate_limit:     getRateLimit(m.id),
       notes:          "",
       source:         `https://openrouter.ai/${m.id}`,
@@ -149,17 +169,33 @@ async function main() {
     };
   });
 
-  // Merge extra providers
-  const all = [...normalised, ...EXTRA_PROVIDERS];
+  // Merge Pollinations (live) and attach ranking + health
+  const [pollinations, ranking] = await Promise.all([fetchPollinationsModels(), fetchZoRanking()]);
+  const all = [...normalised, ...pollinations].map((m) => {
+    const r = ranking.get(m.id);
+    return {
+      ...m,
+      // A "chat" model returns text. Music, image and audio generators are
+      // free too, but ranking them among LLMs by context window put Google's
+      // Lyria (music) at #4 of a list people read as "best free LLMs".
+      // Text-only output. Lyria reports ["text","audio"]: it answers with music.
+      kind:     (m.output_modalities ?? ["text"]).every((x) => x === "text") ? "chat" : "other",
+      zo_score: r ? r.score : null,
+      health:   r ? r.health : null,
+    };
+  });
 
-  // Sort: context window desc
-  all.sort((a, b) => (b.context_window ?? 0) - (a.context_window ?? 0));
+  // Sort: ranked models first by score, then everything else by context window
+  all.sort((a, b) => {
+    if ((a.zo_score ?? -1) !== (b.zo_score ?? -1)) return (b.zo_score ?? -1) - (a.zo_score ?? -1);
+    return (b.context_window ?? 0) - (a.context_window ?? 0);
+  });
 
   const updatedAt = new Date().toISOString();
   const snapshot = {
     updated_at:        updatedAt,
     total_free_models: all.length,
-    sources:           ["openrouter.ai/api/v1/models", "pollinations.ai"],
+    sources:           ["openrouter.ai/api/v1/models", "text.pollinations.ai/models", "zerolimitai.com/api/models/free-top"],
     models:            all,
   };
 
@@ -190,15 +226,21 @@ async function main() {
 const READMES = [
   {
     file: "README.md",
-    caption: (date, n) => `> Last updated: **${date}** · ${n} models tracked`,
-    columns: ["#", "Model", "Provider", "Context", "Modalities", "Rate Limit", "Source"],
+    caption: (date, n) =>
+      `> Last updated: **${date}** · ${n} chat models · ranked by [ZeroOptimize](https://www.zerolimitai.com/leaderboard) score, then context window`,
+    columns: ["#", "Model", "Provider", "Context", "Modalities", "Rate Limit", "Score", "Today", "Source"],
     link: "link",
+    health: { ok: "✅ up", sick: "⚠️ degraded", dead: "❌ down" },
+    otherCaption: (n) => `${n} free models that are not chat models (music, image, audio generation):`,
   },
   {
     file: "README.es.md",
-    caption: (date, n) => `> Última actualización: **${date}** · ${n} modelos seguidos`,
-    columns: ["#", "Modelo", "Proveedor", "Contexto", "Modalidades", "Límite de uso", "Fuente"],
+    caption: (date, n) =>
+      `> Última actualización: **${date}** · ${n} modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto`,
+    columns: ["#", "Modelo", "Proveedor", "Contexto", "Modalidades", "Límite de uso", "Puntuación", "Hoy", "Fuente"],
     link: "enlace",
+    health: { ok: "✅ activo", sick: "⚠️ degradado", dead: "❌ caído" },
+    otherCaption: (n) => `${n} modelos gratuitos que no son de chat (generación de música, imagen o audio):`,
   },
 ];
 
@@ -215,20 +257,30 @@ async function updateReadme(models, updatedAt) {
       `|${cfg.columns.map(() => "---").join("|")}|`,
     ].join("\n");
 
-    const rows = models.map((m, i) => {
-      const ctx        = fmtCtx(m.context_window);
+    const chat  = models.filter((m) => m.kind !== "other");
+    const other = models.filter((m) => m.kind === "other");
+
+    const rows = chat.map((m, i) => {
+      const ctx        = m.context_window ? fmtCtx(m.context_window) : "—";
       const modalities = (m.modalities ?? ["text"]).map(modalityBadge).join(", ");
       const rateLimit  = m.rate_limit ?? "varies";
+      const score      = m.zo_score != null ? String(m.zo_score) : "—";
+      const today      = m.health ? cfg.health[m.health] ?? "—" : "—";
       const source     = `[${cfg.link}](${m.source})`;
-      return `| ${i + 1} | **${m.name}** | ${m.provider} | ${ctx} | ${modalities} | ${rateLimit} | ${source} |`;
+      return `| ${i + 1} | **${m.name}** | ${m.provider} | ${ctx} | ${modalities} | ${rateLimit} | ${score} | ${today} | ${source} |`;
     });
+
+    const otherBlock = other.length
+      ? ["", cfg.otherCaption(other.length), "", ...other.map((m) => `- [${m.name}](${m.source})`)]
+      : [];
 
     const tableBlock = [
       `<!-- TABLE_START -->`,
-      cfg.caption(dateLabel, models.length),
+      cfg.caption(dateLabel, chat.length),
       ``,
       header,
       rows.join("\n"),
+      ...otherBlock,
       `<!-- TABLE_END -->`,
     ].join("\n");
 

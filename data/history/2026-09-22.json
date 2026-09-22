@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T09:10:07.246Z",
+  "updated_at": "2026-09-22T22:49:11.821Z",
   "total_free_models": 25,
   "sources": [
     "openrouter.ai/api/v1/models",
@@ -21,7 +21,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "20 req/min",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/qwen/qwen3.8-27b:free",
       "created": 1786722910,
@@ -41,13 +41,13 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "40 req/min",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
       "created": 1780551208,
       "kind": "chat",
       "zo_score": 85,
-      "health": "sick"
+      "health": "ok"
     },
     {
       "id": "z-ai/glm-5.2:free",
@@ -61,13 +61,13 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/z-ai/glm-5.2:free",
       "created": 1781631930,
       "kind": "chat",
       "zo_score": 75,
-      "health": "sick"
+      "health": "ok"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
@@ -81,7 +81,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free",
       "created": 1787846290,
@@ -103,7 +103,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free",
       "created": 1789056114,
@@ -123,7 +123,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "40 req/min",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
       "created": 1773245239,
@@ -143,7 +143,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free",
       "created": 1788545946,
@@ -165,7 +165,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
       "created": 1775227989,
@@ -185,7 +185,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/poolside/laguna-s-2.1:free",
       "created": 1784652683,
@@ -207,7 +207,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/google/gemma-4-31b-it:free",
       "created": 1775148486,
@@ -227,7 +227,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
       "created": 1783002429,
@@ -247,7 +247,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/cohere/north-mini-code:free",
       "created": 1781723748,
@@ -268,7 +268,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/nex-agi/nex-n2.5-mini:free",
       "created": 1788890061,
@@ -288,7 +288,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "40 req/min",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
       "created": 1786452751,
@@ -311,7 +311,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "40 req/min",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "created": 1777393095,
@@ -332,7 +332,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
       "created": 1786680361,
@@ -352,7 +352,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "10 req/min",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
       "created": 1786470519,
@@ -373,7 +373,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/nex-agi/nex-n2.5-pro:free",
       "created": 1788890050,
@@ -395,7 +395,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/thinkingmachines/inkling-small:free",
       "created": 1785443117,
@@ -417,7 +417,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/thinkingmachines/inkling:free",
       "created": 1784325956,
@@ -440,7 +440,7 @@
         "text",
         "audio"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/google/lyria-3-pro-preview",
       "created": 1774907286,
@@ -463,7 +463,7 @@
         "text",
         "audio"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/google/lyria-3-clip-preview",
       "created": 1774907255,
@@ -484,7 +484,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "varies",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/openrouter/free",
       "created": 1769917427,
@@ -505,7 +505,7 @@
       "output_modalities": [
         "text"
       ],
-      "rate_limit": "40 req/min",
+      "rate_limit": "20 RPM · 50 RPD",
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
       "created": 1780581864,

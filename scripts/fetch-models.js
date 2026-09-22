@@ -18,26 +18,24 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
-// ── Known rate limits per provider (requests/minute unless noted) ──────────────
-const RATE_LIMITS = {
-  "google/gemini":         "15 req/min · 1M tokens/day",
-  "meta-llama":            "30 req/min",
-  "deepseek":              "20 req/min",
-  "qwen":                  "20 req/min",
-  "mistralai":             "5 req/min",
-  "microsoft":             "10 req/min",
-  "nvidia":                "40 req/min",
-  "nousresearch":          "20 req/min",
-  "liquid":                "10 req/min",
-  "sophosympatheia":       "20 req/min",
+// ── Rate limits: the provider's, not the model's ───────────────────────
+//
+// This used to be a hand-written map keyed by the model id ("nvidia" → 40
+// req/min, "mistralai" → 5 req/min). Those numbers were invented: every row
+// here comes from OpenRouter, where the free-model limit belongs to the
+// ACCOUNT, is the same for every `:free` model, and has nothing to do with who
+// trained it. Publishing a made-up limit is exactly the staleness this repo
+// exists to avoid, so the limit now comes from the source, with a citation.
+//
+// OpenRouter, "Free usage limits" (checked 2026-09-23):
+//   https://openrouter.ai/docs/api-reference/limits
+//   :free models — 20 requests/minute, 50 requests/day per account,
+//   or 1,000/day once the account has purchased $10 in credits. Limits are
+//   global per account: extra keys do not widen them.
+const SOURCE_LIMITS = {
+  openrouter:   "20 RPM · 50 RPD",
+  pollinations: "anonymous tier (no key)",
 };
-
-function getRateLimit(modelId) {
-  for (const [prefix, limit] of Object.entries(RATE_LIMITS)) {
-    if (modelId.includes(prefix)) return limit;
-  }
-  return "varies";
-}
 
 // ── Modality icons ─────────────────────────────────────────────────────────────
 function modalityBadge(modality) {
@@ -49,7 +47,7 @@ function modalityBadge(modality) {
   return map[modality] ?? modality;
 }
 
-// ── Format context window ──────────────────────────────────────────────────────
+// ── Format token counts ──────────────────────────────────────────────────────
 function fmtCtx(n) {
   if (!n) return "—";
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(0)}M`;
@@ -92,7 +90,7 @@ async function fetchPollinationsModels() {
         max_output:        null,
         modalities:        [...new Set([...(m.input_modalities ?? ["text"]), ...(m.output_modalities ?? ["text"])])],
         output_modalities: m.output_modalities ?? ["text"],
-        rate_limit:        "anonymous tier (no key)",
+        rate_limit:        SOURCE_LIMITS.pollinations,
         notes:             "No API key required",
         source:            "https://pollinations.ai",
       }));
@@ -162,7 +160,7 @@ async function main() {
       max_output:     m.top_provider?.max_completion_tokens ?? null,
       modalities:     allModalities,
       output_modalities: outputModalities,
-      rate_limit:     getRateLimit(m.id),
+      rate_limit:     SOURCE_LIMITS.openrouter,
       notes:          "",
       source:         `https://openrouter.ai/${m.id}`,
       created:        m.created ?? null,
@@ -227,8 +225,8 @@ const READMES = [
   {
     file: "README.md",
     caption: (date, n) =>
-      `> Last updated: **${date}** · ${n} chat models · ranked by [ZeroOptimize](https://www.zerolimitai.com/leaderboard) score, then context window`,
-    columns: ["#", "Model", "Provider", "Context", "Modalities", "Rate Limit", "Score", "Today", "Source"],
+      `> Last updated: **${date}** · ${n} chat models · ranked by [ZeroOptimize](https://www.zerolimitai.com/leaderboard) score, then context window · rate limits are the provider's, per account[^or][^poll]`,
+    columns: ["#", "Model", "Provider", "Context", "Max output", "Modalities", "Rate Limit", "Score", "Today", "Source"],
     link: "link",
     health: { ok: "✅ up", sick: "⚠️ degraded", dead: "❌ down" },
     otherCaption: (n) => `${n} free models that are not chat models (music, image, audio generation):`,
@@ -236,8 +234,8 @@ const READMES = [
   {
     file: "README.es.md",
     caption: (date, n) =>
-      `> Última actualización: **${date}** · ${n} modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto`,
-    columns: ["#", "Modelo", "Proveedor", "Contexto", "Modalidades", "Límite de uso", "Puntuación", "Hoy", "Fuente"],
+      `> Última actualización: **${date}** · ${n} modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto · los límites son del proveedor, por cuenta`,
+    columns: ["#", "Modelo", "Proveedor", "Contexto", "Salida máx.", "Modalidades", "Límite de uso", "Puntuación", "Hoy", "Fuente"],
     link: "enlace",
     health: { ok: "✅ activo", sick: "⚠️ degradado", dead: "❌ caído" },
     otherCaption: (n) => `${n} modelos gratuitos que no son de chat (generación de música, imagen o audio):`,
@@ -262,12 +260,13 @@ async function updateReadme(models, updatedAt) {
 
     const rows = chat.map((m, i) => {
       const ctx        = m.context_window ? fmtCtx(m.context_window) : "—";
+      const maxOut     = m.max_output ? fmtCtx(m.max_output) : "—";
       const modalities = (m.modalities ?? ["text"]).map(modalityBadge).join(", ");
       const rateLimit  = m.rate_limit ?? "varies";
       const score      = m.zo_score != null ? String(m.zo_score) : "—";
       const today      = m.health ? cfg.health[m.health] ?? "—" : "—";
       const source     = `[${cfg.link}](${m.source})`;
-      return `| ${i + 1} | **${m.name}** | ${m.provider} | ${ctx} | ${modalities} | ${rateLimit} | ${score} | ${today} | ${source} |`;
+      return `| ${i + 1} | **${m.name}** | ${m.provider} | ${ctx} | ${maxOut} | ${modalities} | ${rateLimit} | ${score} | ${today} | ${source} |`;
     });
 
     const otherBlock = other.length

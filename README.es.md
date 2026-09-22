@@ -62,39 +62,55 @@ Cada modelo incluye:
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Tue, 22 Sep 2026 09:10:07 UTC** · 23 modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto
+> Última actualización: **Tue, 22 Sep 2026 22:49:11 UTC** · 23 modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto · los límites son del proveedor, por cuenta
 
-| # | Modelo | Proveedor | Contexto | Modalidades | Límite de uso | Puntuación | Hoy | Fuente |
-|---|---|---|---|---|---|---|---|---|
-| 1 | **Qwen: Qwen3.8 27B (free)** | Qwen | 262K | 💬 text, 🖼️ vision, video | 20 req/min | 100 | ⚠️ degradado | [enlace](https://openrouter.ai/qwen/qwen3.8-27b:free) |
-| 2 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 💬 text | 40 req/min | 85 | ⚠️ degradado | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 3 | **Z.ai: GLM 5.2 (free)** | Z ai | 33K | 💬 text | varies | 75 | ⚠️ degradado | [enlace](https://openrouter.ai/z-ai/glm-5.2:free) |
-| 4 | **inclusionAI: Ling 3.0 Flash Fin (free)** | Inclusionai | 262K | 💬 text | varies | 65 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free) |
-| 5 | **inclusionAI: Ling 3.0 Flash VL (free)** | Inclusionai | 262K | 💬 text, 🖼️ vision, video | varies | 59 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free) |
-| 6 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 262K | 💬 text | 40 req/min | 59 | ✅ activo | [enlace](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
-| 7 | **inclusionAI: Ling 3.0 Flash Sante (free)** | Inclusionai | 262K | 💬 text | varies | 54 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free) |
-| 8 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | 43 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 9 | **Poolside: Laguna S 2.1 (free)** | Poolside | 262K | 💬 text | varies | 40 | ✅ activo | [enlace](https://openrouter.ai/poolside/laguna-s-2.1:free) |
-| 10 | **Google: Gemma 4 31B (free)** | Google | 262K | 🖼️ vision, 💬 text, video | varies | 34 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 11 | **Poolside: Laguna XS 2.1 (free)** | Poolside | 262K | 💬 text | varies | 31 | ✅ activo | [enlace](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
-| 12 | **Cohere: North Mini Code (free)** | Cohere | 256K | 💬 text | varies | 31 | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
-| 13 | **Nex AGI: Nex-N2.5-Mini (free)** | Nex agi | 262K | 💬 text, 🖼️ vision | varies | 21 | ✅ activo | [enlace](https://openrouter.ai/nex-agi/nex-n2.5-mini:free) |
-| 14 | **NVIDIA: Nemotron 3.5 Lightning (free)** | Nvidia | 1M | 💬 text | 40 req/min | 20 | ✅ activo | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
-| 15 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 💬 text, audio, 🖼️ vision, video | 40 req/min | 15 | ✅ activo | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
-| 16 | **Dots Studio: Dots3-Note Preview (free)** | Dots studio | 512K | 💬 text, 🖼️ vision | varies | 14 | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
-| 17 | **LiquidAI: LFM2.5-2.6B (free)** | Liquid | 66K | 💬 text | 10 req/min | 12 | ✅ activo | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
-| 18 | **Nex AGI: Nex-N2.5-Pro (free)** | Nex agi | 262K | 💬 text, 🖼️ vision | varies | 10 | ✅ activo | [enlace](https://openrouter.ai/nex-agi/nex-n2.5-pro:free) |
-| 19 | **Thinking Machines: Inkling Small (free)** | Thinkingmachines | 1M | 💬 text, 🖼️ vision, audio | varies | — | — | [enlace](https://openrouter.ai/thinkingmachines/inkling-small:free) |
-| 20 | **Thinking Machines: Inkling (free)** | Thinkingmachines | 1M | 💬 text, 🖼️ vision, audio | varies | — | — | [enlace](https://openrouter.ai/thinkingmachines/inkling:free) |
-| 21 | **Free Models Router** | Openrouter | 200K | 💬 text, 🖼️ vision | varies | — | — | [enlace](https://openrouter.ai/openrouter/free) |
-| 22 | **NVIDIA: Nemotron 3.5 Content Safety (free)** | Nvidia | 128K | 💬 text, 🖼️ vision | 40 req/min | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free) |
-| 23 | **GPT-OSS 20B Reasoning LLM (OVH)** | Pollinations AI | — | 💬 text | anonymous tier (no key) | — | — | [enlace](https://pollinations.ai) |
+| # | Modelo | Proveedor | Contexto | Salida máx. | Modalidades | Límite de uso | Puntuación | Hoy | Fuente |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | **Qwen: Qwen3.8 27B (free)** | Qwen | 262K | 236K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 100 | ⚠️ degradado | [enlace](https://openrouter.ai/qwen/qwen3.8-27b:free) |
+| 2 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | 85 | ✅ activo | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
+| 3 | **Z.ai: GLM 5.2 (free)** | Z ai | 33K | 29K | 💬 text | 20 RPM · 50 RPD | 75 | ✅ activo | [enlace](https://openrouter.ai/z-ai/glm-5.2:free) |
+| 4 | **inclusionAI: Ling 3.0 Flash Fin (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 65 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free) |
+| 5 | **inclusionAI: Ling 3.0 Flash VL (free)** | Inclusionai | 262K | 33K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 59 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free) |
+| 6 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 262K | 236K | 💬 text | 20 RPM · 50 RPD | 59 | ✅ activo | [enlace](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
+| 7 | **inclusionAI: Ling 3.0 Flash Sante (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 54 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free) |
+| 8 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 43 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 9 | **Poolside: Laguna S 2.1 (free)** | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 40 | ✅ activo | [enlace](https://openrouter.ai/poolside/laguna-s-2.1:free) |
+| 10 | **Google: Gemma 4 31B (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 34 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 11 | **Poolside: Laguna XS 2.1 (free)** | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 31 | ✅ activo | [enlace](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
+| 12 | **Cohere: North Mini Code (free)** | Cohere | 256K | 64K | 💬 text | 20 RPM · 50 RPD | 31 | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
+| 13 | **Nex AGI: Nex-N2.5-Mini (free)** | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 21 | ✅ activo | [enlace](https://openrouter.ai/nex-agi/nex-n2.5-mini:free) |
+| 14 | **NVIDIA: Nemotron 3.5 Lightning (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | 20 | ✅ activo | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
+| 15 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 66K | 💬 text, audio, 🖼️ vision, video | 20 RPM · 50 RPD | 15 | ✅ activo | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
+| 16 | **Dots Studio: Dots3-Note Preview (free)** | Dots studio | 512K | 461K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 14 | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
+| 17 | **LiquidAI: LFM2.5-2.6B (free)** | Liquid | 66K | 8K | 💬 text | 20 RPM · 50 RPD | 12 | ✅ activo | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
+| 18 | **Nex AGI: Nex-N2.5-Pro (free)** | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 10 | ✅ activo | [enlace](https://openrouter.ai/nex-agi/nex-n2.5-pro:free) |
+| 19 | **Thinking Machines: Inkling Small (free)** | Thinkingmachines | 1M | 262K | 💬 text, 🖼️ vision, audio | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/thinkingmachines/inkling-small:free) |
+| 20 | **Thinking Machines: Inkling (free)** | Thinkingmachines | 1M | 262K | 💬 text, 🖼️ vision, audio | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/thinkingmachines/inkling:free) |
+| 21 | **Free Models Router** | Openrouter | 200K | — | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/openrouter/free) |
+| 22 | **NVIDIA: Nemotron 3.5 Content Safety (free)** | Nvidia | 128K | 8K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free) |
+| 23 | **GPT-OSS 20B Reasoning LLM (OVH)** | Pollinations AI | — | — | 💬 text | anonymous tier (no key) | — | — | [enlace](https://pollinations.ai) |
 
 2 modelos gratuitos que no son de chat (generación de música, imagen o audio):
 
 - [Google: Lyria 3 Pro Preview](https://openrouter.ai/google/lyria-3-pro-preview)
 - [Google: Lyria 3 Clip Preview](https://openrouter.ai/google/lyria-3-clip-preview)
 <!-- TABLE_END -->
+
+**Cómo leer la tabla.** `Contexto` y `Salida máx.` van en tokens. `Límite de uso`
+es el límite del *proveedor* para modelos gratuitos, no del modelo: en OpenRouter
+pertenece a la cuenta y es idéntico para cualquier id `:free`. `Puntuación` es la
+calidad según ZeroOptimize (0-100, relativa al mejor modelo gratuito de hoy) y
+`Hoy` es el resultado de una comprobación real en producción, no una página de estado.
+
+| Término | Significado |
+|---------|-------------|
+| RPM | Peticiones por minuto |
+| RPD | Peticiones por día |
+| TPM | Tokens por minuto |
+| TPD | Tokens por día |
+
+Las condiciones de cada proveedor, con su enlace, están en la
+[tabla de proveedores del README en inglés](README.md#where-to-call-these-models).
 
 ---
 
@@ -158,7 +174,7 @@ Si usas ese endpoint y miras qué modelo ha contestado, a menudo será uno que n
 
 **Este repo responde a "¿qué modelos gratuitos existen?"** Lee los catálogos públicos — la API de OpenRouter y Pollinations — una vez al día y lista todo lo que cuesta $0. Es un catálogo.
 
-**El router responde a "¿cuál de ellos va a contestar de verdad, ahora mismo?"** Llega a proveedores que esta lista no sigue (Cloudflare Workers AI, Cerebras, Together, Groq), puntúa cada candidato en diez dimensiones — ELO en la arena, contexto, latencia, novedad, disponibilidad — y descarta los que empiezan a fallar, probando el siguiente automáticamente.
+**El router responde a "¿cuál de ellos va a contestar de verdad, ahora mismo?"** Puntúa cada candidato con [ZeroOptimize v3](https://www.zerolimitai.com/leaderboard) — índices de benchmark publicados y valoraciones de LM Arena para la calidad, y después contexto, techo de salida, soporte de herramientas y su propia latencia en producción — y descarta los que empiezan a fallar, probando el siguiente automáticamente.
 
 Las dos listas se separan por dos motivos: **fuentes distintas y preguntas distintas.** Un modelo puede estar en esta página y ser inutilizable hoy: con el límite reducido a nada, renombrado sin avisar, o con un endpoint que ha dejado de servir. Descubrirlo es lo que te cuesta una tarde, y es la parte que merece la pena automatizar.
 

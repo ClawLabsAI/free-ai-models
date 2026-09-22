@@ -1,0 +1,28 @@
+name: Report a wrong listing
+description: A model listed here is no longer free, does not answer, or has wrong details
+title: "[Wrong] "
+labels: ["wrong-listing"]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model (as shown in the table)
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong
+      options:
+        - It is not free (it charged me or asks for credit)
+        - It does not answer / returns errors
+        - Wrong context window or rate limit
+        - It is not a chat model
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: The error message or the page that shows it, and roughly when you saw it

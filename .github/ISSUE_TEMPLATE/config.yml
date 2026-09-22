@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: One OpenAI-compatible endpoint for the best free model
+    url: https://www.zerolimitai.com/developers?utm_source=github&utm_medium=issue_template
+    about: Built by the maintainers of this list. Routes each request to the #1 free model, with failover.

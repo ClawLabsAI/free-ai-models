@@ -2,3 +2,8 @@ node_modules/
 .env
 .DS_Store
 *.log
+
+# weekly-release.js output (published as a GitHub release, not committed)
+release-notes.md
+release-tag.txt
+release-title.txt

@@ -1,0 +1,42 @@
+name: Add a free model or provider
+description: A free model or free API tier that is missing from the list
+title: "[Add] "
+labels: ["add-model"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks. This list only includes models that are **free to call today** (no card, or a free tier that does not bill).
+  - type: input
+    id: model
+    attributes:
+      label: Model name
+      placeholder: e.g. Qwen3.8 27B
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Provider serving it for free
+      placeholder: e.g. OpenRouter, Groq, Cerebras, Google AI Studio, Cloudflare Workers AI
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link that shows it is free
+      description: Pricing page, model page with $0 pricing, or the free-tier docs
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Known limits
+      description: Requests per minute / per day, context window, whether an API key or card is required
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I called it (or the provider documents it) without being charged
+          required: true

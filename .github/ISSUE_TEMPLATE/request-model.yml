@@ -40,3 +40,14 @@ body:
       options:
         - label: I called it (or the provider documents it) without being charged
           required: true
+        - label: It is free under a rate limit, not a monthly/weekly allowance, credit, promotion or rotating lineup
+          required: true
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Do you work for or get paid by this provider?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true

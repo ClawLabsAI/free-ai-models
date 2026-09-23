@@ -62,12 +62,12 @@ Cada modelo incluye:
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Wed, 23 Sep 2026 11:00:55 UTC** · 23 modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto · los límites son del proveedor, por cuenta
+> Última actualización: **Wed, 23 Sep 2026 11:04:32 UTC** · 23 modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto · los límites son del proveedor, por cuenta
 
 | # | Modelo | Proveedor | Contexto | Salida máx. | Modalidades | Límite de uso | Puntuación | Hoy | Fuente |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | **Qwen: Qwen3.8 27B (free)** | Qwen | 262K | 236K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 100 | ✅ activo | [enlace](https://openrouter.ai/qwen/qwen3.8-27b:free) |
-| 2 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | 76 | ⚠️ degradado | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
+| 2 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | 76 | ✅ activo | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 3 | **Z.ai: GLM 5.2 (free)** | Z ai | 33K | 29K | 💬 text | 20 RPM · 50 RPD | 73 | ✅ activo | [enlace](https://openrouter.ai/z-ai/glm-5.2:free) |
 | 4 | **inclusionAI: Ling 3.0 Flash VL (free)** | Inclusionai | 262K | 33K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 58 | ⚠️ degradado | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free) |
 | 5 | **inclusionAI: Ling 3.0 Flash Fin (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 55 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free) |

@@ -62,25 +62,25 @@ Each model entry includes:
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Wed, 23 Sep 2026 09:10:27 UTC** · 23 chat models · ranked by [ZeroOptimize](https://www.zerolimitai.com/leaderboard) score, then context window · rate limits are the provider's, per account[^or][^poll]
+> Last updated: **Wed, 23 Sep 2026 11:00:55 UTC** · 23 chat models · ranked by [ZeroOptimize](https://www.zerolimitai.com/leaderboard) score, then context window · rate limits are the provider's, per account[^or][^poll]
 
 | # | Model | Provider | Context | Max output | Modalities | Rate Limit | Score | Today | Source |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | **Qwen: Qwen3.8 27B (free)** | Qwen | 262K | 236K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 100 | ✅ up | [link](https://openrouter.ai/qwen/qwen3.8-27b:free) |
-| 2 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | 76 | ✅ up | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
+| 2 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | 76 | ⚠️ degraded | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 3 | **Z.ai: GLM 5.2 (free)** | Z ai | 33K | 29K | 💬 text | 20 RPM · 50 RPD | 73 | ✅ up | [link](https://openrouter.ai/z-ai/glm-5.2:free) |
-| 4 | **inclusionAI: Ling 3.0 Flash VL (free)** | Inclusionai | 262K | 33K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 58 | ✅ up | [link](https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free) |
+| 4 | **inclusionAI: Ling 3.0 Flash VL (free)** | Inclusionai | 262K | 33K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 58 | ⚠️ degraded | [link](https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free) |
 | 5 | **inclusionAI: Ling 3.0 Flash Fin (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 55 | ✅ up | [link](https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free) |
 | 6 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 262K | 236K | 💬 text | 20 RPM · 50 RPD | 50 | ✅ up | [link](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
 | 7 | **NVIDIA: Nemotron 3.5 Lightning (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | 48 | ✅ up | [link](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 8 | **inclusionAI: Ling 3.0 Flash Sante (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 44 | ✅ up | [link](https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free) |
-| 9 | **Nex AGI: Nex-N2.5-Pro (free)** | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 38 | ✅ up | [link](https://openrouter.ai/nex-agi/nex-n2.5-pro:free) |
+| 9 | **Nex AGI: Nex-N2.5-Pro (free)** <br><sub>⏳ retiring 2026-09-25</sub> | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 38 | ✅ up | [link](https://openrouter.ai/nex-agi/nex-n2.5-pro:free) |
 | 10 | **Google: Gemma 4 31B (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 38 | ✅ up | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
 | 11 | **Poolside: Laguna S 2.1 (free)** | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 32 | ✅ up | [link](https://openrouter.ai/poolside/laguna-s-2.1:free) |
 | 12 | **Poolside: Laguna XS 2.1 (free)** | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 31 | ✅ up | [link](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
 | 13 | **Cohere: North Mini Code (free)** | Cohere | 256K | 64K | 💬 text | 20 RPM · 50 RPD | 30 | ✅ up | [link](https://openrouter.ai/cohere/north-mini-code:free) |
-| 14 | **Nex AGI: Nex-N2.5-Mini (free)** | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 23 | ✅ up | [link](https://openrouter.ai/nex-agi/nex-n2.5-mini:free) |
-| 15 | **Dots Studio: Dots3-Note Preview (free)** | Dots studio | 512K | 461K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 17 | ✅ up | [link](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
+| 14 | **Nex AGI: Nex-N2.5-Mini (free)** <br><sub>⏳ retiring 2026-09-25</sub> | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 23 | ✅ up | [link](https://openrouter.ai/nex-agi/nex-n2.5-mini:free) |
+| 15 | **Dots Studio: Dots3-Note Preview (free)** <br><sub>⏳ retiring 2026-12-31</sub> | Dots studio | 512K | 461K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 17 | ✅ up | [link](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
 | 16 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 66K | 💬 text, audio, 🖼️ vision, video | 20 RPM · 50 RPD | 15 | ✅ up | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
 | 17 | **LiquidAI: LFM2.5-2.6B (free)** | Liquid | 66K | 8K | 💬 text | 20 RPM · 50 RPD | 11 | ✅ up | [link](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
 | 18 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 6 | ✅ up | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
@@ -100,7 +100,18 @@ Each model entry includes:
 is the *provider's* limit for free models, not the model's — on OpenRouter it
 belongs to the account and is identical for every `:free` id. `Score` is the
 ZeroOptimize quality score (0–100, relative to the best free model today) and
-`Today` is the result of a real production health check, not a status page.
+`Today` is the result of a real production health check, not a status page. A
+model tagged **⏳ retiring** has a shutdown date published by its provider: it
+still works today, and it will stop without further notice on that date.
+
+**Data policy.** Free inference is free because someone gets something back.
+Of the 91 providers OpenRouter lists, four may train on the prompts they
+receive — DeepSeek, Liquid, NVIDIA and Thinking Machines
+([their table](https://openrouter.ai/docs/guides/features/privacy-and-logging),
+checked 2026-09-23). Whether that matters is your call; what matters is knowing
+it before you send a customer's data. ZeroLimitAI's router refuses those
+providers on every request, which is why a handful of otherwise-good models are
+missing from its chain.
 
 | Term | Meaning |
 |------|---------|

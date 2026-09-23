@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T09:10:27.938Z",
+  "updated_at": "2026-09-23T11:00:55.163Z",
   "total_free_models": 25,
   "sources": [
     "openrouter.ai/api/v1/models",
@@ -22,6 +22,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/qwen/qwen3.8-27b:free",
       "created": 1786722910,
@@ -42,12 +43,13 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
       "created": 1780551208,
       "kind": "chat",
       "zo_score": 76,
-      "health": "ok"
+      "health": "sick"
     },
     {
       "id": "z-ai/glm-5.2:free",
@@ -62,6 +64,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/z-ai/glm-5.2:free",
       "created": 1781631930,
@@ -84,12 +87,13 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/inclusionai/ling-3.0-flash-vl:free",
       "created": 1789056114,
       "kind": "chat",
       "zo_score": 58,
-      "health": "ok"
+      "health": "sick"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
@@ -104,6 +108,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free",
       "created": 1787846290,
@@ -124,6 +129,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free",
       "created": 1773245239,
@@ -144,6 +150,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
       "created": 1786452751,
@@ -164,6 +171,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free",
       "created": 1788545946,
@@ -185,6 +193,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-09-25",
       "notes": "",
       "source": "https://openrouter.ai/nex-agi/nex-n2.5-pro:free",
       "created": 1788890050,
@@ -207,6 +216,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/google/gemma-4-31b-it:free",
       "created": 1775148486,
@@ -227,6 +237,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/poolside/laguna-s-2.1:free",
       "created": 1784652683,
@@ -247,6 +258,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
       "created": 1783002429,
@@ -267,6 +279,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/cohere/north-mini-code:free",
       "created": 1781723748,
@@ -288,6 +301,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-09-25",
       "notes": "",
       "source": "https://openrouter.ai/nex-agi/nex-n2.5-mini:free",
       "created": 1788890061,
@@ -309,6 +323,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-12-31",
       "notes": "",
       "source": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
       "created": 1786680361,
@@ -332,6 +347,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "created": 1777393095,
@@ -352,6 +368,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
       "created": 1786470519,
@@ -374,6 +391,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
       "created": 1775227989,
@@ -396,6 +414,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/thinkingmachines/inkling-small:free",
       "created": 1785443117,
@@ -418,6 +437,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/thinkingmachines/inkling:free",
       "created": 1784325956,
@@ -441,6 +461,7 @@
         "audio"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/google/lyria-3-pro-preview",
       "created": 1774907286,
@@ -464,6 +485,7 @@
         "audio"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/google/lyria-3-clip-preview",
       "created": 1774907255,
@@ -485,6 +507,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/openrouter/free",
       "created": 1769917427,
@@ -506,6 +529,7 @@
         "text"
       ],
       "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
       "notes": "",
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
       "created": 1780581864,
@@ -526,6 +550,7 @@
         "text"
       ],
       "rate_limit": "anonymous tier (no key)",
+      "expires": null,
       "notes": "No API key required",
       "source": "https://pollinations.ai",
       "kind": "chat",

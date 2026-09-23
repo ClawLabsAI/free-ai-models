@@ -37,6 +37,12 @@ const SOURCE_LIMITS = {
   pollinations: "anonymous tier (no key)",
 };
 
+/** OpenRouter publishes a shutdown date on the models that have one. */
+function or_expiry(m) {
+  const d = m.expiration_date;
+  return d ? String(d).slice(0, 10) : null;
+}
+
 // ── Modality icons ─────────────────────────────────────────────────────────────
 function modalityBadge(modality) {
   const map = {
@@ -91,6 +97,7 @@ async function fetchPollinationsModels() {
         modalities:        [...new Set([...(m.input_modalities ?? ["text"]), ...(m.output_modalities ?? ["text"])])],
         output_modalities: m.output_modalities ?? ["text"],
         rate_limit:        SOURCE_LIMITS.pollinations,
+        expires:           null,
         notes:             "No API key required",
         source:            "https://pollinations.ai",
       }));
@@ -161,6 +168,10 @@ async function main() {
       modalities:     allModalities,
       output_modalities: outputModalities,
       rate_limit:     SOURCE_LIMITS.openrouter,
+      // The day the provider stops serving it, when one is published. Rare
+      // (3 of 24 today) but the thing you most want to know before pinning a
+      // model: two of those three retire this week.
+      expires:        or_expiry(m),
       notes:          "",
       source:         `https://openrouter.ai/${m.id}`,
       created:        m.created ?? null,
@@ -228,6 +239,7 @@ const READMES = [
       `> Last updated: **${date}** · ${n} chat models · ranked by [ZeroOptimize](https://www.zerolimitai.com/leaderboard) score, then context window · rate limits are the provider's, per account[^or][^poll]`,
     columns: ["#", "Model", "Provider", "Context", "Max output", "Modalities", "Rate Limit", "Score", "Today", "Source"],
     link: "link",
+    retiring: (d) => `<br><sub>⏳ retiring ${d}</sub>`,
     health: { ok: "✅ up", sick: "⚠️ degraded", dead: "❌ down" },
     otherCaption: (n) => `${n} free models that are not chat models (music, image, audio generation):`,
   },
@@ -237,6 +249,7 @@ const READMES = [
       `> Última actualización: **${date}** · ${n} modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto · los límites son del proveedor, por cuenta`,
     columns: ["#", "Modelo", "Proveedor", "Contexto", "Salida máx.", "Modalidades", "Límite de uso", "Puntuación", "Hoy", "Fuente"],
     link: "enlace",
+    retiring: (d) => `<br><sub>⏳ se retira el ${d}</sub>`,
     health: { ok: "✅ activo", sick: "⚠️ degradado", dead: "❌ caído" },
     otherCaption: (n) => `${n} modelos gratuitos que no son de chat (generación de música, imagen o audio):`,
   },
@@ -266,7 +279,8 @@ async function updateReadme(models, updatedAt) {
       const score      = m.zo_score != null ? String(m.zo_score) : "—";
       const today      = m.health ? cfg.health[m.health] ?? "—" : "—";
       const source     = `[${cfg.link}](${m.source})`;
-      return `| ${i + 1} | **${m.name}** | ${m.provider} | ${ctx} | ${maxOut} | ${modalities} | ${rateLimit} | ${score} | ${today} | ${source} |`;
+      const expiry     = m.expires ? ` ${cfg.retiring(m.expires)}` : "";
+      return `| ${i + 1} | **${m.name}**${expiry} | ${m.provider} | ${ctx} | ${maxOut} | ${modalities} | ${rateLimit} | ${score} | ${today} | ${source} |`;
     });
 
     const otherBlock = other.length

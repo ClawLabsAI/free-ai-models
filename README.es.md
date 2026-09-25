@@ -62,27 +62,27 @@ Cada modelo incluye:
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Thu, 24 Sep 2026 09:07:36 UTC** · 23 modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto · los límites son del proveedor, por cuenta
+> Última actualización: **Fri, 25 Sep 2026 09:28:27 UTC** · 23 modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto · los límites son del proveedor, por cuenta
 
 | # | Modelo | Proveedor | Contexto | Salida máx. | Modalidades | Límite de uso | Puntuación | Hoy | Fuente |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | **Qwen: Qwen3.8 27B (free)** | Qwen | 262K | 236K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 100 | ⚠️ degradado | [enlace](https://openrouter.ai/qwen/qwen3.8-27b:free) |
-| 2 | **inclusionAI: Ling 3.0 Flash Fin (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 59 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free) |
-| 3 | **Z.ai: GLM 5.2 (free)** | Z ai | 33K | 29K | 💬 text | 20 RPM · 50 RPD | 56 | ✅ activo | [enlace](https://openrouter.ai/z-ai/glm-5.2:free) |
-| 4 | **inclusionAI: Ling 3.0 Flash Sante (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 47 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free) |
-| 5 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 30 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 6 | **Cohere: North Mini Code (free)** | Cohere | 256K | 64K | 💬 text | 20 RPM · 50 RPD | 27 | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
-| 7 | **Google: Gemma 4 31B (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 14 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 8 | **Nex AGI: Nex-N2.5-Mini (free)** <br><sub>⏳ se retira el 2026-09-25</sub> | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 11 | ✅ activo | [enlace](https://openrouter.ai/nex-agi/nex-n2.5-mini:free) |
-| 9 | **Nex AGI: Nex-N2.5-Pro (free)** <br><sub>⏳ se retira el 2026-09-25</sub> | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 10 | ✅ activo | [enlace](https://openrouter.ai/nex-agi/nex-n2.5-pro:free) |
-| 10 | **Dots Studio: Dots3-Note Preview (free)** <br><sub>⏳ se retira el 2026-12-31</sub> | Dots studio | 512K | 461K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 6 | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
+| 1 | **Z.ai: GLM 5.2 (free)** | Z ai | 33K | 29K | 💬 text | 20 RPM · 50 RPD | 100 | ✅ activo | [enlace](https://openrouter.ai/z-ai/glm-5.2:free) |
+| 2 | **Qwen: Qwen3.8 27B (free)** | Qwen | 262K | 236K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | 81 | ✅ activo | [enlace](https://openrouter.ai/qwen/qwen3.8-27b:free) |
+| 3 | **inclusionAI: Ling 3.0 Flash Fin (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 75 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free) |
+| 4 | **inclusionAI: Ling 3.0 Flash Sante (free)** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 63 | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.0-flash-sante:free) |
+| 5 | **Poolside: Laguna S 2.1 (free)** | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 51 | ✅ activo | [enlace](https://openrouter.ai/poolside/laguna-s-2.1:free) |
+| 6 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 48 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 7 | **Poolside: Laguna XS 2.1 (free)** | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 39 | ✅ activo | [enlace](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
+| 8 | **Cohere: North Mini Code (free)** | Cohere | 256K | 64K | 💬 text | 20 RPM · 50 RPD | 35 | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
+| 9 | **Dots Studio: Dots3-Note Preview (free)** | Dots studio | 512K | 461K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 21 | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
+| 10 | **Google: Gemma 4 31B (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 21 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
 | 11 | **Thinking Machines: Inkling Small (free)** | Thinkingmachines | 1M | 262K | 💬 text, 🖼️ vision, audio | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/thinkingmachines/inkling-small:free) |
 | 12 | **Thinking Machines: Inkling (free)** | Thinkingmachines | 1M | 262K | 💬 text, 🖼️ vision, audio | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/thinkingmachines/inkling:free) |
-| 13 | **Space Bunny Alpha** <br><sub>⏳ se retira el 2098-12-31</sub> | Stealth | 1M | 524K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/stealth/space-bunny-alpha) |
+| 13 | **Space Bunny Alpha** | Stealth | 1M | 524K | 💬 text, 🖼️ vision, video | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/stealth/space-bunny-alpha) |
 | 14 | **NVIDIA: Nemotron 3.5 Lightning (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 15 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 16 | **Poolside: Laguna S 2.1 (free)** | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/poolside/laguna-s-2.1:free) |
-| 17 | **Poolside: Laguna XS 2.1 (free)** | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
+| 16 | **Nex AGI: Nex-N2.5-Mini (free)** <br><sub>⏳ se retira el 2026-09-25</sub> | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nex-agi/nex-n2.5-mini:free) |
+| 17 | **Nex AGI: Nex-N2.5-Pro (free)** <br><sub>⏳ se retira el 2026-09-25</sub> | Nex agi | 262K | 236K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nex-agi/nex-n2.5-pro:free) |
 | 18 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 262K | 236K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
 | 19 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 66K | 💬 text, audio, 🖼️ vision, video | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
 | 20 | **Free Models Router** | Openrouter | 200K | — | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/openrouter/free) |

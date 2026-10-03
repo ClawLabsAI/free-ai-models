@@ -52,7 +52,9 @@ Cada modelo incluye:
 | `rate_limit` | Límite de uso conocido (peticiones/min o tokens/día) |
 | `source` | Dónde acceder a él |
 | `kind` | `chat` (salida de texto) u `other` (generadores de música, imagen o audio) |
-| `zo_score` | Puntuación de calidad 0–100 relativa al mejor modelo gratuito, de [ZeroOptimize](https://www.zerolimitai.com/leaderboard); `null` si no está clasificado |
+| `zo_score` | Puntuación de calidad 0–100 de [ZeroOptimize](https://www.zerolimitai.com/leaderboard), la misma cifra que el ranking de la web; `null` si no está clasificado |
+| `zo_rank` | Posición en el ranking de ZeroOptimize (el orden del router); `null` si no está clasificado |
+| `answering_now` | `true` para el modelo al que va la siguiente petición (el mejor que responde ahora) |
 | `health` | `ok` / `sick` / `dead` — resultado de hoy del health check de producción de ZeroLimitAI; `null` si no se ha probado |
 
 → Datos en bruto: [`data/models.json`](data/models.json)
@@ -96,7 +98,7 @@ Cada modelo incluye:
 **Cómo leer la tabla.** `Contexto` y `Salida máx.` van en tokens. `Límite de uso`
 es el límite del *proveedor* para modelos gratuitos, no del modelo: en OpenRouter
 pertenece a la cuenta y es idéntico para cualquier id `:free`. `Puntuación` es la
-calidad según ZeroOptimize (0-100, relativa al mejor modelo gratuito de hoy) y
+calidad según ZeroOptimize (0-100, la misma cifra que el ranking de la web; **▶ respondiendo ahora** marca el modelo al que va la siguiente petición) y
 `Hoy` es el resultado de una comprobación real en producción, no una página de estado.
 
 | Término | Significado |

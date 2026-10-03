@@ -110,10 +110,14 @@ async function fetchPollinationsModels() {
 // ── ZeroOptimize ranking + today's health ──────────────────────────────────────
 //
 // Public endpoint of zerolimitai.com (the router built by this repo's
-// maintainers): the same scores and health marks its production routing uses.
-// `zoPct` is the score relative to the best model (0-100); `health` comes from a
-// daily probe plus live failures. Optional: if it is unreachable the table
-// falls back to context-window order and says so.
+// maintainers): the ZeroOptimize ranking, the same list, order and 0-100 score
+// as zerolimitai.com/leaderboard, its homepage and its in-app /models page.
+// `score` is the absolute score (until 2026-10-03 this read `zoPct`, a
+// percentage of the leader, so the numbers here differed from the site's);
+// `rank` is the router's order; `health` comes from a daily probe plus live
+// failures; `answeringNow` marks the model the next request goes to.
+// Optional: if it is unreachable the table falls back to context-window order
+// and says so.
 async function fetchZoRanking() {
   try {
     const res = await fetch("https://www.zerolimitai.com/api/models/free-top?count=20", {
@@ -125,7 +129,14 @@ async function fetchZoRanking() {
     const byId = new Map();
     for (const m of list) {
       const id = m.battleModelId ?? m.modelId;
-      if (!byId.has(id)) byId.set(id, { score: Math.round(m.zoPct ?? 0), health: m.health ?? "ok" });
+      if (!byId.has(id)) {
+        byId.set(id, {
+          score: Math.round(m.score ?? m.zoScore ?? 0),
+          rank: m.rank ?? null,
+          health: m.health ?? "ok",
+          answering: m.answeringNow === true,
+        });
+      }
     }
     console.log(`✅ ZeroOptimize ranking: ${byId.size} models`);
     return byId;
@@ -190,13 +201,18 @@ async function main() {
       // Text-only output. Lyria reports ["text","audio"]: it answers with music.
       kind:     (m.output_modalities ?? ["text"]).every((x) => x === "text") ? "chat" : "other",
       zo_score: r ? r.score : null,
+      zo_rank:  r ? r.rank : null,
       health:   r ? r.health : null,
+      answering_now: r ? r.answering : false,
     };
   });
 
-  // Sort: ranked models first by score, then everything else by context window
+  // Sort: ranked models in the router's own order (the same as the site's
+  // leaderboard), then everything else by context window.
   all.sort((a, b) => {
-    if ((a.zo_score ?? -1) !== (b.zo_score ?? -1)) return (b.zo_score ?? -1) - (a.zo_score ?? -1);
+    const ra = a.zo_rank ?? Infinity;
+    const rb = b.zo_rank ?? Infinity;
+    if (ra !== rb) return ra - rb;
     return (b.context_window ?? 0) - (a.context_window ?? 0);
   });
 
@@ -241,6 +257,7 @@ const READMES = [
     link: "link",
     retiring: (d) => `<br><sub>⏳ retiring ${d}</sub>`,
     health: { ok: "✅ up", sick: "⚠️ degraded", dead: "❌ down" },
+    answering: "▶ answering now",
     otherCaption: (n) => `${n} free models that are not chat models (music, image, audio generation):`,
   },
   {
@@ -251,6 +268,7 @@ const READMES = [
     link: "enlace",
     retiring: (d) => `<br><sub>⏳ se retira el ${d}</sub>`,
     health: { ok: "✅ activo", sick: "⚠️ degradado", dead: "❌ caído" },
+    answering: "▶ respondiendo ahora",
     otherCaption: (n) => `${n} modelos gratuitos que no son de chat (generación de música, imagen o audio):`,
   },
 ];
@@ -277,7 +295,7 @@ async function updateReadme(models, updatedAt) {
       const modalities = (m.modalities ?? ["text"]).map(modalityBadge).join(", ");
       const rateLimit  = m.rate_limit ?? "varies";
       const score      = m.zo_score != null ? String(m.zo_score) : "—";
-      const today      = m.health ? cfg.health[m.health] ?? "—" : "—";
+      const today      = m.answering_now ? cfg.answering : m.health ? cfg.health[m.health] ?? "—" : "—";
       const source     = `[${cfg.link}](${m.source})`;
       const expiry     = m.expires ? ` ${cfg.retiring(m.expires)}` : "";
       return `| ${i + 1} | **${m.name}**${expiry} | ${m.provider} | ${ctx} | ${maxOut} | ${modalities} | ${rateLimit} | ${score} | ${today} | ${source} |`;

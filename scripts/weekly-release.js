@@ -100,7 +100,7 @@ lines.push("---");
 lines.push(`Full table, updated daily: [README](../../#free-models-auto-updated-daily) · raw data: [\`data/models.json\`](../../blob/main/data/models.json)`);
 lines.push("");
 lines.push(
-  `Scores are [ZeroOptimize](${SITE}/leaderboard?${UTM}) quality scores (0–100, relative to the best free model). ` +
+  `Scores are [ZeroOptimize](${SITE}/leaderboard?${UTM}) quality scores (0–100, the same number as the site's leaderboard). ` +
     `Want the #1 model without tracking any of this? [One OpenAI-compatible endpoint](${SITE}/developers?${UTM}) routes every request to it, with failover.`,
 );
 

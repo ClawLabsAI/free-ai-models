@@ -52,7 +52,9 @@ Each model entry includes:
 | `rate_limit` | Known rate limit (req/min or tokens/day) |
 | `source` | Where to access it |
 | `kind` | `chat` (text out) or `other` (music, image, audio generators) |
-| `zo_score` | 0–100 quality score relative to the best free model, from [ZeroOptimize](https://www.zerolimitai.com/leaderboard); `null` if unranked |
+| `zo_score` | 0–100 [ZeroOptimize](https://www.zerolimitai.com/leaderboard) quality score — the same number the site's leaderboard shows; `null` if unranked |
+| `zo_rank` | Position in the ZeroOptimize ranking (the router's order); `null` if unranked |
+| `answering_now` | `true` for the model the next request goes to (the best one answering right now) |
 | `health` | `ok` / `sick` / `dead` — today's result of ZeroLimitAI's production health check; `null` if not probed |
 
 → Raw data: [`data/models.json`](data/models.json)
@@ -96,8 +98,8 @@ Each model entry includes:
 **How to read the table.** `Context` and `Max output` are tokens. `Rate Limit`
 is the *provider's* limit for free models, not the model's — on OpenRouter it
 belongs to the account and is identical for every `:free` id. `Score` is the
-ZeroOptimize quality score (0–100, relative to the best free model today) and
-`Today` is the result of a real production health check, not a status page. A
+ZeroOptimize quality score (0–100, the same number as the site's leaderboard) and
+`Today` is the result of a real production health check, not a status page; **▶ answering now** marks the model the next request goes to, which is not always row 1. A
 model tagged **⏳ retiring** has a shutdown date published by its provider: it
 still works today, and it will stop without further notice on that date.
 

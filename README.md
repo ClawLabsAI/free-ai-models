@@ -299,6 +299,7 @@ we route to it, and several of the highest-ranked ones we do not.
 
 - [awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis) — a wider, hand-curated catalogue of providers with free tiers
 - [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi) and [free-claude-code](https://github.com/Alishahryar1/free-claude-code) — self-hosted routers that stack free tiers using your own keys
+- [freelm](https://github.com/shihabshahrier/freelm) — the same idea as a Python/TypeScript library you import, or a local endpoint (`freelm serve`), with your own keys
 - [LiteLLM](https://github.com/BerriAI/litellm) — one SDK and proxy for every provider
 - [LM Arena](https://lmarena.ai) and [Artificial Analysis](https://artificialanalysis.ai) — where the measurements come from
 

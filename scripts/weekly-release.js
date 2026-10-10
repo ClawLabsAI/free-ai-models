@@ -21,8 +21,6 @@ import { fileURLToPath } from "url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const HIST = join(ROOT, "data", "history");
-const SITE = "https://www.zerolimitai.com";
-const UTM = "utm_source=github&utm_medium=release";
 
 const argToday = process.argv.indexOf("--today");
 const today = argToday > -1 ? process.argv[argToday + 1] : new Date().toISOString().slice(0, 10);
@@ -100,8 +98,8 @@ lines.push("---");
 lines.push(`Full table, updated daily: [README](../../#free-models-auto-updated-daily) · raw data: [\`data/models.json\`](../../blob/main/data/models.json)`);
 lines.push("");
 lines.push(
-  `Scores are [ZeroOptimize](${SITE}/leaderboard?${UTM}) quality scores (0–100, the same number as the site's leaderboard). ` +
-    `Want the #1 model without tracking any of this? [One OpenAI-compatible endpoint](${SITE}/developers?${UTM}) routes every request to it, with failover.`,
+  `Scores come from the open score in this repo ([\`scoring/score.js\`](../../blob/main/scoring/score.js), 0–100). ` +
+    `Since 2026-10-10 it is computed here from public data, without production penalties, so numbers before that date are lower.`,
 );
 
 const tag = `week-${today}`;

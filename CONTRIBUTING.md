@@ -12,8 +12,17 @@ Nothing is typed in by hand. Every day a GitHub Action reads each provider's
 - [OpenRouter](https://openrouter.ai/api/v1/models): models priced `0` for input and output
 - [Pollinations](https://text.pollinations.ai/models): models in the anonymous (no key) tier
 
-The ranking and the "Today" column come from ZeroOptimize, the router built
+The ranking is computed in this repo by [`scoring/score.js`](scoring/score.js)
+from public data ([how it works](scoring/README.md)). Only the "Today" column
+comes from outside: the production health checks of ZeroLimitAI's router, built
 by the maintainers (`zerolimitai.com/api/models/free-top`).
+
+## Changing the score
+
+The weights are named constants at the top of `scoring/score.js`. A pull request
+that changes one should include the ranking it produces (`npm run update`) and
+say why that ranking is better, and must keep `npm test` green — each test there
+is a mistake an earlier version of the ranking made.
 
 We used to keep a hand-written list of extra providers. It went stale within
 weeks (it still claimed GPT-4o was free, anonymously), so it was removed. A

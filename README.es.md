@@ -1,221 +1,239 @@
-# 🆓 Modelos de IA gratis
+# APIs de IA gratuitas, ordenadas cada día
 
 [🇬🇧 Read in English](README.md)
 
-[![Models](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FClawLabsAI%2Ffree-ai-models%2Fmain%2Fdata%2Fmodels.json&query=%24.total_free_models&label=modelos%20gratis&color=7c3aed&style=flat-square)](data/models.json)
-[![Actualizado a diario](https://img.shields.io/badge/actualizado-a%20diario-4ade80?style=flat-square)](#)
+[![Modelos gratuitos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FClawLabsAI%2Ffree-ai-models%2Fmain%2Fdata%2Fmodels.json&query=%24.total_free_models&label=modelos%20gratuitos&color=7c3aed&style=flat-square)](data/models.json)
+[![Actualizado a diario](https://img.shields.io/badge/actualizado-a%20diario-4ade80?style=flat-square)](.github/workflows/update.yml)
 [![Licencia: MIT](https://img.shields.io/badge/licencia-MIT-blue?style=flat-square)](LICENSE)
-[![PRs bienvenidos](https://img.shields.io/badge/PRs-bienvenidos-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
-**Lista de todos los modelos de inteligencia artificial gratuitos (API de LLM gratis) disponibles ahora mismo, actualizada cada día y mantenida por la comunidad.**
+**Todas las APIs de modelos de lenguaje gratuitas que se pueden leer de una
+fuente pública, ordenadas cada día con una puntuación de calidad abierta, y con
+quién sirve de verdad cada modelo y si puede entrenar con tus prompts.**
 
-Sin muros de pago. Sin API key para consultarla. Se actualiza sola cada 24 horas con GitHub Actions a partir de [OpenRouter](https://openrouter.ai), [Pollinations AI](https://pollinations.ai) y otras fuentes públicas.
+Tres cosas que esta lista hace y una simple lista de modelos gratis no:
 
-### [↓ Ver la lista completa de modelos gratis](#modelos-gratis-actualizados-a-diario)
+- **Ordena por calidad medida.** Índices de benchmarks publicados y valoraciones
+  de LM Arena, combinados por [un único fichero](scoring/score.js) que puedes
+  leer y volver a ejecutar. Ni orden alfabético, ni por contexto, ni a mano.
+- **Te dice quién recibe tus prompts.** Un modelo gratuito lo sirve muchas veces
+  un proveedor con una política de datos distinta de la del laboratorio que lo
+  creó. Cada fila indica si ese proveedor puede entrenar con lo que envías y
+  cuánto tiempo lo guarda.
+- **Son datos, no solo una página.** [`data/models.json`](data/models.json) se
+  regenera a diario con cada puntuación y cada dato del que sale, y en
+  [`data/history/`](data/history) queda una copia de cada día.
 
-> **¿No quieres integrar una docena de proveedores tú mismo?**
->
-> [**ZeroLimitAI**](https://www.zerolimitai.com/developers?utm_source=github&utm_medium=readme&utm_content=es) — creado por quienes mantienen esta lista — te da **un único endpoint compatible con OpenAI** que enruta cada petición al modelo gratuito que mejor responde en ese momento, con cambio automático cuando uno llega a su límite.
->
-> [![Consigue una API key gratis](https://img.shields.io/badge/API%20key%20gratis-compatible%20con%20OpenAI-7c3aed?style=for-the-badge)](https://www.zerolimitai.com/developers?utm_source=github&utm_medium=readme&utm_content=es)
-> &nbsp;
-> [![O simplemente chatea](https://img.shields.io/badge/O%20simplemente%20chatea-sin%20configurar%20nada-4ade80?style=for-the-badge)](https://www.zerolimitai.com/register?utm_source=github&utm_medium=readme&utm_content=es)
->
-> <sub>Key gratis · sin tarjeta · inferencia a $0 · web y precios en español, con precio para Latinoamérica — [cómo funciona ↓](#una-sola-api-para-el-modelo-que-hoy-es-el-nº-1)</sub>
-
----
-
-## Por qué existe esto
-
-El panorama de modelos de IA gratuitos cambia **cada semana**: aparecen modelos nuevos, cambian los límites de uso, hay proveedores que cierran sin avisar. Este repositorio lo sigue todo automáticamente para que tú no tengas que hacerlo.
-
-**Sirve para:**
-- Encontrar el mejor modelo gratis para lo que estés haciendo
-- Ver qué proveedores ofrecen los planes gratuitos más generosos
-- Enterarte de modelos nuevos con GitHub Watch → Releases
-- Montar tu propia lógica de enrutado sobre datos reales y actualizados
-
----
-
-## Qué contienen los datos
-
-Cada modelo incluye:
-
-| Campo | Descripción |
-|-------|-------------|
-| `id` | ID completo del modelo (p. ej. `google/gemini-2.5-flash:free`) |
-| `name` | Nombre legible |
-| `provider` | Quién lo ha creado |
-| `context_window` | Máximo de tokens de contexto |
-| `max_output` | Máximo de tokens por respuesta |
-| `modalities` | texto / visión / archivos |
-| `rate_limit` | Límite de uso conocido (peticiones/min o tokens/día) |
-| `source` | Dónde acceder a él |
-| `kind` | `chat` (salida de texto) u `other` (generadores de música, imagen o audio) |
-| `zo_score` | Puntuación de calidad 0–100 de [ZeroOptimize](https://www.zerolimitai.com/leaderboard), la misma cifra que el ranking de la web; `null` si no está clasificado |
-| `zo_rank` | Posición en el ranking de ZeroOptimize (el orden del router); `null` si no está clasificado |
-| `answering_now` | `true` para el modelo al que va la siguiente petición (el mejor que responde ahora) |
-| `health` | `ok` / `sick` / `dead` — resultado de hoy del health check de producción de ZeroLimitAI; `null` si no se ha probado |
-
-→ Datos en bruto: [`data/models.json`](data/models.json)
+No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y oficiales.
 
 ---
 
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Fri, 09 Oct 2026 11:11:16 UTC** · 18 modelos de chat · ordenados por puntuación [ZeroOptimize](https://www.zerolimitai.com/leaderboard) y después por contexto · los límites son del proveedor, por cuenta
+> Última actualización: **Sat, 10 Oct 2026 09:22:19 UTC** · 16 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+>
+> **5 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 
-| # | Modelo | Proveedor | Contexto | Salida máx. | Modalidades | Límite de uso | Puntuación | Hoy | Fuente |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Google: Gemma 4 31B (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 36 | ▶ respondiendo ahora | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 2 | **Poolside: Laguna S 2.1 (free)** <br><sub>⏳ se retira el 2026-10-31</sub> | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 33 | ⚠️ degradado | [enlace](https://openrouter.ai/poolside/laguna-s-2.1:free) |
-| 3 | **Google: Gemma 4 26B A4B  (free)** | Google | 262K | 33K | 🖼️ vision, 💬 text, video | 20 RPM · 50 RPD | 33 | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 4 | **Poolside: Laguna XS 2.1 (free)** <br><sub>⏳ se retira el 2026-10-31</sub> | Poolside | 262K | 33K | 💬 text | 20 RPM · 50 RPD | 26 | ⚠️ degradado | [enlace](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
-| 5 | **Cohere: North Mini Code (free)** | Cohere | 256K | 64K | 💬 text | 20 RPM · 50 RPD | 16 | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
-| 6 | **Apodex: Apodex 1.1 Mini (free)** | Apodex | 262K | 236K | 💬 text | 20 RPM · 50 RPD | 0 | ✅ activo | [enlace](https://openrouter.ai/apodex/apodex-1.1-mini:free) |
-| 7 | **Dots Studio: Dots3-Note Preview (free)** <br><sub>⏳ se retira el 2026-12-31</sub> | Dots studio | 512K | 461K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | 0 | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
-| 8 | **Thinking Machines: Inkling Small (free)** | Thinkingmachines | 1M | 262K | 💬 text, 🖼️ vision, audio | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/thinkingmachines/inkling-small:free) |
-| 9 | **Thinking Machines: Inkling (free)** | Thinkingmachines | 1M | 262K | 💬 text, 🖼️ vision, audio | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/thinkingmachines/inkling:free) |
-| 10 | **NVIDIA: Nemotron 3.5 Lightning (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
-| 11 | **NVIDIA: Nemotron 3 Ultra (free)** | Nvidia | 1M | 66K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 12 | **inclusionAI: Ling 3.1 Flash** | Inclusionai | 262K | 33K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/inclusionai/ling-3.1-flash) |
-| 13 | **NVIDIA: Nemotron 3 Super (free)** | Nvidia | 262K | 236K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
-| 14 | **NVIDIA: Nemotron 3 Nano Omni (free)** | Nvidia | 256K | 66K | 💬 text, audio, 🖼️ vision, video | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
-| 15 | **Free Models Router** | Openrouter | 200K | — | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/openrouter/free) |
-| 16 | **NVIDIA: Nemotron 3.5 Content Safety (free)** | Nvidia | 128K | 8K | 💬 text, 🖼️ vision | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free) |
-| 17 | **LiquidAI: LFM2.5-2.6B (free)** | Liquid | 66K | 8K | 💬 text | 20 RPM · 50 RPD | — | — | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
-| 18 | **GPT-OSS 20B Reasoning LLM (OVH)** | Pollinations AI | — | — | 💬 text | anonymous tier (no key) | — | — | [enlace](https://pollinations.ai) |
+| # | Modelo | Puntuación | Medido con | ¿Entrena con tus prompts? | Contexto | Salida máx. | Tools | Entrada | Hoy | Fuente |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | **Thinking Machines: Inkling** | 68 | benchmarks + Arena | 🔴 puede entrenar | 1M | 262K | ✓ | 🖼️ vision, audio | — | [enlace](https://openrouter.ai/thinkingmachines/inkling:free) |
+| 2 | **NVIDIA: Nemotron 3 Ultra** | 66 | benchmarks + Arena | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
+| 3 | **inclusionAI: Ling 3.1 Flash** | 65 | benchmarks | ✅ no · retención cero | 262K | 33K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/inclusionai/ling-3.1-flash) |
+| 4 | **Thinking Machines: Inkling Small** | 65 | benchmarks + Arena | 🔴 puede entrenar | 1M | 262K | ✓ | 🖼️ vision, audio | — | [enlace](https://openrouter.ai/thinkingmachines/inkling-small:free) |
+| 5 | **Google: Gemma 4 31B** | 57 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 6 | **Google: Gemma 4 26B A4B** | 55 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 7 | **NVIDIA: Nemotron 3 Super** | 46 | benchmarks + Arena | 🔴 puede entrenar | 262K | 236K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
+| 8 | **NVIDIA: Nemotron 3.5 Lightning** | 36 | benchmarks + Arena | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
+| 9 | **Poolside: Laguna S 2.1** <br><sub>⏳ se retira el 2026-10-31</sub> | 34 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 33K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/poolside/laguna-s-2.1:free) |
+| 10 | **Poolside: Laguna XS 2.1** <br><sub>⏳ se retira el 2026-10-31</sub> | 26 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 33K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
+| 11 | **Cohere: North Mini Code** | 23 | benchmarks | ✅ no · guarda 30 días | 256K | 64K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
+| 12 | **NVIDIA: Nemotron 3 Nano Omni** | 15 | benchmarks | 🔴 puede entrenar | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
+| 13 | **Apodex: Apodex 1.1 Mini** | 13 | estimación (tamaño) | ✅ no · retención cero | 262K | 236K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/apodex/apodex-1.1-mini:free) |
+| 14 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ se retira el 2026-12-31</sub> | 13 | estimación (tamaño) | ✅ no · retención desconocida | 512K | 461K | ✓ | 🖼️ vision | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
+| 15 | **LiquidAI: LFM2.5-2.6B** | 9 | benchmarks | 🔴 puede entrenar | 66K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
+| 16 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [enlace](https://pollinations.ai) |
 
-2 modelos gratuitos que no son de chat (generación de música, imagen o audio):
+3 modelos gratuitos que no son de chat (música, imagen, audio, clasificadores):
 
 - [Google: Lyria 3 Pro Preview](https://openrouter.ai/google/lyria-3-pro-preview)
 - [Google: Lyria 3 Clip Preview](https://openrouter.ai/google/lyria-3-clip-preview)
+- [NVIDIA: Nemotron 3.5 Content Safety (free)](https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free)
 <!-- TABLE_END -->
 
-**Cómo leer la tabla.** `Contexto` y `Salida máx.` van en tokens. `Límite de uso`
-es el límite del *proveedor* para modelos gratuitos, no del modelo: en OpenRouter
-pertenece a la cuenta y es idéntico para cualquier id `:free`. `Puntuación` es la
-calidad según ZeroOptimize (0-100, la misma cifra que el ranking de la web; **▶ respondiendo ahora** marca el modelo al que va la siguiente petición) y
-`Hoy` es el resultado de una comprobación real en producción, no una página de estado.
+**Cómo leer la tabla**
 
-| Término | Significado |
-|---------|-------------|
-| RPM | Peticiones por minuto |
-| RPD | Peticiones por día |
-| TPM | Tokens por minuto |
-| TPD | Tokens por día |
+- **Puntuación**: de 0 a 100, calculada por [`scoring/score.js`](scoring/score.js).
+  100 sería un modelo gratuito tan bueno como el mejor que se vende; ninguno se acerca.
+- **Medido con**: en qué se apoya la nota. `benchmarks + Arena` es la base más
+  sólida; una sola de las dos se descuenta; una `estimación` significa que nadie
+  ha medido aún el modelo, y tiene un tope para que no supere a uno medido.
+- **¿Entrena con tus prompts?**: la política del proveedor que *sirve el endpoint
+  gratuito en OpenRouter*, según la
+  [tabla de proveedores de OpenRouter](https://openrouter.ai/docs/guides/privacy/provider-logging)
+  (leída a mano por última vez el 10-oct-2026), y cuánto tiempo guarda los
+  prompts. `—` significa que no lo hemos podido establecer; no lo suponemos.
+- **Hoy**: si el endpoint gratuito está respondiendo. Una GitHub Action no tiene
+  tráfico para saberlo, así que esta columna viene de las comprobaciones en
+  producción del router de [ZeroLimitAI](https://www.zerolimitai.com), que
+  mantiene el mismo equipo que este repo. Solo comprueba los modelos a los que
+  enruta, y no enruta a proveedores que pueden entrenar: esas filas muestran `—`.
+- **⏳ se retira**: el proveedor ha publicado una fecha de cierre. El modelo
+  funciona hoy y deja de hacerlo ese día sin más aviso.
 
-Las condiciones de cada proveedor, con su enlace, están en la
-[tabla de proveedores del README en inglés](README.md#where-to-call-these-models).
+Los límites gratuitos son del proveedor y van por cuenta, no por modelo: en
+OpenRouter todos los id `:free` comparten 20 peticiones por minuto y 50 al día
+(1.000 al día si la cuenta ha comprado 10 $ en créditos). Crear más claves o
+más cuentas no los amplía
+([límites de OpenRouter](https://openrouter.ai/docs/api-reference/limits), comprobado el 10-oct-2026).
+Los modelos de [Pollinations](https://pollinations.ai) (nivel anónimo, sin
+clave) aparecen sin puntuar: no hay datos públicos de benchmarks para ellos.
+
+### Sobre la columna de uso de datos
+
+La inferencia gratuita es gratuita porque alguien recibe algo a cambio, y a
+veces ese algo son tus prompts. Si te importa o no es decisión tuya; lo
+importante es saberlo antes de enviar los datos de un cliente.
+
+- La columna describe el **endpoint gratuito en OpenRouter**. El mismo modelo
+  llamado en otro sitio se rige por las condiciones de ese proveedor, que pueden
+  ser distintas. Lee las condiciones de donde lo llames.
+- OpenRouter presenta su tabla como su mejor conocimiento de la política de cada
+  proveedor, no como una fuente definitiva. Este repo la copia para los
+  proveedores que sirven modelos gratuitos
+  ([`scoring/sources.js`](scoring/sources.js), con la fecha de lectura). Si una
+  fila está mal, [abre una incidencia](../../issues/new/choose).
+- En OpenRouter puedes rechazar a esos proveedores en cada petición:
+
+```json
+{
+  "model": "google/gemma-4-31b-it:free",
+  "provider": { "data_collection": "deny" },
+  "messages": [{ "role": "user", "content": "¡Hola!" }]
+}
+```
 
 ---
 
-## Cómo funciona el seguimiento
+## Usar los datos
+
+El fichero es JSON en una URL estable:
 
 ```
-GitHub Actions (cada día a las 04:00 UTC)
-         │
-         ▼
-  fetch-models.js
-         │
-         ├── GET openrouter.ai/api/v1/models  (sin autenticación)
-         │   └── filtro: pricing.prompt === "0"
-         │
-         ├── Lista estática: Pollinations AI, etc.
-         │
-         └── Escribe:
-             ├── data/models.json       ← instantánea actual
-             ├── data/history/AAAA-MM-DD.json
-             ├── README.md              ← tabla regenerada (inglés)
-             └── README.es.md           ← tabla regenerada (español)
+https://raw.githubusercontent.com/ClawLabsAI/free-ai-models/main/data/models.json
 ```
 
-Sin scraping ni ingeniería inversa: solo APIs públicas y oficiales.
+El mejor modelo gratuito de hoy que admite tools y que no sirve un proveedor
+que puede entrenar:
+
+```bash
+curl -s https://raw.githubusercontent.com/ClawLabsAI/free-ai-models/main/data/models.json \
+  | jq -r '[.models[] | select(.rank and .supports_tools and .data_use == "no-training")][0].id'
+```
+
+```js
+const { models } = await (await fetch(
+  "https://raw.githubusercontent.com/ClawLabsAI/free-ai-models/main/data/models.json",
+)).json();
+
+// Cadena de reserva: ordenados, con tools, sin entrenamiento, el mejor primero.
+const chain = models
+  .filter((m) => m.rank && m.supports_tools && m.data_use === "no-training")
+  .map((m) => m.id);
+```
+
+Los id son los de OpenRouter, así que sirven tal cual en cualquier sitio que
+acepte uno: los SDK de OpenAI apuntando a OpenRouter, LiteLLM
+(`openrouter/<id>`) y herramientas como Cline, Roo Code, Continue, Aider u
+OpenCode. La lista completa de campos está en el
+[README en inglés](README.md#fields).
 
 ---
 
-## Una sola API para el modelo que hoy es el nº 1
+## Cómo funciona la puntuación
 
-Seguir la lista es la parte fácil. Lo difícil es mantener tu aplicación apuntando al mejor modelo gratuito del momento, con límites que cambian y proveedores que van y vienen.
+Todo el método está en [`scoring/score.js`](scoring/score.js) (puro: sin red ni
+reloj) y sus datos vienen de [`scoring/sources.js`](scoring/sources.js). La
+explicación larga, con cada peso y su porqué, está en
+[`scoring/README.md`](scoring/README.md) (en inglés). En resumen:
 
-**[ZeroLimitAI](https://www.zerolimitai.com/developers?utm_source=github&utm_medium=readme&utm_content=es)** lo hace por ti con un endpoint **compatible con OpenAI**. Envía `model: "auto"` y ZeroOptimize™ enruta cada petición al modelo gratuito mejor clasificado disponible, con cambio automático cuando uno se queda sin cuota. Cambia dos líneas, paga $0:
+1. **Benchmarks**: índices de inteligencia, programación y agentes de Artificial
+   Analysis, normalizados al mejor modelo de todo el catálogo, de pago incluidos.
+   Un índice que falta se estima con descuento, nunca se descarta: publicar menos
+   datos no puede subir la nota.
+2. **Preferencia**: valoraciones de LM Arena (general, programación y seguimiento
+   de instrucciones).
+3. Con las dos, se mezclan al 55/45; con una sola, se descuenta un 8 %.
+4. **Sin ninguna medida**: el modelo hereda el 80 % de un hermano medido de su
+   familia, o recibe una estimación por su tamaño real y sus descargas, con un
+   tope por debajo de cualquier modelo bien medido.
+5. **Aptitud**: factores pequeños por lo que importa al construir sobre un
+   modelo: contexto menor de 32K, salida menor de 4K, sin tools, fecha de cierre
+   en menos de una semana.
 
-```python
-from openai import OpenAI
+Que un modelo esté respondiendo *ahora mismo* queda fuera de la nota a
+propósito: un modelo saturado esta hora sigue siendo el mejor modelo.
 
-client = OpenAI(
-    base_url="https://www.zerolimitai.com/api/v1",
-    api_key="TU_KEY_GRATIS",
-)
-
-# ZeroOptimize™ elige el mejor modelo gratuito de esta lista, en cada petición
-resp = client.chat.completions.create(
-    model="auto",
-    messages=[{"role": "user", "content": "¡Hola!"}],
-)
-print(resp.choices[0].message.content)
+```bash
+git clone https://github.com/ClawLabsAI/free-ai-models && cd free-ai-models
+npm ci
+npm test          # las reglas de la puntuación
+npm run update    # reconstruye el ranking de hoy desde las fuentes públicas
 ```
 
-Funciona sin cambios con Cline, Roo Code, Continue, Aider, Open WebUI y LangChain: pon la `base_url`, tu key y `auto` como modelo.
-
-[![API key gratis](https://img.shields.io/badge/API%20key%20gratis-compatible%20con%20OpenAI-7c3aed?style=for-the-badge)](https://www.zerolimitai.com/developers?utm_source=github&utm_medium=readme&utm_content=es)
-&nbsp;
-[![Probar el chat](https://img.shields.io/badge/O%20simplemente%20chatea-sin%20configurar%20nada-4ade80?style=for-the-badge)](https://www.zerolimitai.com/register?utm_source=github&utm_medium=readme&utm_content=es)
+¿No estás de acuerdo con un peso? Cámbialo, ejecútalo y abre un pull request con
+el ranking que produce. Para eso está el fichero.
 
 ---
 
-## Por qué el router responde muchas veces con un modelo que no está en esta página
+## Dónde llamar a estos modelos
 
-Si usas ese endpoint y miras qué modelo ha contestado, a menudo será uno que no encuentras en la tabla de arriba. Es lo esperado, y es justo la gracia.
+| Proveedor | URL base | Nivel gratuito | Clave |
+|---|---|---|---|
+| [OpenRouter](https://openrouter.ai/keys) | `https://openrouter.ai/api/v1` | Todos los modelos `:free`: 20 por minuto y 50 al día por cuenta (1.000 al día con 10 $ en créditos) | Sí, sin tarjeta |
+| [Pollinations](https://pollinations.ai) | `https://text.pollinations.ai` | Nivel anónimo, lista de modelos cambiante | Sin clave |
+| [Groq](https://console.groq.com/keys) | `https://api.groq.com/openai/v1` | Plan gratuito, límites por modelo ([tabla publicada](https://console.groq.com/docs/rate-limits)) | Sí, sin tarjeta |
+| [Google AI Studio](https://aistudio.google.com/app/apikey) | `https://generativelanguage.googleapis.com/v1beta/openai` | Nivel gratuito por modelo ([límites publicados](https://ai.google.dev/gemini-api/docs/rate-limits)) | Sí, sin tarjeta |
+| [Cerebras](https://cloud.cerebras.ai) | `https://api.cerebras.ai/v1` | Nivel gratuito ([límites publicados](https://inference-docs.cerebras.ai/support/rate-limits)) | Sí |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/profile/api-tokens) | `https://api.cloudflare.com/client/v4/accounts/{id}/ai/v1` | 10.000 neuronas al día entre todos los modelos ([precios](https://developers.cloudflare.com/workers-ai/platform/pricing/)) | Sí |
 
-**Este repo responde a "¿qué modelos gratuitos existen?"** Lee los catálogos públicos — la API de OpenRouter y Pollinations — una vez al día y lista todo lo que cuesta $0. Es un catálogo.
-
-**El router responde a "¿cuál de ellos va a contestar de verdad, ahora mismo?"** Puntúa cada candidato con [ZeroOptimize v3](https://www.zerolimitai.com/leaderboard) — índices de benchmark publicados y valoraciones de LM Arena para la calidad, y después contexto, techo de salida, soporte de herramientas y su propia latencia en producción — y descarta los que empiezan a fallar, probando el siguiente automáticamente.
-
-Las dos listas se separan por dos motivos: **fuentes distintas y preguntas distintas.** Un modelo puede estar en esta página y ser inutilizable hoy: con el límite reducido a nada, renombrado sin avisar, o con un endpoint que ha dejado de servir. Descubrirlo es lo que te cuesta una tarde, y es la parte que merece la pena automatizar.
-
-Usa esta lista para ver el panorama. Usa el router cuando prefieras no mantener la fontanería tú mismo.
+Solo hemos verificado nosotros los límites de OpenRouter y de Pollinations; para
+el resto, la página del proveedor es la fuente de verdad. Los niveles gratuitos
+están pensados para construir y probar: lee las condiciones de cada proveedor
+antes de poner uno detrás de un producto.
 
 ---
 
 ## Contribuir
 
-¿Falta un modelo gratuito? Abre un PR editando `EXTRA_PROVIDERS` en [`scripts/fetch-models.js`](scripts/fetch-models.js).
+- **Falta un modelo o una fila está mal**: se lee de la API del propio proveedor,
+  así que suele corregirse solo en un día. Si no,
+  [abre una incidencia](../../issues/new/choose).
+- **Un proveedor nuevo**: bienvenido si se puede leer igual, en vivo y desde su
+  API pública. Mira [CONTRIBUTING.md](CONTRIBUTING.md).
+- **La puntuación**: un pull request que cambie un peso debe decir qué ranking
+  produce el cambio y por qué es mejor.
 
-**Criterios:**
-- El modelo debe ser gratuito de verdad (sin costes ocultos, sin "solo prueba")
-- Debe tener un endpoint de API público
-- Incluye el límite de uso si lo conoces
-
-Más detalles en [CONTRIBUTING.md](CONTRIBUTING.md).
+Para recibir un resumen semanal en vez de un commit diario: Watch → Custom →
+**Releases**.
 
 ---
 
 ## Quién lo mantiene
 
-Este rastreador lo construye y mantiene al día el equipo de [**ZeroLimitAI**](https://www.zerolimitai.com/?utm_source=github&utm_medium=readme&utm_content=es), una plataforma de IA multimodelo cuyo router — ZeroOptimize™ — funciona exactamente con estos datos. Tener la lista al día no es un proyecto secundario para nosotros: es de lo que depende nuestro propio producto cada día.
-
-Los datos siguen siendo libres, con licencia MIT y neutrales respecto a proveedores. Si un modelo debe estar aquí, entra, lo enrutemos nosotros o no.
-
----
+El equipo de [ZeroLimitAI](https://www.zerolimitai.com), una app y una API
+alojadas cuyo router ordena los modelos gratuitos con esta misma función.
+Mantenemos la lista al día porque nuestro producto depende de ella; la lista en
+sí es MIT, neutral con los proveedores y útil sin nosotros: un modelo entra
+aquí tanto si enrutamos a él como si no, y a varios de los mejor puntuados no lo
+hacemos.
 
 ## Proyectos relacionados
 
-- [openrouter.ai](https://openrouter.ai) — pasarela de API para más de 200 modelos
-- [lmarena.ai](https://lmarena.ai) — arena de LLMs y ranking ELO
-- [ZeroLimitAI](https://www.zerolimitai.com/?utm_source=github&utm_medium=readme&utm_content=es) — chat de IA gratis + una API compatible con OpenAI que enruta entre estos modelos
-
----
+- [awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis): un catálogo más amplio, mantenido a mano, de proveedores con nivel gratuito
+- [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi) y [free-claude-code](https://github.com/Alishahryar1/free-claude-code): routers para instalar uno mismo que suman niveles gratuitos con tus propias claves
+- [LiteLLM](https://github.com/BerriAI/litellm): un SDK y un proxy para todos los proveedores
+- [LM Arena](https://lmarena.ai) y [Artificial Analysis](https://artificialanalysis.ai): de donde salen las medidas
 
 ## Licencia
 
-MIT — úsalo libremente; se agradece la atribución.
-
----
-
-<div align="center">
-<sub>Mantenido por <a href="https://www.zerolimitai.com/?utm_source=github&utm_medium=readme&utm_content=es"><b>ZeroLimitAI</b></a> ·
-<a href="https://www.zerolimitai.com/developers?utm_source=github&utm_medium=readme&utm_content=es">API gratis</a> ·
-<a href="https://www.zerolimitai.com/register?utm_source=github&utm_medium=readme&utm_content=es">Probar el chat</a></sub>
-</div>
+MIT. Úsalo libremente; se agradece la atribución.

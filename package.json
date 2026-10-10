@@ -1,13 +1,14 @@
 {
   "name": "free-ai-models",
-  "version": "1.0.0",
-  "description": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status",
+  "version": "2.0.0",
+  "description": "Every free LLM API, ranked daily by an open quality score \u2014 with who serves each one and whether they train on your prompts",
   "type": "module",
   "scripts": {
-    "update": "node scripts/fetch-models.js"
+    "update": "node scripts/fetch-models.js",
+    "test": "node --test test/*.test.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "keywords": [
     "ai",
@@ -19,11 +20,15 @@
     "llm-api",
     "openai-compatible",
     "openrouter",
-    "llama",
-    "deepseek",
-    "qwen",
     "gemma",
-    "mistral"
+    "llm-ranking",
+    "model-ranking",
+    "privacy",
+    "lm-arena",
+    "benchmarks"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "hyparquet": "^1.31.3"
+  }
 }

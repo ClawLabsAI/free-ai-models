@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T10:40:19.679Z",
+  "updated_at": "2026-10-12T11:44:57.851Z",
   "total_free_models": 19,
   "scoring": {
     "code": "scoring/score.js",
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 952.4,
-        "downloads": 1057857,
+        "downloads": 1091341,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -113,7 +113,7 @@
       },
       "hf": {
         "paramsB": 560.5,
-        "downloads": 829165,
+        "downloads": 840720,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -131,7 +131,7 @@
       "name": "inclusionAI: Ling 3.1 Flash",
       "provider": "Inclusionai",
       "context_window": 262144,
-      "max_output": 32768,
+      "max_output": 235929,
       "modalities": [
         "text"
       ],
@@ -211,7 +211,7 @@
       },
       "hf": {
         "paramsB": 266,
-        "downloads": 677293,
+        "downloads": 679899,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -265,7 +265,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 9587016,
+        "downloads": 9503078,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -319,7 +319,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 11657345,
+        "downloads": 11524713,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -371,7 +371,7 @@
       },
       "hf": {
         "paramsB": 123.6,
-        "downloads": 62882,
+        "downloads": 63018,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -423,7 +423,7 @@
       },
       "hf": {
         "paramsB": 31.6,
-        "downloads": 615150,
+        "downloads": 622829,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -456,19 +456,19 @@
       "created": 1784652683,
       "kind": "chat",
       "rank": 9,
-      "score": 33.5,
-      "quality": 31.9,
+      "score": 33.6,
+      "quality": 32,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 20d"
+        "expires in 19d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 117.6,
-        "downloads": 249281,
+        "downloads": 265790,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -476,7 +476,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "sick",
+      "health": null,
       "answering_now": false,
       "zo_score": 34,
       "zo_rank": 9
@@ -502,18 +502,18 @@
       "kind": "chat",
       "rank": 10,
       "score": 25.8,
-      "quality": 24.5,
+      "quality": 24.6,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 20d"
+        "expires in 19d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 33.4,
-        "downloads": 295370,
+        "downloads": 313870,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -521,7 +521,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "sick",
+      "health": null,
       "answering_now": false,
       "zo_score": 26,
       "zo_rank": 10
@@ -559,7 +559,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 7383,
+        "downloads": 7097,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -610,7 +610,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 349435,
+        "downloads": 349180,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -689,7 +689,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 81d"
+        "expires in 80d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -741,7 +741,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 117664,
+        "downloads": 117772,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -875,7 +875,7 @@
       "arena": null,
       "hf": {
         "paramsB": 4.3,
-        "downloads": 15575,
+        "downloads": 15881,
         "pipelineTag": null
       },
       "served_by": [

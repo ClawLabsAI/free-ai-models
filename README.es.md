@@ -231,6 +231,7 @@ hacemos.
 
 - [awesome-free-llm-apis](https://github.com/mnfst/awesome-free-llm-apis): un catálogo más amplio, mantenido a mano, de proveedores con nivel gratuito
 - [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi) y [free-claude-code](https://github.com/Alishahryar1/free-claude-code): routers para instalar uno mismo que suman niveles gratuitos con tus propias claves
+- [freelm](https://github.com/shihabshahrier/freelm): la misma idea como biblioteca de Python/TypeScript que importas, o como endpoint local (`freelm serve`), con tus propias claves
 - [LiteLLM](https://github.com/BerriAI/litellm): un SDK y un proxy para todos los proveedores
 - [LM Arena](https://lmarena.ai) y [Artificial Analysis](https://artificialanalysis.ai): de donde salen las medidas
 

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T11:44:57.851Z",
+  "updated_at": "2026-10-13T11:31:43.518Z",
   "total_free_models": 19,
   "scoring": {
     "code": "scoring/score.js",
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 952.4,
-        "downloads": 1091341,
+        "downloads": 1162862,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -113,7 +113,7 @@
       },
       "hf": {
         "paramsB": 560.5,
-        "downloads": 840720,
+        "downloads": 874104,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -211,7 +211,7 @@
       },
       "hf": {
         "paramsB": 266,
-        "downloads": 679899,
+        "downloads": 713066,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -265,7 +265,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 9503078,
+        "downloads": 9502198,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -319,7 +319,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 11524713,
+        "downloads": 11454083,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -371,7 +371,7 @@
       },
       "hf": {
         "paramsB": 123.6,
-        "downloads": 63018,
+        "downloads": 63881,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -423,7 +423,7 @@
       },
       "hf": {
         "paramsB": 31.6,
-        "downloads": 622829,
+        "downloads": 650554,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -461,14 +461,14 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 19d"
+        "expires in 18d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 117.6,
-        "downloads": 265790,
+        "downloads": 293888,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -476,7 +476,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": null,
+      "health": "sick",
       "answering_now": false,
       "zo_score": 34,
       "zo_rank": 9
@@ -506,14 +506,14 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 19d"
+        "expires in 18d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 33.4,
-        "downloads": 313870,
+        "downloads": 349701,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -521,7 +521,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": null,
+      "health": "sick",
       "answering_now": false,
       "zo_score": 26,
       "zo_rank": 10
@@ -559,7 +559,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 7097,
+        "downloads": 6975,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -610,7 +610,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 349180,
+        "downloads": 352666,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -689,7 +689,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 80d"
+        "expires in 79d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -741,7 +741,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 117772,
+        "downloads": 116541,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -875,7 +875,7 @@
       "arena": null,
       "hf": {
         "paramsB": 4.3,
-        "downloads": 15881,
+        "downloads": 16264,
         "pipelineTag": null
       },
       "served_by": [

@@ -1,4 +1,4 @@
-# Free LLM APIs, ranked daily
+# 🆓 Free AI Models — every free LLM API, ranked daily
 
 [🇪🇸 Leer en español](README.es.md)
 
@@ -7,9 +7,13 @@
 [![Tests](https://github.com/ClawLabsAI/free-ai-models/actions/workflows/test.yml/badge.svg)](.github/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 
-**Every free LLM API we can read from a public source, ranked every day by an
-open quality score — with who actually serves each model and whether they may
-train on your prompts.**
+**A daily-updated list of every free AI model (free LLM API) available right now,
+ranked every day by an open quality score — with who actually serves each model
+and whether they may train on your prompts.**
+
+> Want one OpenAI-compatible endpoint that routes to the best of these for you?
+> [ZeroLimitAI](https://www.zerolimitai.com/developers?utm_source=github&utm_medium=readme&utm_campaign=free-ai-models)
+> is the hosted router built by the maintainers of this list, on this same ranking.
 
 Three things this list does that a plain list of free models does not:
 

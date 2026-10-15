@@ -1,4 +1,4 @@
-# APIs de IA gratuitas, ordenadas cada día
+# 🆓 Modelos de IA gratis — todas las APIs gratuitas, ordenadas cada día
 
 [🇬🇧 Read in English](README.md)
 
@@ -6,9 +6,14 @@
 [![Actualizado a diario](https://img.shields.io/badge/actualizado-a%20diario-4ade80?style=flat-square)](.github/workflows/update.yml)
 [![Licencia: MIT](https://img.shields.io/badge/licencia-MIT-blue?style=flat-square)](LICENSE)
 
-**Todas las APIs de modelos de lenguaje gratuitas que se pueden leer de una
-fuente pública, ordenadas cada día con una puntuación de calidad abierta, y con
-quién sirve de verdad cada modelo y si puede entrenar con tus prompts.**
+**Lista actualizada a diario de todos los modelos de IA gratis (APIs de LLM
+gratuitas) disponibles ahora mismo, ordenados cada día con una puntuación de
+calidad abierta, y con quién sirve de verdad cada modelo y si puede entrenar con
+tus prompts.**
+
+> ¿Quieres un único endpoint compatible con OpenAI que elija el mejor por ti?
+> [ZeroLimitAI](https://www.zerolimitai.com/developers?utm_source=github&utm_medium=readme&utm_campaign=free-ai-models&utm_content=es)
+> es el router alojado de quienes mantienen esta lista, con este mismo ranking.
 
 Tres cosas que esta lista hace y una simple lista de modelos gratis no:
 

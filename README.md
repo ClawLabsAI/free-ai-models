@@ -34,7 +34,7 @@ No key needed to read any of it. No scraping: only public, official APIs.
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Sat, 17 Oct 2026 08:21:27 UTC** · 16 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
+> Last updated: **Sun, 18 Oct 2026 08:41:39 UTC** · 16 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
 >
 > **6 of today's top 10** are served only by providers that may train on your prompts.
 
@@ -44,12 +44,12 @@ No key needed to read any of it. No scraping: only public, official APIs.
 | 2 | **NVIDIA: Nemotron 3 Ultra** | 66 | benchmarks + Arena | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 3 | **Thinking Machines: Inkling Small** | 65 | benchmarks + Arena | 🔴 may train | 1M | 262K | ✓ | 🖼️ vision, audio | — | [link](https://openrouter.ai/thinkingmachines/inkling-small:free) |
 | 4 | **NVIDIA: Nemotron 3.5 Super VL** | 61 | benchmarks + Arena | 🔴 may train | 1M | 131K | ✓ | 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
-| 5 | **Google: Gemma 4 31B** | 57 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ✅ up | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 6 | **Google: Gemma 4 26B A4B** | 55 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 5 | **Google: Gemma 4 31B** | 57 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 6 | **Google: Gemma 4 26B A4B** | 55 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ✅ up | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
 | 7 | **NVIDIA: Nemotron 3 Super** | 46 | benchmarks + Arena | 🔴 may train | 262K | 236K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
 | 8 | **NVIDIA: Nemotron 3.5 Lightning** | 36 | benchmarks + Arena | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
-| 9 | **Poolside: Laguna S 2.1** <br><sub>⏳ retiring 2026-10-31</sub> | 34 | estimate (size) | ✅ no · retention unknown | 262K | 33K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/poolside/laguna-s-2.1:free) |
-| 10 | **Poolside: Laguna XS 2.1** <br><sub>⏳ retiring 2026-10-31</sub> | 26 | estimate (size) | ✅ no · retention unknown | 262K | 33K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
+| 9 | **Poolside: Laguna S 2.1** <br><sub>⏳ retiring 2026-10-31</sub> | 34 | estimate (size) | ✅ no · retention unknown | 262K | 33K | ✓ | 💬 text | — | [link](https://openrouter.ai/poolside/laguna-s-2.1:free) |
+| 10 | **Poolside: Laguna XS 2.1** <br><sub>⏳ retiring 2026-10-31</sub> | 26 | estimate (size) | ✅ no · retention unknown | 262K | 33K | ✓ | 💬 text | — | [link](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
 | 11 | **XingChen: Xing4.0 29B A4B** | 25 | estimate (size) | — | 262K | 236K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free) |
 | 12 | **Cohere: North Mini Code** | 23 | benchmarks | ✅ no · kept 30 days | 256K | 64K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/cohere/north-mini-code:free) |
 | 13 | **NVIDIA: Nemotron 3 Nano Omni** | 15 | benchmarks | 🔴 may train | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |

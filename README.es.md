@@ -35,7 +35,7 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Mon, 19 Oct 2026 09:42:45 UTC** · 16 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+> Última actualización: **Tue, 20 Oct 2026 09:16:26 UTC** · 17 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
 >
 > **6 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 
@@ -45,18 +45,19 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 | 2 | **NVIDIA: Nemotron 3 Ultra** | 66 | benchmarks + Arena | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 3 | **Thinking Machines: Inkling Small** | 65 | benchmarks + Arena | 🔴 puede entrenar | 1M | 262K | ✓ | 🖼️ vision, audio | — | [enlace](https://openrouter.ai/thinkingmachines/inkling-small:free) |
 | 4 | **NVIDIA: Nemotron 3.5 Super VL** | 61 | benchmarks + Arena | 🔴 puede entrenar | 1M | 131K | ✓ | 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
-| 5 | **Google: Gemma 4 31B** | 57 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 6 | **Google: Gemma 4 26B A4B** | 55 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ⚠️ degradado | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 7 | **NVIDIA: Nemotron 3 Super** | 46 | benchmarks + Arena | 🔴 puede entrenar | 262K | 236K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
-| 8 | **NVIDIA: Nemotron 3.5 Lightning** | 36 | benchmarks + Arena | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
-| 9 | **Poolside: Laguna S 2.1** <br><sub>⏳ se retira el 2026-10-31</sub> | 34 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 33K | ✓ | 💬 text | ⚠️ degradado | [enlace](https://openrouter.ai/poolside/laguna-s-2.1:free) |
-| 10 | **Poolside: Laguna XS 2.1** <br><sub>⏳ se retira el 2026-10-31</sub> | 26 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 33K | ✓ | 💬 text | ⚠️ degradado | [enlace](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
-| 11 | **XingChen: Xing4.0 29B A4B** | 25 | estimación (tamaño) | — | 262K | 236K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free) |
-| 12 | **Cohere: North Mini Code** | 23 | benchmarks | ✅ no · guarda 30 días | 256K | 64K | ✓ | 💬 text | ⚠️ degradado | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
-| 13 | **NVIDIA: Nemotron 3 Nano Omni** | 15 | benchmarks | 🔴 puede entrenar | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
-| 14 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ se retira el 2026-12-31</sub> | 13 | estimación (tamaño) | ✅ no · retención desconocida | 512K | 461K | ✓ | 🖼️ vision | ⚠️ degradado | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
-| 15 | **LiquidAI: LFM2.5-2.6B** | 9 | benchmarks | 🔴 puede entrenar | 66K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
-| 16 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [enlace](https://pollinations.ai) |
+| 5 | **MiniMax: MiniMax M3.1 Flash** | 58 | benchmarks | — | 1M | 524K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/minimax/minimax-m3.1-flash:free) |
+| 6 | **Google: Gemma 4 31B** | 57 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 7 | **Google: Gemma 4 26B A4B** | 55 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 8 | **NVIDIA: Nemotron 3 Super** | 46 | benchmarks + Arena | 🔴 puede entrenar | 262K | 236K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-super-120b-a12b:free) |
+| 9 | **NVIDIA: Nemotron 3.5 Lightning** | 36 | benchmarks + Arena | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
+| 10 | **Poolside: Laguna S 2.1** <br><sub>⏳ se retira el 2026-10-31</sub> | 34 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 33K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/poolside/laguna-s-2.1:free) |
+| 11 | **Poolside: Laguna XS 2.1** <br><sub>⏳ se retira el 2026-10-31</sub> | 26 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 33K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/poolside/laguna-xs-2.1:free) |
+| 12 | **XingChen: Xing4.0 29B A4B** | 25 | estimación (tamaño) | — | 262K | 236K | ✓ | 💬 text | ⚠️ degradado | [enlace](https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free) |
+| 13 | **Cohere: North Mini Code** | 23 | benchmarks | ✅ no · guarda 30 días | 256K | 64K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
+| 14 | **NVIDIA: Nemotron 3 Nano Omni** | 15 | benchmarks | 🔴 puede entrenar | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
+| 15 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ se retira el 2026-12-31</sub> | 13 | estimación (tamaño) | ✅ no · retención desconocida | 512K | 461K | ✓ | 🖼️ vision | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
+| 16 | **LiquidAI: LFM2.5-2.6B** | 9 | benchmarks | 🔴 puede entrenar | 66K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
+| 17 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [enlace](https://pollinations.ai) |
 
 3 modelos gratuitos que no son de chat (música, imagen, audio, clasificadores):
 

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-21T09:12:46.276Z",
-  "total_free_models": 20,
+  "updated_at": "2026-10-22T09:15:33.154Z",
+  "total_free_models": 21,
   "scoring": {
     "code": "scoring/score.js",
     "benchmark_maxima": {
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 952.4,
-        "downloads": 1321879,
+        "downloads": 1360835,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -115,7 +115,7 @@
       },
       "hf": {
         "paramsB": 266,
-        "downloads": 786170,
+        "downloads": 820895,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -216,7 +216,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 8894902,
+        "downloads": 8630477,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -270,7 +270,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 10065405,
+        "downloads": 9441586,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -322,7 +322,7 @@
       },
       "hf": {
         "paramsB": 123.6,
-        "downloads": 62317,
+        "downloads": 59161,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -368,7 +368,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1008838,
+        "downloads": 1058710,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -447,19 +447,19 @@
       "created": 1784652683,
       "kind": "chat",
       "rank": 9,
-      "score": 33.7,
-      "quality": 32.1,
+      "score": 33.8,
+      "quality": 32.2,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 10d"
+        "expires in 9d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 117.6,
-        "downloads": 364049,
+        "downloads": 385923,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -467,7 +467,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "sick",
+      "health": null,
       "answering_now": false,
       "zo_score": 34,
       "zo_rank": 9
@@ -493,18 +493,18 @@
       "kind": "chat",
       "rank": 10,
       "score": 26,
-      "quality": 24.7,
+      "quality": 24.8,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 10d"
+        "expires in 9d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 33.4,
-        "downloads": 440897,
+        "downloads": 477664,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -512,7 +512,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "sick",
+      "health": null,
       "answering_now": false,
       "zo_score": 26,
       "zo_rank": 10
@@ -537,8 +537,8 @@
       "created": 1792177496,
       "kind": "chat",
       "rank": 11,
-      "score": 24.9,
-      "quality": 23,
+      "score": 24.7,
+      "quality": 22.8,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption"
@@ -548,7 +548,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 37548,
+        "downloads": 25942,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -594,7 +594,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 7320,
+        "downloads": 7213,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -640,7 +640,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 695209,
+        "downloads": 719212,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -652,6 +652,51 @@
       "answering_now": false,
       "zo_score": 22,
       "zo_rank": 13
+    },
+    {
+      "id": "recursive/flint-v1.0:free",
+      "name": "Recursive: Flint (free)",
+      "provider": "Recursive",
+      "context_window": 262144,
+      "max_output": 235929,
+      "modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
+      "source": "https://openrouter.ai/recursive/flint-v1.0:free",
+      "created": 1792622765,
+      "kind": "chat",
+      "rank": 14,
+      "score": 20.1,
+      "quality": 22.5,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "always reasons (slow first token)"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": {
+        "paramsB": 39.8,
+        "downloads": 0,
+        "pipelineTag": "text-generation"
+      },
+      "served_by": [
+        "Recursive"
+      ],
+      "data_use": null,
+      "retention": null,
+      "health": "ok",
+      "answering_now": false,
+      "zo_score": 20,
+      "zo_rank": 14
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -675,7 +720,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "created": 1777393095,
       "kind": "chat",
-      "rank": 14,
+      "rank": 15,
       "score": 14.7,
       "quality": 14,
       "basis": "benchmarks",
@@ -691,7 +736,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 249267,
+        "downloads": 211617,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -702,7 +747,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 15,
-      "zo_rank": 14
+      "zo_rank": 15
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
@@ -724,13 +769,13 @@
       "source": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
       "created": 1786680361,
       "kind": "chat",
-      "rank": 15,
+      "rank": 16,
       "score": 13,
       "quality": 12,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 71d"
+        "expires in 70d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -744,7 +789,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 13,
-      "zo_rank": 15
+      "zo_rank": 16
     },
     {
       "id": "liquid/lfm-2.5-2.6b:free",
@@ -765,7 +810,7 @@
       "source": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
       "created": 1786470519,
       "kind": "chat",
-      "rank": 16,
+      "rank": 17,
       "score": 8.9,
       "quality": 9.7,
       "basis": "benchmarks",
@@ -782,7 +827,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 103485,
+        "downloads": 102450,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -793,7 +838,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 9,
-      "zo_rank": 16
+      "zo_rank": 17
     },
     {
       "id": "google/lyria-3-pro-preview",
@@ -916,7 +961,7 @@
       "arena": null,
       "hf": {
         "paramsB": 4.3,
-        "downloads": 29250,
+        "downloads": 32946,
         "pipelineTag": null
       },
       "served_by": [

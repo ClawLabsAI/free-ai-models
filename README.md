@@ -77,8 +77,11 @@ No key needed to read any of it. No scraping: only public, official APIs.
 - **Trains on your prompts?** — the policy of the provider *serving the free
   endpoint on OpenRouter*, from
   [OpenRouter's provider table](https://openrouter.ai/docs/guides/privacy/provider-logging)
-  (last read by hand on 2026-10-10), plus how long that provider keeps
-  prompts. `—` means we could not establish it; we do not guess.
+  (last read by hand on 2026-10-22), plus how long that provider keeps
+  prompts. `—` means we could not establish it; we do not guess. Where
+  OpenRouter treats a provider's *free* endpoint more strictly than its table
+  row (Poolside, since October: its free endpoints are refused to accounts
+  that disallow free-model training), the stricter answer is shown.
 - **Today** — whether the free endpoint is actually answering. A GitHub Action
   has no traffic to know that, so this one column is borrowed from the
   production health checks of [ZeroLimitAI](https://www.zerolimitai.com)'s

@@ -71,15 +71,22 @@ export function benchmarkMaxima(allModels) {
  * That table is rendered in the browser from data that has no public API, so
  * this is a copy, read by hand on POLICIES_CHECKED. Only the providers seen
  * behind a free endpoint are listed; anything else is reported as unknown
- * (null), never guessed. On that date the table had 93 providers and four
+ * (null), never guessed. On that date the table had 95 providers and four
  * marked "May train": DeepSeek, Liquid, NVIDIA and Thinking Machines.
+ *
+ * The table is per provider; a provider's FREE endpoint can differ. Poolside
+ * is "Does not train" in the table, yet OpenRouter refuses its :free endpoints
+ * to an account that disallows free-model training ("No endpoints found
+ * matching your data policy (Free model training)", seen in production on
+ * 2026-10-22). Since this file only describes free endpoints, the stricter
+ * answer wins.
  * OpenRouter calls the table its best knowledge of each provider's own
  * policy, not a definitive source — and so is this.
  *
  * `retention` is how long the provider keeps prompts: "zero", a number of
  * days, or "unknown" when the table says "retained for unknown period".
  */
-export const POLICIES_CHECKED = "2026-10-10";
+export const POLICIES_CHECKED = "2026-10-22";
 export const PROVIDER_POLICIES = {
   "deepseek":          { trains: true,  retention: "unknown" },
   "liquid":            { trains: true,  retention: "unknown" },
@@ -93,11 +100,15 @@ export const PROVIDER_POLICIES = {
   "google vertex":     { trains: false, retention: "zero" },
   "groq":              { trains: false, retention: "zero" },
   "meta":              { trains: false, retention: 30 },
+  "minimax":           { trains: false, retention: "unknown" },
   "mistral":           { trains: false, retention: 30 },
   "modelrun":          { trains: false, retention: "zero" },
   "nex agi":           { trains: false, retention: 30 },
   "novitaai":          { trains: false, retention: "zero" },
-  "poolside":          { trains: false, retention: "unknown" },
+  "phala":             { trains: false, retention: "zero" },
+  // Free endpoint flagged as training by OpenRouter (see above); the table says otherwise.
+  "poolside":          { trains: true,  retention: "unknown" },
+  "recursive":         { trains: false, retention: "unknown" },
   "z.ai":              { trains: false, retention: "zero" },
 };
 // The endpoints API and the policy table do not always spell a name the same way.

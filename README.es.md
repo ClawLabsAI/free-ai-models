@@ -194,8 +194,21 @@ el ranking que produce. Para eso está el fichero.
 
 ## Dónde llamar a estos modelos
 
-| Proveedor | URL base | Nivel gratuito | Clave |
-|---|---|---|---|
+| Proveedor | URL base | Gratis | Tarjeta | Tus prompts | La pega | Comprobado |
+|---|---|---|---|---|---|---|
+| [OpenRouter](https://openrouter.ai/keys) | `https://openrouter.ai/api/v1` | Todos los `:free` juntos: 20 por minuto y 50 al día por cuenta (1.000 al día con 10 $ en créditos) | No | Según quién sirva el modelo (columna de uso de datos); `provider.data_collection: "deny"` excluye a los que pueden entrenar | Un solo tope diario para todos los modelos gratis | 2026-10-22 |
+| [Groq](https://console.groq.com/keys) | `https://api.groq.com/openai/v1` | Por modelo: 30 por minuto, 1.000 al día, 8.000 tokens/min (`qwen/qwen3.8-27b`, `openai/gpt-oss-120b`, `openai/gpt-oss-20b`) | No | No se guardan por defecto; registro de hasta 30 días por abuso; no habla de entrenamiento | 8K tokens/min: un prompt largo falla. Con tarjeta, la organización puede estar en pago por uso: mira Billing | 2026-10-22 |
+| [Google AI Studio](https://aistudio.google.com/app/apikey) | `https://generativelanguage.googleapis.com/v1beta/openai/` | Por modelo y proyecto, se ven en AI Studio | No | Gratis: se usan para mejorar productos de Google y pueden leerlos revisores | No se permite en apps para usuarios del EEE, Suiza o Reino Unido | 2026-10-22 |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/profile/api-tokens) | `https://api.cloudflare.com/client/v4/accounts/{id}/ai/v1` | 10.000 neuronas al día entre todos los modelos, se reinicia a las 00:00 UTC | No | No entrena; no los guarda en peticiones normales | Neuronas, no peticiones: cunden según el modelo | 2026-10-22 |
+| [Cerebras](https://cloud.cerebras.ai) | `https://api.cerebras.ai/v1` | **Prueba, no nivel gratuito**: 5 $ que caducan a los 30 días; 5 por minuto | **Sí** | No lo dice su página de límites | Sin método de pago la API no se activa | 2026-10-22 |
+| [Pollinations](https://pollinations.ai) | `https://text.pollinations.ai` | Nivel anónimo, lista de modelos cambiante | Sin clave | — | — | 2026-09-23 |
+
+Las fuentes de cada dato están en las notas de la [versión en inglés](README.md#where-to-call-these-models).
+Mistral no aparece: el 22-oct-2026 su página de precios no mostraba un plan de API gratis verificable.
+Los niveles gratuitos están pensados para construir y probar: lee las condiciones
+de cada proveedor antes de poner uno detrás de un producto.
+
+---|---|---|---|
 | [OpenRouter](https://openrouter.ai/keys) | `https://openrouter.ai/api/v1` | Todos los modelos `:free`: 20 por minuto y 50 al día por cuenta (1.000 al día con 10 $ en créditos) | Sí, sin tarjeta |
 | [Pollinations](https://pollinations.ai) | `https://text.pollinations.ai` | Nivel anónimo, lista de modelos cambiante | Sin clave |
 | [Groq](https://console.groq.com/keys) | `https://api.groq.com/openai/v1` | Plan gratuito, límites por modelo ([tabla publicada](https://console.groq.com/docs/rate-limits)) | Sí, sin tarjeta |

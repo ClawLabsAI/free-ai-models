@@ -92,7 +92,7 @@ Free-tier limits are the provider's and belong to the account, not the model:
 on OpenRouter every `:free` id shares 20 requests/minute and 50 requests/day
 (1,000/day once the account has bought $10 in credits).[^or]
 
-[^or]: OpenRouter, [Free usage limits](https://openrouter.ai/docs/api-reference/limits) (checked 2026-10-10). The cap is global per account — extra API keys or accounts do not widen it.
+[^or]: OpenRouter, [Free usage limits](https://openrouter.ai/docs/api-reference/limits) (checked 2026-10-22). The cap is global per account — extra API keys or accounts do not widen it.
 [^poll]: [Pollinations](https://pollinations.ai) serves an anonymous tier with no API key. Which models are in it changes; this list reads their live catalogue every day and keeps the models marked `tier: "anonymous"`. They are listed unscored: no public benchmark data is attached to them.
 
 ### About the data-use column
@@ -238,20 +238,29 @@ ranking it produces. That is what the file is for.
 For anyone wiring up a provider directly. All of them speak the OpenAI shape
 unless noted, so `base_url` is the only change.
 
-| Provider | Base URL | Free tier | Key | Checked |
-|---|---|---|---|---|
-| [OpenRouter](https://openrouter.ai/keys) | `https://openrouter.ai/api/v1` | Every `:free` model: 20 RPM, 50 RPD per account (1,000 RPD after $10 in credits) [^or] | Yes, no card | 2026-10-10 |
-| [Pollinations](https://pollinations.ai) | `https://text.pollinations.ai` | Anonymous tier, rotating model list [^poll] | No key | 2026-09-23 |
-| [OVHcloud AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | Catalogue is public and keyless; the anonymous chat tier is 2 RPM per IP and in practice answers `429` most of the time [^ovh] | No key | 2026-09-23 |
-| [Groq](https://console.groq.com/keys) | `https://api.groq.com/openai/v1` | Free plan, per-model limits — [published table](https://console.groq.com/docs/rate-limits) | Yes, no card | — |
-| [Google AI Studio](https://aistudio.google.com/app/apikey) | `https://generativelanguage.googleapis.com/v1beta/openai` | Free tier per model — [published limits](https://ai.google.dev/gemini-api/docs/rate-limits) | Yes, no card | — |
-| [Cerebras](https://cloud.cerebras.ai) | `https://api.cerebras.ai/v1` | Free tier — [published limits](https://inference-docs.cerebras.ai/support/rate-limits) | Yes | — |
-| [Cloudflare Workers AI](https://dash.cloudflare.com/profile/api-tokens) | `https://api.cloudflare.com/client/v4/accounts/{id}/ai/v1` | 10,000 Neurons/day shared across all models — [pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) | Yes | — |
+| Provider | Base URL | Free allowance | Card | Your prompts | The catch | Checked |
+|---|---|---|---|---|---|---|
+| [OpenRouter](https://openrouter.ai/keys) | `https://openrouter.ai/api/v1` | Every `:free` model together: 20 RPM, 50 RPD per account (1,000 RPD after $10 in credits) [^or] | No | Depends on who serves the model: see the data-use column above; send `provider.data_collection: "deny"` to refuse providers that may train [^orp] | One daily cap for all free models | 2026-10-22 |
+| [Groq](https://console.groq.com/keys) | `https://api.groq.com/openai/v1` | Per model: 30 RPM, 1,000 RPD, 8,000 tokens/min for `qwen/qwen3.8-27b`, `openai/gpt-oss-120b`, `openai/gpt-oss-20b` [^groq] | No | Not retained by default; may be logged up to 30 days for abuse review; training not mentioned [^groqd] | 8K tokens/min: one long prompt fails. With a card on file the org can be on paid on-demand usage — check Billing | 2026-10-22 |
+| [Google AI Studio](https://aistudio.google.com/app/apikey) | `https://generativelanguage.googleapis.com/v1beta/openai/` | Per model and per project, shown in AI Studio (no numbers in the docs) [^gem] | No | Free tier: used to improve Google products, may be read by human reviewers [^gemt] | Not allowed in apps for users in the EEA, Switzerland or the UK [^gemt] | 2026-10-22 |
+| [Cloudflare Workers AI](https://dash.cloudflare.com/profile/api-tokens) | `https://api.cloudflare.com/client/v4/accounts/{id}/ai/v1` | 10,000 Neurons/day across all models, reset 00:00 UTC [^cf] | No | Not used for training; not kept for standard requests [^cfd] | Neurons, not requests: how far they go depends on the model | 2026-10-22 |
+| [Cerebras](https://cloud.cerebras.ai) | `https://api.cerebras.ai/v1` | **Trial, not a free tier**: $5 of credits that expire after 30 days; 5 RPM [^cer] | **Yes** | Not covered on the limits page | API stays inactive until you add a payment method | 2026-10-22 |
+| [Pollinations](https://pollinations.ai) | `https://text.pollinations.ai` | Anonymous tier, rotating model list [^poll] | No key | — | — | 2026-09-23 |
+| [OVHcloud AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) | `https://oai.endpoints.kepler.ai.cloud.ovh.net/v1` | Anonymous: 2 RPM per IP; in practice `429` most of the time [^ovh] | No key | — | — | 2026-09-23 |
 
-A blank **Checked** means we link the provider's own limits page but have not
-verified the numbers ourselves — treat their page as the source of truth.
-Free tiers are meant for building and trying things; read each provider's
-terms before putting one behind a product.
+Mistral is not listed: on 2026-10-22 its pricing page showed no free API plan we could verify.
+Free tiers are meant for building and trying things; read each provider's terms
+before putting one behind a product. Plain-language pages per provider:
+[zerolimitai.com/free-llm-api](https://www.zerolimitai.com/free-llm-api?utm_source=github&utm_medium=readme&utm_campaign=free-ai-models).
+
+[^orp]: OpenRouter, [provider logging and training](https://openrouter.ai/docs/guides/privacy/provider-logging).
+[^groq]: Groq, [rate limits](https://console.groq.com/docs/rate-limits). Your organisation's own limits are at console.groq.com/settings/limits.
+[^groqd]: Groq, [your data](https://console.groq.com/docs/your-data).
+[^gem]: Google, [Gemini API rate limits](https://ai.google.dev/gemini-api/docs/rate-limits): per project, vary by model; setting up billing moves the project to a paid tier.
+[^gemt]: Google, [Gemini API additional terms](https://ai.google.dev/gemini-api/terms) (updated 2026-04-28): Unpaid Services, and "You may use only Paid Services when making API Clients available to users in the European Economic Area, Switzerland, or the UK".
+[^cf]: Cloudflare, [Workers AI pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/).
+[^cfd]: Cloudflare, [Workers AI data usage](https://developers.cloudflare.com/workers-ai/platform/data-usage/).
+[^cer]: Cerebras, [rate limits](https://inference-docs.cerebras.ai/support/rate-limits): "no permanently free tier".
 
 [^ovh]: OVHcloud publishes a permanent anonymous tier (no signup, no key) limited to 2 requests/minute per IP per model. Their `/v1/models` catalogue answers without a key; on 2026-09-23 four chat completions from two different models, spaced over several minutes, all returned `API rate limit exceeded`.
 

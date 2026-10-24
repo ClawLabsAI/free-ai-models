@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T09:11:37.926Z",
+  "updated_at": "2026-10-24T08:45:00.849Z",
   "total_free_models": 20,
   "scoring": {
     "code": "scoring/score.js",
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 952.4,
-        "downloads": 1383288,
+        "downloads": 1422701,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -115,7 +115,7 @@
       },
       "hf": {
         "paramsB": 266,
-        "downloads": 846529,
+        "downloads": 884226,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -381,96 +381,6 @@
       "zo_rank": 7
     },
     {
-      "id": "poolside/laguna-s-2.1:free",
-      "name": "Poolside: Laguna S 2.1 (free)",
-      "provider": "Poolside",
-      "context_window": 262144,
-      "max_output": 32768,
-      "modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-10-31",
-      "source": "https://openrouter.ai/poolside/laguna-s-2.1:free",
-      "created": 1784652683,
-      "kind": "chat",
-      "rank": 8,
-      "score": 33.8,
-      "quality": 32.2,
-      "basis": "prior",
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "expires in 8d"
-      ],
-      "excluded": null,
-      "benchmarks": null,
-      "arena": null,
-      "hf": {
-        "paramsB": 117.6,
-        "downloads": 397257,
-        "pipelineTag": "text-generation"
-      },
-      "served_by": [
-        "Poolside"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": "sick",
-      "answering_now": false,
-      "zo_score": 34,
-      "zo_rank": 8
-    },
-    {
-      "id": "poolside/laguna-xs-2.1:free",
-      "name": "Poolside: Laguna XS 2.1 (free)",
-      "provider": "Poolside",
-      "context_window": 262144,
-      "max_output": 32768,
-      "modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-10-31",
-      "source": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
-      "created": 1783002429,
-      "kind": "chat",
-      "rank": 9,
-      "score": 26.1,
-      "quality": 24.8,
-      "basis": "prior",
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "expires in 8d"
-      ],
-      "excluded": null,
-      "benchmarks": null,
-      "arena": null,
-      "hf": {
-        "paramsB": 33.4,
-        "downloads": 499646,
-        "pipelineTag": "text-generation"
-      },
-      "served_by": [
-        "Poolside"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": "sick",
-      "answering_now": false,
-      "zo_score": 26,
-      "zo_rank": 9
-    },
-    {
       "id": "xingchen-agi/xing4.0-29b-a4b:free",
       "name": "XingChen: Xing4.0 29B A4B (free)",
       "provider": "Xingchen agi",
@@ -489,9 +399,9 @@
       "source": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
       "created": 1792177496,
       "kind": "chat",
-      "rank": 10,
-      "score": 24.4,
-      "quality": 22.5,
+      "rank": 8,
+      "score": 24.3,
+      "quality": 22.4,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption"
@@ -501,7 +411,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 15279,
+        "downloads": 12905,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -509,10 +419,55 @@
       ],
       "data_use": "no-training",
       "retention": "zero",
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 24,
-      "zo_rank": 10
+      "zo_rank": 8
+    },
+    {
+      "id": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "provider": "Poolside",
+      "context_window": 262144,
+      "max_output": 32768,
+      "modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-10-31",
+      "source": "https://openrouter.ai/poolside/laguna-s-2.1:free",
+      "created": 1784652683,
+      "kind": "chat",
+      "rank": 9,
+      "score": 23.7,
+      "quality": 32.2,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "expires in 7d"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": {
+        "paramsB": 117.6,
+        "downloads": 414462,
+        "pipelineTag": "text-generation"
+      },
+      "served_by": [
+        "Poolside"
+      ],
+      "data_use": "may-train",
+      "retention": "unknown",
+      "health": null,
+      "answering_now": false,
+      "zo_score": 24,
+      "zo_rank": 9
     },
     {
       "id": "cohere/north-mini-code:free",
@@ -533,7 +488,7 @@
       "source": "https://openrouter.ai/cohere/north-mini-code:free",
       "created": 1781723748,
       "kind": "chat",
-      "rank": 11,
+      "rank": 10,
       "score": 23,
       "quality": 21.9,
       "basis": "benchmarks",
@@ -555,10 +510,10 @@
       ],
       "data_use": "no-training",
       "retention": 30,
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 23,
-      "zo_rank": 11
+      "zo_rank": 10
     },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
@@ -579,7 +534,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
       "created": 1786452751,
       "kind": "chat",
-      "rank": 12,
+      "rank": 11,
       "score": 22,
       "quality": 21,
       "basis": "benchmarks",
@@ -593,7 +548,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 717180,
+        "downloads": 742789,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -604,7 +559,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 22,
-      "zo_rank": 12
+      "zo_rank": 11
     },
     {
       "id": "recursive/flint-v1.0:free",
@@ -625,9 +580,9 @@
       "source": "https://openrouter.ai/recursive/flint-v1.0:free",
       "created": 1792622765,
       "kind": "chat",
-      "rank": 13,
-      "score": 20.1,
-      "quality": 22.5,
+      "rank": 12,
+      "score": 20.4,
+      "quality": 22.8,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -638,7 +593,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 420,
+        "downloads": 1904,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -646,9 +601,54 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 20,
+      "zo_rank": 12
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "name": "Poolside: Laguna XS 2.1 (free)",
+      "provider": "Poolside",
+      "context_window": 262144,
+      "max_output": 32768,
+      "modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-10-31",
+      "source": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
+      "created": 1783002429,
+      "kind": "chat",
+      "rank": 13,
+      "score": 18.2,
+      "quality": 24.8,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "expires in 7d"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": {
+        "paramsB": 33.4,
+        "downloads": 499646,
+        "pipelineTag": "text-generation"
+      },
+      "served_by": [
+        "Poolside"
+      ],
+      "data_use": "may-train",
+      "retention": "unknown",
+      "health": null,
+      "answering_now": false,
+      "zo_score": 18,
       "zo_rank": 13
     },
     {
@@ -728,7 +728,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 69d"
+        "expires in 68d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -739,7 +739,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 13,
       "zo_rank": 15
@@ -780,7 +780,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 98407,
+        "downloads": 96613,
         "pipelineTag": "text-generation"
       },
       "served_by": [

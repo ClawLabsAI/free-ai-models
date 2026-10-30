@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T10:45:56.625Z",
+  "updated_at": "2026-10-30T10:44:51.412Z",
   "total_free_models": 19,
   "scoring": {
     "code": "scoring/score.js",
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 952.4,
-        "downloads": 2025390,
+        "downloads": 2180171,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 8387378,
+        "downloads": 8453913,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -125,8 +125,8 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "ok",
-      "answering_now": true,
+      "health": "sick",
+      "answering_now": false,
       "zo_score": 60,
       "zo_rank": 2
     },
@@ -171,7 +171,7 @@
       },
       "hf": {
         "paramsB": 266,
-        "downloads": 1342698,
+        "downloads": 1467615,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -227,7 +227,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 6670881,
+        "downloads": 6341224,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -236,7 +236,7 @@
       "data_use": "no-training",
       "retention": 55,
       "health": "ok",
-      "answering_now": false,
+      "answering_now": true,
       "zo_score": 56,
       "zo_rank": 4
     },
@@ -273,7 +273,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1365738,
+        "downloads": 1440626,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -321,7 +321,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 7731,
+        "downloads": 7998,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -354,7 +354,7 @@
       "created": 1792177496,
       "kind": "chat",
       "rank": 7,
-      "score": 24,
+      "score": 23.9,
       "quality": 22.1,
       "basis": "prior",
       "notes": [
@@ -365,7 +365,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 7749,
+        "downloads": 6749,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -398,19 +398,19 @@
       "created": 1784652683,
       "kind": "chat",
       "rank": 8,
-      "score": 23.8,
-      "quality": 32.4,
+      "score": 23.9,
+      "quality": 32.5,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 2d"
+        "expires in 1d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 117.6,
-        "downloads": 619054,
+        "downloads": 674871,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -418,7 +418,7 @@
       ],
       "data_use": "may-train",
       "retention": "unknown",
-      "health": null,
+      "health": "ok",
       "answering_now": false,
       "zo_score": 24,
       "zo_rank": 8
@@ -470,54 +470,6 @@
       "zo_rank": 9
     },
     {
-      "id": "nvidia/nemotron-3.5-lightning:free",
-      "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
-      "provider": "Nvidia",
-      "context_window": 1000000,
-      "max_output": 65536,
-      "modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": null,
-      "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
-      "created": 1786452751,
-      "kind": "chat",
-      "rank": 10,
-      "score": 21.5,
-      "quality": 20.5,
-      "basis": "benchmarks",
-      "notes": [
-        "benchmarks 2/3 (rest imputed)"
-      ],
-      "excluded": null,
-      "benchmarks": {
-        "intelligence": null,
-        "coding": 26.8,
-        "agentic": 3.5
-      },
-      "arena": null,
-      "hf": {
-        "paramsB": 31.6,
-        "downloads": 1117157,
-        "pipelineTag": "text-generation"
-      },
-      "served_by": [
-        "Nvidia"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": 22,
-      "zo_rank": 10
-    },
-    {
       "id": "recursive/flint-v1.0:free",
       "name": "Recursive: Flint (free)",
       "provider": "Recursive",
@@ -536,9 +488,9 @@
       "source": "https://openrouter.ai/recursive/flint-v1.0:free",
       "created": 1792622765,
       "kind": "chat",
-      "rank": 11,
-      "score": 21.4,
-      "quality": 24,
+      "rank": 10,
+      "score": 21.5,
+      "quality": 24.1,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -549,7 +501,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 16598,
+        "downloads": 19015,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -559,8 +511,8 @@
       "retention": "unknown",
       "health": "ok",
       "answering_now": false,
-      "zo_score": 21,
-      "zo_rank": 11
+      "zo_score": 22,
+      "zo_rank": 10
     },
     {
       "id": "poolside/laguna-xs-2.1:free",
@@ -581,20 +533,20 @@
       "source": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
       "created": 1783002429,
       "kind": "chat",
-      "rank": 12,
+      "rank": 11,
       "score": 18.4,
-      "quality": 25,
+      "quality": 25.1,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 2d"
+        "expires in 1d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 33.4,
-        "downloads": 758119,
+        "downloads": 829597,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -602,9 +554,55 @@
       ],
       "data_use": "may-train",
       "retention": "unknown",
-      "health": null,
+      "health": "ok",
       "answering_now": false,
       "zo_score": 18,
+      "zo_rank": 11
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning:free",
+      "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+      "provider": "Nvidia",
+      "context_window": 1000000,
+      "max_output": 65536,
+      "modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
+      "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
+      "created": 1786452751,
+      "kind": "chat",
+      "rank": 12,
+      "score": 16.5,
+      "quality": 15.7,
+      "basis": "benchmarks",
+      "notes": [],
+      "excluded": null,
+      "benchmarks": {
+        "intelligence": 5.5,
+        "coding": 26.8,
+        "agentic": 3.5
+      },
+      "arena": null,
+      "hf": {
+        "paramsB": 31.6,
+        "downloads": 1206234,
+        "pipelineTag": "text-generation"
+      },
+      "served_by": [
+        "Nvidia"
+      ],
+      "data_use": "may-train",
+      "retention": "unknown",
+      "health": null,
+      "answering_now": false,
+      "zo_score": 17,
       "zo_rank": 12
     },
     {
@@ -633,7 +631,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 63d"
+        "expires in 62d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -687,7 +685,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 123526,
+        "downloads": 120874,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -736,7 +734,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 93143,
+        "downloads": 91747,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -870,7 +868,7 @@
       "arena": null,
       "hf": {
         "paramsB": 4.3,
-        "downloads": 45491,
+        "downloads": 45964,
         "pipelineTag": null
       },
       "served_by": [

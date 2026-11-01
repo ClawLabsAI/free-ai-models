@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-31T10:14:42.465Z",
-  "total_free_models": 19,
+  "updated_at": "2026-11-01T11:06:47.829Z",
+  "total_free_models": 17,
   "scoring": {
     "code": "scoring/score.js",
     "benchmark_maxima": {
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 952.4,
-        "downloads": 2178557,
+        "downloads": 2084207,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 8456004,
+        "downloads": 8301351,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -126,7 +126,7 @@
       "data_use": "no-training",
       "retention": 55,
       "health": "ok",
-      "answering_now": true,
+      "answering_now": false,
       "zo_score": 60,
       "zo_rank": 2
     },
@@ -171,7 +171,7 @@
       },
       "hf": {
         "paramsB": 266,
-        "downloads": 1474408,
+        "downloads": 1411262,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -227,7 +227,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 6135897,
+        "downloads": 6032823,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -236,7 +236,7 @@
       "data_use": "no-training",
       "retention": 55,
       "health": "ok",
-      "answering_now": false,
+      "answering_now": true,
       "zo_score": 56,
       "zo_rank": 4
     },
@@ -273,7 +273,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1461115,
+        "downloads": 1429742,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -321,7 +321,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8187,
+        "downloads": 8123,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -365,7 +365,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 6364,
+        "downloads": 5744,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -445,7 +445,7 @@
       "kind": "chat",
       "rank": 9,
       "score": 21.6,
-      "quality": 24.2,
+      "quality": 24.3,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -456,7 +456,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 23079,
+        "downloads": 26703,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -502,7 +502,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 1218688,
+        "downloads": 1177164,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -541,7 +541,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 61d"
+        "expires in 60d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -595,7 +595,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 120716,
+        "downloads": 116749,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -644,7 +644,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 90512,
+        "downloads": 69948,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -746,96 +746,6 @@
       "zo_rank": null
     },
     {
-      "id": "poolside/laguna-s-2.1:free",
-      "name": "Poolside: Laguna S 2.1 (free)",
-      "provider": "Poolside",
-      "context_window": 262144,
-      "max_output": 32768,
-      "modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-10-31",
-      "source": "https://openrouter.ai/poolside/laguna-s-2.1:free",
-      "created": 1784652683,
-      "kind": "chat",
-      "rank": null,
-      "score": null,
-      "quality": null,
-      "basis": null,
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "expires in 0d"
-      ],
-      "excluded": "expired",
-      "benchmarks": null,
-      "arena": null,
-      "hf": {
-        "paramsB": 117.6,
-        "downloads": 680694,
-        "pipelineTag": "text-generation"
-      },
-      "served_by": [
-        "Poolside"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": null,
-      "zo_rank": null
-    },
-    {
-      "id": "poolside/laguna-xs-2.1:free",
-      "name": "Poolside: Laguna XS 2.1 (free)",
-      "provider": "Poolside",
-      "context_window": 262144,
-      "max_output": 32768,
-      "modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-10-31",
-      "source": "https://openrouter.ai/poolside/laguna-xs-2.1:free",
-      "created": 1783002429,
-      "kind": "chat",
-      "rank": null,
-      "score": null,
-      "quality": null,
-      "basis": null,
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "expires in 0d"
-      ],
-      "excluded": "expired",
-      "benchmarks": null,
-      "arena": null,
-      "hf": {
-        "paramsB": 33.4,
-        "downloads": 836993,
-        "pipelineTag": "text-generation"
-      },
-      "served_by": [
-        "Poolside"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": null,
-      "zo_rank": null
-    },
-    {
       "id": "nvidia/nemotron-3.5-content-safety:free",
       "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
       "provider": "Nvidia",
@@ -868,7 +778,7 @@
       "arena": null,
       "hf": {
         "paramsB": 4.3,
-        "downloads": 46462,
+        "downloads": 46053,
         "pipelineTag": null
       },
       "served_by": [

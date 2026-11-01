@@ -35,16 +35,16 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Sat, 31 Oct 2026 10:14:42 UTC** · 14 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+> Última actualización: **Sun, 01 Nov 2026 11:06:47 UTC** · 14 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
 >
 > **5 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 
 | # | Modelo | Puntuación | Medido con | ¿Entrena con tus prompts? | Contexto | Salida máx. | Tools | Entrada | Hoy | Fuente |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | **Thinking Machines: Inkling** | 62 | benchmarks + Arena | 🔴 puede entrenar | 1M | 262K | ✓ | 🖼️ vision, audio | — | [enlace](https://openrouter.ai/thinkingmachines/inkling:free) |
-| 2 | **Google: Gemma 4 31B** | 60 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 2 | **Google: Gemma 4 31B** | 60 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
 | 3 | **Thinking Machines: Inkling Small** | 59 | benchmarks + Arena | 🔴 puede entrenar | 1M | 262K | ✓ | 🖼️ vision, audio | — | [enlace](https://openrouter.ai/thinkingmachines/inkling-small:free) |
-| 4 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 4 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
 | 5 | **NVIDIA: Nemotron 3 Ultra** | 36 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 6 | **Cohere: North Mini Code** | 28 | benchmarks | ✅ no · guarda 30 días | 256K | 64K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
 | 7 | **XingChen: Xing4.0 29B A4B** | 24 | estimación (tamaño) | ✅ no · retención cero | 262K | 236K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free) |
@@ -56,12 +56,10 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 | 13 | **LiquidAI: LFM2.5-2.6B** | 6 | benchmarks | 🔴 puede entrenar | 66K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
 | 14 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [enlace](https://pollinations.ai) |
 
-5 modelos gratuitos que no son de chat (música, imagen, audio, clasificadores):
+3 modelos gratuitos que no son de chat (música, imagen, audio, clasificadores):
 
 - [Google: Lyria 3 Pro Preview](https://openrouter.ai/google/lyria-3-pro-preview)
 - [Google: Lyria 3 Clip Preview](https://openrouter.ai/google/lyria-3-clip-preview)
-- [Poolside: Laguna S 2.1 (free)](https://openrouter.ai/poolside/laguna-s-2.1:free)
-- [Poolside: Laguna XS 2.1 (free)](https://openrouter.ai/poolside/laguna-xs-2.1:free)
 - [NVIDIA: Nemotron 3.5 Content Safety (free)](https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free)
 <!-- TABLE_END -->
 

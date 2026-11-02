@@ -35,7 +35,7 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Sun, 01 Nov 2026 11:06:47 UTC** · 14 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+> Última actualización: **Mon, 02 Nov 2026 12:06:19 UTC** · 14 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
 >
 > **5 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 

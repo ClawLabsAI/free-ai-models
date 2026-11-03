@@ -34,21 +34,21 @@ No key needed to read any of it. No scraping: only public, official APIs.
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Mon, 02 Nov 2026 12:06:19 UTC** · 14 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
+> Last updated: **Tue, 03 Nov 2026 11:43:04 UTC** · 14 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
 >
 > **5 of today's top 10** are served only by providers that may train on your prompts.
 
 | # | Model | Score | Measured by | Trains on your prompts? | Context | Max output | Tools | Input | Today | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Thinking Machines: Inkling** | 62 | benchmarks + Arena | 🔴 may train | 1M | 262K | ✓ | 🖼️ vision, audio | — | [link](https://openrouter.ai/thinkingmachines/inkling:free) |
-| 2 | **Google: Gemma 4 31B** | 60 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ✅ up | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 3 | **Thinking Machines: Inkling Small** | 59 | benchmarks + Arena | 🔴 may train | 1M | 262K | ✓ | 🖼️ vision, audio | — | [link](https://openrouter.ai/thinkingmachines/inkling-small:free) |
-| 4 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 1 | **Google: Gemma 4 31B** | 60 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 2 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ⚠️ degraded | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 3 | **Thinking Machines: Inkling** <br><sub>⏳ retiring 2026-11-04</sub> | 44 | benchmarks + Arena | 🔴 may train | 1M | 262K | ✓ | 🖼️ vision, audio | — | [link](https://openrouter.ai/thinkingmachines/inkling:free) |
+| 4 | **Thinking Machines: Inkling Small** <br><sub>⏳ retiring 2026-11-04</sub> | 41 | benchmarks + Arena | 🔴 may train | 1M | 262K | ✓ | 🖼️ vision, audio | — | [link](https://openrouter.ai/thinkingmachines/inkling-small:free) |
 | 5 | **NVIDIA: Nemotron 3 Ultra** | 36 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 6 | **Cohere: North Mini Code** | 28 | benchmarks | ✅ no · kept 30 days | 256K | 64K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/cohere/north-mini-code:free) |
 | 7 | **XingChen: Xing4.0 29B A4B** | 24 | estimate (size) | ✅ no · zero retention | 262K | 236K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free) |
 | 8 | **NVIDIA: Nemotron 3.5 Super VL** | 22 | benchmarks | 🔴 may train | 1M | 131K | ✓ | 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
-| 9 | **Recursive: Flint** | 22 | estimate (size) | ✅ no · retention unknown | 262K | 236K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/recursive/flint-v1.0:free) |
+| 9 | **Recursive: Flint** | 22 | estimate (size) | ✅ no · retention unknown | 262K | 236K | ✓ | 💬 text | ⚠️ degraded | [link](https://openrouter.ai/recursive/flint-v1.0:free) |
 | 10 | **NVIDIA: Nemotron 3.5 Lightning** | 17 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 11 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ retiring 2026-12-31</sub> | 13 | estimate (size) | ✅ no · retention unknown | 512K | 461K | ✓ | 🖼️ vision | ✅ up | [link](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
 | 12 | **NVIDIA: Nemotron 3 Nano Omni** | 12 | benchmarks | 🔴 may train | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |

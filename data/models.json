@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T12:06:19.488Z",
+  "updated_at": "2026-11-03T11:43:04.301Z",
   "total_free_models": 17,
   "scoring": {
     "code": "scoring/score.js",
@@ -21,60 +21,6 @@
   ],
   "models": [
     {
-      "id": "thinkingmachines/inkling:free",
-      "name": "Thinking Machines: Inkling (free)",
-      "provider": "Thinkingmachines",
-      "context_window": 1048576,
-      "max_output": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": null,
-      "source": "https://openrouter.ai/thinkingmachines/inkling:free",
-      "created": 1784325956,
-      "kind": "chat",
-      "rank": 1,
-      "score": 62.3,
-      "quality": 59.3,
-      "basis": "benchmarks+arena",
-      "notes": [],
-      "excluded": null,
-      "benchmarks": {
-        "intelligence": 12.5,
-        "coding": 52.1,
-        "agentic": 22.5
-      },
-      "arena": {
-        "overall": 1443,
-        "coding": 1466,
-        "instruction_following": 1426,
-        "spanish": 1450,
-        "votes": 45472
-      },
-      "hf": {
-        "paramsB": 952.4,
-        "downloads": 2005047,
-        "pipelineTag": "image-text-to-text"
-      },
-      "served_by": [
-        "Thinking Machines"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": 62,
-      "zo_rank": 1
-    },
-    {
       "id": "google/gemma-4-31b-it:free",
       "name": "Google: Gemma 4 31B (free)",
       "provider": "Google",
@@ -95,7 +41,7 @@
       "source": "https://openrouter.ai/google/gemma-4-31b-it:free",
       "created": 1775148486,
       "kind": "chat",
-      "rank": 2,
+      "rank": 1,
       "score": 59.5,
       "quality": 56.6,
       "basis": "benchmarks+arena",
@@ -117,7 +63,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 8147734,
+        "downloads": 8012782,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -126,63 +72,9 @@
       "data_use": "no-training",
       "retention": 55,
       "health": "ok",
-      "answering_now": false,
+      "answering_now": true,
       "zo_score": 60,
-      "zo_rank": 2
-    },
-    {
-      "id": "thinkingmachines/inkling-small:free",
-      "name": "Thinking Machines: Inkling Small (free)",
-      "provider": "Thinkingmachines",
-      "context_window": 1048576,
-      "max_output": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": null,
-      "source": "https://openrouter.ai/thinkingmachines/inkling-small:free",
-      "created": 1785443117,
-      "kind": "chat",
-      "rank": 3,
-      "score": 59.2,
-      "quality": 56.4,
-      "basis": "benchmarks+arena",
-      "notes": [],
-      "excluded": null,
-      "benchmarks": {
-        "intelligence": 12.9,
-        "coding": 52.9,
-        "agentic": 23.5
-      },
-      "arena": {
-        "overall": 1414,
-        "coding": 1451,
-        "instruction_following": 1401,
-        "spanish": 1427,
-        "votes": 36999
-      },
-      "hf": {
-        "paramsB": 266,
-        "downloads": 1364234,
-        "pipelineTag": "image-text-to-text"
-      },
-      "served_by": [
-        "Thinking Machines"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": 59,
-      "zo_rank": 3
+      "zo_rank": 1
     },
     {
       "id": "google/gemma-4-26b-a4b-it:free",
@@ -205,7 +97,7 @@
       "source": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
       "created": 1775227989,
       "kind": "chat",
-      "rank": 4,
+      "rank": 2,
       "score": 55.6,
       "quality": 52.9,
       "basis": "benchmarks+arena",
@@ -227,7 +119,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 5944935,
+        "downloads": 5871104,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -235,9 +127,121 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "ok",
-      "answering_now": true,
+      "health": "sick",
+      "answering_now": false,
       "zo_score": 56,
+      "zo_rank": 2
+    },
+    {
+      "id": "thinkingmachines/inkling:free",
+      "name": "Thinking Machines: Inkling (free)",
+      "provider": "Thinkingmachines",
+      "context_window": 1048576,
+      "max_output": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-11-04",
+      "source": "https://openrouter.ai/thinkingmachines/inkling:free",
+      "created": 1784325956,
+      "kind": "chat",
+      "rank": 3,
+      "score": 43.6,
+      "quality": 59.3,
+      "basis": "benchmarks+arena",
+      "notes": [
+        "expires in 1d"
+      ],
+      "excluded": null,
+      "benchmarks": {
+        "intelligence": 12.5,
+        "coding": 52.1,
+        "agentic": 22.5
+      },
+      "arena": {
+        "overall": 1443,
+        "coding": 1466,
+        "instruction_following": 1426,
+        "spanish": 1450,
+        "votes": 45472
+      },
+      "hf": {
+        "paramsB": 952.4,
+        "downloads": 1958140,
+        "pipelineTag": "image-text-to-text"
+      },
+      "served_by": [
+        "Thinking Machines"
+      ],
+      "data_use": "may-train",
+      "retention": "unknown",
+      "health": null,
+      "answering_now": false,
+      "zo_score": 44,
+      "zo_rank": 3
+    },
+    {
+      "id": "thinkingmachines/inkling-small:free",
+      "name": "Thinking Machines: Inkling Small (free)",
+      "provider": "Thinkingmachines",
+      "context_window": 1048576,
+      "max_output": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-11-04",
+      "source": "https://openrouter.ai/thinkingmachines/inkling-small:free",
+      "created": 1785443117,
+      "kind": "chat",
+      "rank": 4,
+      "score": 41.4,
+      "quality": 56.4,
+      "basis": "benchmarks+arena",
+      "notes": [
+        "expires in 1d"
+      ],
+      "excluded": null,
+      "benchmarks": {
+        "intelligence": 12.9,
+        "coding": 52.9,
+        "agentic": 23.5
+      },
+      "arena": {
+        "overall": 1414,
+        "coding": 1451,
+        "instruction_following": 1401,
+        "spanish": 1427,
+        "votes": 36999
+      },
+      "hf": {
+        "paramsB": 266,
+        "downloads": 1336464,
+        "pipelineTag": "image-text-to-text"
+      },
+      "served_by": [
+        "Thinking Machines"
+      ],
+      "data_use": "may-train",
+      "retention": "unknown",
+      "health": null,
+      "answering_now": false,
+      "zo_score": 41,
       "zo_rank": 4
     },
     {
@@ -273,7 +277,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1390699,
+        "downloads": 1351170,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -321,7 +325,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8061,
+        "downloads": 8228,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -365,7 +369,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 5601,
+        "downloads": 5504,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -445,7 +449,7 @@
       "kind": "chat",
       "rank": 9,
       "score": 21.7,
-      "quality": 24.3,
+      "quality": 24.4,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -456,7 +460,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 29574,
+        "downloads": 32677,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -464,7 +468,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 22,
       "zo_rank": 9
@@ -502,7 +506,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 1149020,
+        "downloads": 1136444,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -541,7 +545,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 59d"
+        "expires in 58d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -595,7 +599,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 115674,
+        "downloads": 116266,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -644,7 +648,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 69615,
+        "downloads": 68997,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -778,7 +782,7 @@
       "arena": null,
       "hf": {
         "paramsB": 4.3,
-        "downloads": 45588,
+        "downloads": 45933,
         "pipelineTag": null
       },
       "served_by": [

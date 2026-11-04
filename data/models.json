@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-03T11:43:04.301Z",
-  "total_free_models": 17,
+  "updated_at": "2026-11-04T11:55:42.094Z",
+  "total_free_models": 18,
   "scoring": {
     "code": "scoring/score.js",
     "benchmark_maxima": {
-      "intelligence": 58.4,
+      "intelligence": 59.1,
       "coding": 80.7,
       "agentic": 57.2
     },
@@ -63,7 +63,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 8012782,
+        "downloads": 7827380,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -72,7 +72,7 @@
       "data_use": "no-training",
       "retention": 55,
       "health": "ok",
-      "answering_now": true,
+      "answering_now": false,
       "zo_score": 60,
       "zo_rank": 1
     },
@@ -119,7 +119,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 5871104,
+        "downloads": 5770236,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -127,122 +127,10 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "sick",
-      "answering_now": false,
+      "health": "ok",
+      "answering_now": true,
       "zo_score": 56,
       "zo_rank": 2
-    },
-    {
-      "id": "thinkingmachines/inkling:free",
-      "name": "Thinking Machines: Inkling (free)",
-      "provider": "Thinkingmachines",
-      "context_window": 1048576,
-      "max_output": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-11-04",
-      "source": "https://openrouter.ai/thinkingmachines/inkling:free",
-      "created": 1784325956,
-      "kind": "chat",
-      "rank": 3,
-      "score": 43.6,
-      "quality": 59.3,
-      "basis": "benchmarks+arena",
-      "notes": [
-        "expires in 1d"
-      ],
-      "excluded": null,
-      "benchmarks": {
-        "intelligence": 12.5,
-        "coding": 52.1,
-        "agentic": 22.5
-      },
-      "arena": {
-        "overall": 1443,
-        "coding": 1466,
-        "instruction_following": 1426,
-        "spanish": 1450,
-        "votes": 45472
-      },
-      "hf": {
-        "paramsB": 952.4,
-        "downloads": 1958140,
-        "pipelineTag": "image-text-to-text"
-      },
-      "served_by": [
-        "Thinking Machines"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": 44,
-      "zo_rank": 3
-    },
-    {
-      "id": "thinkingmachines/inkling-small:free",
-      "name": "Thinking Machines: Inkling Small (free)",
-      "provider": "Thinkingmachines",
-      "context_window": 1048576,
-      "max_output": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-11-04",
-      "source": "https://openrouter.ai/thinkingmachines/inkling-small:free",
-      "created": 1785443117,
-      "kind": "chat",
-      "rank": 4,
-      "score": 41.4,
-      "quality": 56.4,
-      "basis": "benchmarks+arena",
-      "notes": [
-        "expires in 1d"
-      ],
-      "excluded": null,
-      "benchmarks": {
-        "intelligence": 12.9,
-        "coding": 52.9,
-        "agentic": 23.5
-      },
-      "arena": {
-        "overall": 1414,
-        "coding": 1451,
-        "instruction_following": 1401,
-        "spanish": 1427,
-        "votes": 36999
-      },
-      "hf": {
-        "paramsB": 266,
-        "downloads": 1336464,
-        "pipelineTag": "image-text-to-text"
-      },
-      "served_by": [
-        "Thinking Machines"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": 41,
-      "zo_rank": 4
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -263,9 +151,9 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
       "created": 1780551208,
       "kind": "chat",
-      "rank": 5,
-      "score": 36.2,
-      "quality": 34.5,
+      "rank": 3,
+      "score": 36.1,
+      "quality": 34.4,
       "basis": "benchmarks",
       "notes": [],
       "excluded": null,
@@ -277,7 +165,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1351170,
+        "downloads": 1266715,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -288,7 +176,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 36,
-      "zo_rank": 5
+      "zo_rank": 3
     },
     {
       "id": "cohere/north-mini-code:free",
@@ -309,7 +197,7 @@
       "source": "https://openrouter.ai/cohere/north-mini-code:free",
       "created": 1781723748,
       "kind": "chat",
-      "rank": 6,
+      "rank": 4,
       "score": 28.1,
       "quality": 26.7,
       "basis": "benchmarks",
@@ -325,7 +213,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8228,
+        "downloads": 8491,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -336,7 +224,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 28,
-      "zo_rank": 6
+      "zo_rank": 4
     },
     {
       "id": "xingchen-agi/xing4.0-29b-a4b:free",
@@ -357,8 +245,8 @@
       "source": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
       "created": 1792177496,
       "kind": "chat",
-      "rank": 7,
-      "score": 23.8,
+      "rank": 5,
+      "score": 23.7,
       "quality": 22,
       "basis": "prior",
       "notes": [
@@ -369,7 +257,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 5504,
+        "downloads": 5401,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -380,7 +268,52 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 24,
-      "zo_rank": 7
+      "zo_rank": 5
+    },
+    {
+      "id": "recursive/flint-v1.0:free",
+      "name": "Recursive: Flint (free)",
+      "provider": "Recursive",
+      "context_window": 262144,
+      "max_output": 235929,
+      "modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
+      "source": "https://openrouter.ai/recursive/flint-v1.0:free",
+      "created": 1792622765,
+      "kind": "chat",
+      "rank": 6,
+      "score": 21.8,
+      "quality": 24.4,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "always reasons (slow first token)"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": {
+        "paramsB": 39.8,
+        "downloads": 35511,
+        "pipelineTag": "text-generation"
+      },
+      "served_by": [
+        "Recursive"
+      ],
+      "data_use": "no-training",
+      "retention": "unknown",
+      "health": "ok",
+      "answering_now": false,
+      "zo_score": 22,
+      "zo_rank": 6
     },
     {
       "id": "nvidia/nemotron-3.5-super-vl:free",
@@ -403,9 +336,9 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
       "created": 1792076662,
       "kind": "chat",
-      "rank": 8,
-      "score": 21.9,
-      "quality": 20.2,
+      "rank": 7,
+      "score": 21.6,
+      "quality": 20,
       "basis": "benchmarks",
       "notes": [
         "benchmarks 1/3 (rest imputed)"
@@ -426,52 +359,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 22,
-      "zo_rank": 8
-    },
-    {
-      "id": "recursive/flint-v1.0:free",
-      "name": "Recursive: Flint (free)",
-      "provider": "Recursive",
-      "context_window": 262144,
-      "max_output": 235929,
-      "modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": null,
-      "source": "https://openrouter.ai/recursive/flint-v1.0:free",
-      "created": 1792622765,
-      "kind": "chat",
-      "rank": 9,
-      "score": 21.7,
-      "quality": 24.4,
-      "basis": "prior",
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "always reasons (slow first token)"
-      ],
-      "excluded": null,
-      "benchmarks": null,
-      "arena": null,
-      "hf": {
-        "paramsB": 39.8,
-        "downloads": 32677,
-        "pipelineTag": "text-generation"
-      },
-      "served_by": [
-        "Recursive"
-      ],
-      "data_use": "no-training",
-      "retention": "unknown",
-      "health": "sick",
-      "answering_now": false,
-      "zo_score": 22,
-      "zo_rank": 9
+      "zo_rank": 7
     },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
@@ -492,7 +380,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
       "created": 1786452751,
       "kind": "chat",
-      "rank": 10,
+      "rank": 8,
       "score": 16.5,
       "quality": 15.7,
       "basis": "benchmarks",
@@ -506,7 +394,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 1136444,
+        "downloads": 1114876,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -517,7 +405,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 17,
-      "zo_rank": 10
+      "zo_rank": 8
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
@@ -539,13 +427,13 @@
       "source": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
       "created": 1786680361,
       "kind": "chat",
-      "rank": 11,
+      "rank": 9,
       "score": 13,
       "quality": 12,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 58d"
+        "expires in 57d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -559,7 +447,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 13,
-      "zo_rank": 11
+      "zo_rank": 9
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -583,7 +471,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "created": 1777393095,
       "kind": "chat",
-      "rank": 12,
+      "rank": 10,
       "score": 11.7,
       "quality": 11.1,
       "basis": "benchmarks",
@@ -599,7 +487,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 116266,
+        "downloads": 120594,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -610,7 +498,52 @@
       "health": null,
       "answering_now": false,
       "zo_score": 12,
-      "zo_rank": 12
+      "zo_rank": 10
+    },
+    {
+      "id": "stealth/crouton-alpha",
+      "name": "Crouton Alpha",
+      "provider": "Stealth",
+      "context_window": 1048576,
+      "max_output": 943718,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": true,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
+      "source": "https://openrouter.ai/stealth/crouton-alpha",
+      "created": 1793669930,
+      "kind": "chat",
+      "rank": 11,
+      "score": 11,
+      "quality": 12,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "always reasons (slow first token)"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": null,
+      "served_by": [
+        "Stealth"
+      ],
+      "data_use": null,
+      "retention": null,
+      "health": null,
+      "answering_now": false,
+      "zo_score": 11,
+      "zo_rank": 11
     },
     {
       "id": "liquid/lfm-2.5-2.6b:free",
@@ -631,7 +564,7 @@
       "source": "https://openrouter.ai/liquid/lfm-2.5-2.6b:free",
       "created": 1786470519,
       "kind": "chat",
-      "rank": 13,
+      "rank": 12,
       "score": 5.7,
       "quality": 6.2,
       "basis": "benchmarks",
@@ -648,7 +581,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 68997,
+        "downloads": 67851,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -659,7 +592,119 @@
       "health": null,
       "answering_now": false,
       "zo_score": 6,
-      "zo_rank": 13
+      "zo_rank": 12
+    },
+    {
+      "id": "thinkingmachines/inkling-small:free",
+      "name": "Thinking Machines: Inkling Small (free)",
+      "provider": "Thinkingmachines",
+      "context_window": 1048576,
+      "max_output": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-11-04",
+      "source": "https://openrouter.ai/thinkingmachines/inkling-small:free",
+      "created": 1785443117,
+      "kind": "chat",
+      "rank": null,
+      "score": null,
+      "quality": null,
+      "basis": null,
+      "notes": [
+        "expires in 0d"
+      ],
+      "excluded": "expired",
+      "benchmarks": {
+        "intelligence": 12.9,
+        "coding": 52.9,
+        "agentic": 23.5
+      },
+      "arena": {
+        "overall": 1414,
+        "coding": 1451,
+        "instruction_following": 1401,
+        "spanish": 1427,
+        "votes": 36999
+      },
+      "hf": {
+        "paramsB": 266,
+        "downloads": 1296591,
+        "pipelineTag": "image-text-to-text"
+      },
+      "served_by": [
+        "Thinking Machines"
+      ],
+      "data_use": "may-train",
+      "retention": "unknown",
+      "health": null,
+      "answering_now": false,
+      "zo_score": null,
+      "zo_rank": null
+    },
+    {
+      "id": "thinkingmachines/inkling:free",
+      "name": "Thinking Machines: Inkling (free)",
+      "provider": "Thinkingmachines",
+      "context_window": 1048576,
+      "max_output": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-11-04",
+      "source": "https://openrouter.ai/thinkingmachines/inkling:free",
+      "created": 1784325956,
+      "kind": "chat",
+      "rank": null,
+      "score": null,
+      "quality": null,
+      "basis": null,
+      "notes": [
+        "expires in 0d"
+      ],
+      "excluded": "expired",
+      "benchmarks": {
+        "intelligence": 12.5,
+        "coding": 52.1,
+        "agentic": 22.5
+      },
+      "arena": {
+        "overall": 1443,
+        "coding": 1466,
+        "instruction_following": 1426,
+        "spanish": 1450,
+        "votes": 45472
+      },
+      "hf": {
+        "paramsB": 952.4,
+        "downloads": 1891876,
+        "pipelineTag": "image-text-to-text"
+      },
+      "served_by": [
+        "Thinking Machines"
+      ],
+      "data_use": "may-train",
+      "retention": "unknown",
+      "health": null,
+      "answering_now": false,
+      "zo_score": null,
+      "zo_rank": null
     },
     {
       "id": "google/lyria-3-pro-preview",
@@ -782,7 +827,7 @@
       "arena": null,
       "hf": {
         "paramsB": 4.3,
-        "downloads": 45933,
+        "downloads": 45707,
         "pipelineTag": null
       },
       "served_by": [

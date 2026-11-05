@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-04T11:55:42.094Z",
-  "total_free_models": 18,
+  "updated_at": "2026-11-05T11:58:36.849Z",
+  "total_free_models": 16,
   "scoring": {
     "code": "scoring/score.js",
     "benchmark_maxima": {
@@ -63,7 +63,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 7827380,
+        "downloads": 7684597,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -71,7 +71,7 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 60,
       "zo_rank": 1
@@ -119,7 +119,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 5770236,
+        "downloads": 5707846,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -127,8 +127,8 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "ok",
-      "answering_now": true,
+      "health": "sick",
+      "answering_now": false,
       "zo_score": 56,
       "zo_rank": 2
     },
@@ -165,7 +165,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1266715,
+        "downloads": 1221229,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -213,7 +213,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8491,
+        "downloads": 8407,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -247,7 +247,7 @@
       "kind": "chat",
       "rank": 5,
       "score": 23.7,
-      "quality": 22,
+      "quality": 21.9,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption"
@@ -257,7 +257,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 5401,
+        "downloads": 5283,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -266,7 +266,7 @@
       "data_use": "no-training",
       "retention": "zero",
       "health": "ok",
-      "answering_now": false,
+      "answering_now": true,
       "zo_score": 24,
       "zo_rank": 5
     },
@@ -291,7 +291,7 @@
       "kind": "chat",
       "rank": 6,
       "score": 21.8,
-      "quality": 24.4,
+      "quality": 24.5,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -302,7 +302,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 35511,
+        "downloads": 38357,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -310,7 +310,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 22,
       "zo_rank": 6
@@ -394,7 +394,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 1114876,
+        "downloads": 1119938,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -433,7 +433,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 57d"
+        "expires in 56d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -444,7 +444,7 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 13,
       "zo_rank": 9
@@ -487,7 +487,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 120594,
+        "downloads": 124156,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -581,7 +581,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 67851,
+        "downloads": 72138,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -593,118 +593,6 @@
       "answering_now": false,
       "zo_score": 6,
       "zo_rank": 12
-    },
-    {
-      "id": "thinkingmachines/inkling-small:free",
-      "name": "Thinking Machines: Inkling Small (free)",
-      "provider": "Thinkingmachines",
-      "context_window": 1048576,
-      "max_output": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-11-04",
-      "source": "https://openrouter.ai/thinkingmachines/inkling-small:free",
-      "created": 1785443117,
-      "kind": "chat",
-      "rank": null,
-      "score": null,
-      "quality": null,
-      "basis": null,
-      "notes": [
-        "expires in 0d"
-      ],
-      "excluded": "expired",
-      "benchmarks": {
-        "intelligence": 12.9,
-        "coding": 52.9,
-        "agentic": 23.5
-      },
-      "arena": {
-        "overall": 1414,
-        "coding": 1451,
-        "instruction_following": 1401,
-        "spanish": 1427,
-        "votes": 36999
-      },
-      "hf": {
-        "paramsB": 266,
-        "downloads": 1296591,
-        "pipelineTag": "image-text-to-text"
-      },
-      "served_by": [
-        "Thinking Machines"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": null,
-      "zo_rank": null
-    },
-    {
-      "id": "thinkingmachines/inkling:free",
-      "name": "Thinking Machines: Inkling (free)",
-      "provider": "Thinkingmachines",
-      "context_window": 1048576,
-      "max_output": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-11-04",
-      "source": "https://openrouter.ai/thinkingmachines/inkling:free",
-      "created": 1784325956,
-      "kind": "chat",
-      "rank": null,
-      "score": null,
-      "quality": null,
-      "basis": null,
-      "notes": [
-        "expires in 0d"
-      ],
-      "excluded": "expired",
-      "benchmarks": {
-        "intelligence": 12.5,
-        "coding": 52.1,
-        "agentic": 22.5
-      },
-      "arena": {
-        "overall": 1443,
-        "coding": 1466,
-        "instruction_following": 1426,
-        "spanish": 1450,
-        "votes": 45472
-      },
-      "hf": {
-        "paramsB": 952.4,
-        "downloads": 1891876,
-        "pipelineTag": "image-text-to-text"
-      },
-      "served_by": [
-        "Thinking Machines"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
-      "health": null,
-      "answering_now": false,
-      "zo_score": null,
-      "zo_rank": null
     },
     {
       "id": "google/lyria-3-pro-preview",
@@ -827,7 +715,7 @@
       "arena": null,
       "hf": {
         "paramsB": 4.3,
-        "downloads": 45707,
+        "downloads": 45734,
         "pipelineTag": null
       },
       "served_by": [

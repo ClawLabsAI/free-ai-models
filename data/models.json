@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-05T11:58:36.849Z",
-  "total_free_models": 16,
+  "updated_at": "2026-11-06T11:54:48.354Z",
+  "total_free_models": 15,
   "scoring": {
     "code": "scoring/score.js",
     "benchmark_maxima": {
@@ -20,62 +20,6 @@
     "zerolimitai.com/api/models/free-top (health only)"
   ],
   "models": [
-    {
-      "id": "google/gemma-4-31b-it:free",
-      "name": "Google: Gemma 4 31B (free)",
-      "provider": "Google",
-      "context_window": 262144,
-      "max_output": 32768,
-      "modalities": [
-        "image",
-        "text",
-        "video"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": null,
-      "source": "https://openrouter.ai/google/gemma-4-31b-it:free",
-      "created": 1775148486,
-      "kind": "chat",
-      "rank": 1,
-      "score": 59.5,
-      "quality": 56.6,
-      "basis": "benchmarks+arena",
-      "notes": [
-        "benchmarks 2/3 (rest imputed)"
-      ],
-      "excluded": null,
-      "benchmarks": {
-        "intelligence": null,
-        "coding": 43.4,
-        "agentic": 4.2
-      },
-      "arena": {
-        "overall": 1443,
-        "coding": 1459,
-        "instruction_following": 1434,
-        "spanish": 1444,
-        "votes": 6138
-      },
-      "hf": {
-        "paramsB": 31.3,
-        "downloads": 7684597,
-        "pipelineTag": "image-text-to-text"
-      },
-      "served_by": [
-        "Google AI Studio"
-      ],
-      "data_use": "no-training",
-      "retention": 55,
-      "health": "sick",
-      "answering_now": false,
-      "zo_score": 60,
-      "zo_rank": 1
-    },
     {
       "id": "google/gemma-4-26b-a4b-it:free",
       "name": "Google: Gemma 4 26B A4B  (free)",
@@ -97,7 +41,7 @@
       "source": "https://openrouter.ai/google/gemma-4-26b-a4b-it:free",
       "created": 1775227989,
       "kind": "chat",
-      "rank": 2,
+      "rank": 1,
       "score": 55.6,
       "quality": 52.9,
       "basis": "benchmarks+arena",
@@ -119,7 +63,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 5707846,
+        "downloads": 5661805,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -127,9 +71,63 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "sick",
-      "answering_now": false,
+      "health": "ok",
+      "answering_now": true,
       "zo_score": 56,
+      "zo_rank": 1
+    },
+    {
+      "id": "google/gemma-4-31b-it:free",
+      "name": "Google: Gemma 4 31B (free)",
+      "provider": "Google",
+      "context_window": 262144,
+      "max_output": 32768,
+      "modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": false,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
+      "source": "https://openrouter.ai/google/gemma-4-31b-it:free",
+      "created": 1775148486,
+      "kind": "chat",
+      "rank": 2,
+      "score": 52.6,
+      "quality": 50.1,
+      "basis": "benchmarks+arena",
+      "notes": [],
+      "excluded": null,
+      "benchmarks": {
+        "intelligence": 4.4,
+        "coding": 43.4,
+        "agentic": 4.2
+      },
+      "arena": {
+        "overall": 1443,
+        "coding": 1459,
+        "instruction_following": 1434,
+        "spanish": 1444,
+        "votes": 6138
+      },
+      "hf": {
+        "paramsB": 31.3,
+        "downloads": 7526808,
+        "pipelineTag": "image-text-to-text"
+      },
+      "served_by": [
+        "Google AI Studio"
+      ],
+      "data_use": "no-training",
+      "retention": 55,
+      "health": "ok",
+      "answering_now": false,
+      "zo_score": 53,
       "zo_rank": 2
     },
     {
@@ -165,7 +163,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1221229,
+        "downloads": 1174849,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -213,7 +211,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8407,
+        "downloads": 8338,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -257,7 +255,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 5283,
+        "downloads": 5238,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -266,7 +264,7 @@
       "data_use": "no-training",
       "retention": "zero",
       "health": "ok",
-      "answering_now": true,
+      "answering_now": false,
       "zo_score": 24,
       "zo_rank": 5
     },
@@ -290,7 +288,7 @@
       "created": 1792622765,
       "kind": "chat",
       "rank": 6,
-      "score": 21.8,
+      "score": 21.9,
       "quality": 24.5,
       "basis": "prior",
       "notes": [
@@ -302,7 +300,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 38357,
+        "downloads": 40716,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -394,7 +392,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 1119938,
+        "downloads": 1119783,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -433,7 +431,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 56d"
+        "expires in 55d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -487,7 +485,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 124156,
+        "downloads": 127855,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -581,7 +579,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 72138,
+        "downloads": 57210,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -677,52 +675,6 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": null,
-      "answering_now": false,
-      "zo_score": null,
-      "zo_rank": null
-    },
-    {
-      "id": "nvidia/nemotron-3.5-content-safety:free",
-      "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-      "provider": "Nvidia",
-      "context_window": 128000,
-      "max_output": 8192,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": false,
-      "supports_structured_outputs": false,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": null,
-      "source": "https://openrouter.ai/nvidia/nemotron-3.5-content-safety:free",
-      "created": 1780581864,
-      "kind": "chat",
-      "rank": null,
-      "score": null,
-      "quality": null,
-      "basis": null,
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "no tool calling"
-      ],
-      "excluded": "not a chat model (classifier/embedding)",
-      "benchmarks": null,
-      "arena": null,
-      "hf": {
-        "paramsB": 4.3,
-        "downloads": 45734,
-        "pipelineTag": null
-      },
-      "served_by": [
-        "Nvidia"
-      ],
-      "data_use": "may-train",
-      "retention": "unknown",
       "health": null,
       "answering_now": false,
       "zo_score": null,

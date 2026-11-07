@@ -35,25 +35,26 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Fri, 06 Nov 2026 11:54:48 UTC** · 13 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+> Última actualización: **Sat, 07 Nov 2026 10:55:35 UTC** · 14 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
 >
 > **4 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 
 | # | Modelo | Puntuación | Medido con | ¿Entrena con tus prompts? | Contexto | Salida máx. | Tools | Entrada | Hoy | Fuente |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 2 | **Google: Gemma 4 31B** | 53 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 1 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ⚠️ degradado | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 2 | **Google: Gemma 4 31B** | 53 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
 | 3 | **NVIDIA: Nemotron 3 Ultra** | 36 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 4 | **Cohere: North Mini Code** | 28 | benchmarks | ✅ no · guarda 30 días | 256K | 64K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
-| 5 | **XingChen: Xing4.0 29B A4B** | 24 | estimación (tamaño) | ✅ no · retención cero | 262K | 236K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free) |
-| 6 | **Recursive: Flint** | 22 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 236K | ✓ | 💬 text | ⚠️ degradado | [enlace](https://openrouter.ai/recursive/flint-v1.0:free) |
-| 7 | **NVIDIA: Nemotron 3.5 Super VL** | 22 | benchmarks | 🔴 puede entrenar | 1M | 131K | ✓ | 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
+| 4 | **XingChen: Xing4.0 29B A4B** | 24 | estimación (tamaño) | ✅ no · retención cero | 262K | 236K | ✓ | 💬 text | ⚠️ degradado | [enlace](https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free) |
+| 5 | **Recursive: Flint** | 22 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 236K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/recursive/flint-v1.0:free) |
+| 6 | **NVIDIA: Nemotron 3.5 Super VL** | 22 | benchmarks | 🔴 puede entrenar | 1M | 131K | ✓ | 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
+| 7 | **Cohere: North Mini Code** | 18 | benchmarks | ✅ no · guarda 30 días | 256K | 64K | ✓ | 💬 text | ⚠️ degradado | [enlace](https://openrouter.ai/cohere/north-mini-code:free) |
 | 8 | **NVIDIA: Nemotron 3.5 Lightning** | 17 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
-| 9 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ se retira el 2026-12-31</sub> | 13 | estimación (tamaño) | ✅ no · retención desconocida | 512K | 461K | ✓ | 🖼️ vision | ⚠️ degradado | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
+| 9 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ se retira el 2026-12-31</sub> | 13 | estimación (tamaño) | ✅ no · retención desconocida | 512K | 461K | ✓ | 🖼️ vision | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
 | 10 | **NVIDIA: Nemotron 3 Nano Omni** | 12 | benchmarks | 🔴 puede entrenar | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
 | 11 | **Crouton Alpha** | 11 | estimación (tamaño) | — | 1M | 944K | ✓ | 🖼️ vision, video, 📄 files, audio | — | [enlace](https://openrouter.ai/stealth/crouton-alpha) |
-| 12 | **LiquidAI: LFM2.5-2.6B** | 6 | benchmarks | 🔴 puede entrenar | 66K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
-| 13 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [enlace](https://pollinations.ai) |
+| 12 | **LiquidAI: LFM3-1.7B** | 8 | estimación (tamaño) | 🔴 puede entrenar | 262K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-3-1.7b:free) |
+| 13 | **LiquidAI: LFM2.5-2.6B** <br><sub>⏳ se retira el 2026-11-13</sub> | 4 | benchmarks | 🔴 puede entrenar | 66K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-2.5-2.6b:free) |
+| 14 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [enlace](https://pollinations.ai) |
 
 2 modelos gratuitos que no son de chat (música, imagen, audio, clasificadores):
 

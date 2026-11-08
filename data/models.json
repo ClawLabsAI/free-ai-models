@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T10:55:35.389Z",
+  "updated_at": "2026-11-08T11:07:11.366Z",
   "total_free_models": 16,
   "scoring": {
     "code": "scoring/score.js",
@@ -63,7 +63,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 5645949,
+        "downloads": 5570341,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -71,8 +71,8 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "sick",
-      "answering_now": false,
+      "health": "ok",
+      "answering_now": true,
       "zo_score": 56,
       "zo_rank": 1
     },
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 7396447,
+        "downloads": 7222936,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -126,7 +126,7 @@
       "data_use": "no-training",
       "retention": 55,
       "health": "ok",
-      "answering_now": true,
+      "answering_now": false,
       "zo_score": 53,
       "zo_rank": 2
     },
@@ -163,7 +163,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1122228,
+        "downloads": 1074381,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -207,7 +207,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.2,
-        "downloads": 5343,
+        "downloads": 5293,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -215,7 +215,7 @@
       ],
       "data_use": "no-training",
       "retention": "zero",
-      "health": "sick",
+      "health": "ok",
       "answering_now": false,
       "zo_score": 24,
       "zo_rank": 4
@@ -252,7 +252,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 42721,
+        "downloads": 44352,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -344,7 +344,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8528,
+        "downloads": 8425,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -352,7 +352,7 @@
       ],
       "data_use": "no-training",
       "retention": 30,
-      "health": "sick",
+      "health": "ok",
       "answering_now": false,
       "zo_score": 18,
       "zo_rank": 7
@@ -390,7 +390,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 1094389,
+        "downloads": 1087949,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -429,7 +429,7 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 54d"
+        "expires in 53d"
       ],
       "excluded": null,
       "benchmarks": null,
@@ -483,7 +483,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 130604,
+        "downloads": 124953,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -562,7 +562,7 @@
       "kind": "chat",
       "rank": 12,
       "score": 7.7,
-      "quality": 8.3,
+      "quality": 8.4,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -573,7 +573,7 @@
       "arena": null,
       "hf": {
         "paramsB": 1.7,
-        "downloads": 70034,
+        "downloads": 73562,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -612,7 +612,7 @@
       "notes": [
         "benchmarks 1/3 (rest imputed)",
         "always reasons (slow first token)",
-        "expires in 6d"
+        "expires in 5d"
       ],
       "excluded": null,
       "benchmarks": {
@@ -623,7 +623,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 53680,
+        "downloads": 51984,
         "pipelineTag": "text-generation"
       },
       "served_by": [

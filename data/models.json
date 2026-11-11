@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T12:18:03.355Z",
+  "updated_at": "2026-11-11T11:43:58.006Z",
   "total_free_models": 16,
   "scoring": {
     "code": "scoring/score.js",
@@ -63,7 +63,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 5439703,
+        "downloads": 5365784,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -71,8 +71,8 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "ok",
-      "answering_now": true,
+      "health": "sick",
+      "answering_now": false,
       "zo_score": 56,
       "zo_rank": 1
     },
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 6961902,
+        "downloads": 6806282,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -126,7 +126,7 @@
       "data_use": "no-training",
       "retention": 55,
       "health": "ok",
-      "answering_now": false,
+      "answering_now": true,
       "zo_score": 52,
       "zo_rank": 2
     },
@@ -182,6 +182,52 @@
       "zo_rank": 3
     },
     {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "provider": "Dots studio",
+      "context_window": 512000,
+      "max_output": 460800,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": true,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-12-31",
+      "source": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+      "created": 1786680361,
+      "kind": "chat",
+      "rank": 4,
+      "score": 38,
+      "quality": 35.2,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "expires in 50d"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": {
+        "paramsB": 288.4,
+        "downloads": 4669,
+        "pipelineTag": "image-text-to-text"
+      },
+      "served_by": [
+        "AtlasCloud"
+      ],
+      "data_use": "no-training",
+      "retention": "unknown",
+      "health": "ok",
+      "answering_now": false,
+      "zo_score": 38,
+      "zo_rank": 4
+    },
+    {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "name": "NVIDIA: Nemotron 3 Ultra (free)",
       "provider": "Nvidia",
@@ -200,7 +246,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
       "created": 1780551208,
       "kind": "chat",
-      "rank": 4,
+      "rank": 5,
       "score": 35.4,
       "quality": 33.7,
       "basis": "benchmarks",
@@ -214,7 +260,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1080025,
+        "downloads": 1058783,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -225,50 +271,6 @@
       "health": null,
       "answering_now": false,
       "zo_score": 35,
-      "zo_rank": 4
-    },
-    {
-      "id": "xingchen-agi/xing4.0-29b-a4b:free",
-      "name": "XingChen: Xing4.0 29B A4B (free)",
-      "provider": "Xingchen agi",
-      "context_window": 262144,
-      "max_output": 235929,
-      "modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": true,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": null,
-      "source": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
-      "created": 1792177496,
-      "kind": "chat",
-      "rank": 5,
-      "score": 23.7,
-      "quality": 21.9,
-      "basis": "prior",
-      "notes": [
-        "unmeasured: prior from size and adoption"
-      ],
-      "excluded": null,
-      "benchmarks": null,
-      "arena": null,
-      "hf": {
-        "paramsB": 31.2,
-        "downloads": 5239,
-        "pipelineTag": "text-generation"
-      },
-      "served_by": [
-        "Phala"
-      ],
-      "data_use": "no-training",
-      "retention": "zero",
-      "health": "ok",
-      "answering_now": false,
-      "zo_score": 24,
       "zo_rank": 5
     },
     {
@@ -303,7 +305,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 47837,
+        "downloads": 49593,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -351,7 +353,11 @@
         "agentic": null
       },
       "arena": null,
-      "hf": null,
+      "hf": {
+        "paramsB": 124.5,
+        "downloads": 76501,
+        "pipelineTag": "image-text-to-text"
+      },
       "served_by": [
         "Nvidia"
       ],
@@ -395,7 +401,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8245,
+        "downloads": 8238,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -441,7 +447,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 1070415,
+        "downloads": 1043242,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -453,48 +459,6 @@
       "answering_now": false,
       "zo_score": 16,
       "zo_rank": 9
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "provider": "Dots studio",
-      "context_window": 512000,
-      "max_output": 460800,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": true,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-12-31",
-      "source": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
-      "created": 1786680361,
-      "kind": "chat",
-      "rank": 10,
-      "score": 13,
-      "quality": 12,
-      "basis": "prior",
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "expires in 51d"
-      ],
-      "excluded": null,
-      "benchmarks": null,
-      "arena": null,
-      "hf": null,
-      "served_by": [
-        "AtlasCloud"
-      ],
-      "data_use": "no-training",
-      "retention": "unknown",
-      "health": "ok",
-      "answering_now": false,
-      "zo_score": 13,
-      "zo_rank": 10
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -518,7 +482,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "created": 1777393095,
       "kind": "chat",
-      "rank": 11,
+      "rank": 10,
       "score": 11.7,
       "quality": 11.1,
       "basis": "benchmarks",
@@ -534,7 +498,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 120407,
+        "downloads": 116202,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -545,6 +509,47 @@
       "health": null,
       "answering_now": false,
       "zo_score": 12,
+      "zo_rank": 10
+    },
+    {
+      "id": "baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "provider": "Baidu",
+      "context_window": 1024000,
+      "max_output": 921600,
+      "modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": true,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
+      "source": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+      "created": 1794333533,
+      "kind": "chat",
+      "rank": 11,
+      "score": 11,
+      "quality": 12,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "always reasons (slow first token)"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": null,
+      "served_by": [
+        "Baidu"
+      ],
+      "data_use": null,
+      "retention": null,
+      "health": null,
+      "answering_now": false,
+      "zo_score": 11,
       "zo_rank": 11
     },
     {
@@ -567,7 +572,7 @@
       "created": 1794009477,
       "kind": "chat",
       "rank": 12,
-      "score": 7.7,
+      "score": 7.8,
       "quality": 8.4,
       "basis": "prior",
       "notes": [
@@ -579,7 +584,7 @@
       "arena": null,
       "hf": {
         "paramsB": 1.7,
-        "downloads": 82718,
+        "downloads": 85615,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -618,7 +623,7 @@
       "notes": [
         "benchmarks 1/3 (rest imputed)",
         "always reasons (slow first token)",
-        "expires in 3d"
+        "expires in 2d"
       ],
       "excluded": null,
       "benchmarks": {
@@ -629,7 +634,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 47737,
+        "downloads": 47286,
         "pipelineTag": "text-generation"
       },
       "served_by": [

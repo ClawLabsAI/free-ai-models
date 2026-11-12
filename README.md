@@ -34,14 +34,14 @@ No key needed to read any of it. No scraping: only public, official APIs.
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Wed, 11 Nov 2026 11:43:58 UTC** · 14 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
+> Last updated: **Thu, 12 Nov 2026 12:20:40 UTC** · 14 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
 >
 > **5 of today's top 10** are served only by providers that may train on your prompts.
 
 | # | Model | Score | Measured by | Trains on your prompts? | Context | Max output | Tools | Input | Today | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ⚠️ degraded | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 2 | **Google: Gemma 4 31B** | 52 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 1 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 2 | **Google: Gemma 4 31B** | 52 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ✅ up | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
 | 3 | **Thinking Machines: Inkling 2 Small** | 52 | benchmarks + Arena | 🔴 may train | 1M | 131K | ✓ | 🖼️ vision | — | [link](https://openrouter.ai/thinkingmachines/inkling-2-small:free) |
 | 4 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ retiring 2026-12-31</sub> | 38 | estimate (size) | ✅ no · retention unknown | 512K | 461K | ✓ | 🖼️ vision | ✅ up | [link](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
 | 5 | **NVIDIA: Nemotron 3 Ultra** | 35 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |

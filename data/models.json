@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T11:43:58.006Z",
+  "updated_at": "2026-11-12T12:20:40.563Z",
   "total_free_models": 16,
   "scoring": {
     "code": "scoring/score.js",
@@ -63,7 +63,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 5365784,
+        "downloads": 5304019,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -71,8 +71,8 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "sick",
-      "answering_now": false,
+      "health": "ok",
+      "answering_now": true,
       "zo_score": 56,
       "zo_rank": 1
     },
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 6806282,
+        "downloads": 6692367,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -126,7 +126,7 @@
       "data_use": "no-training",
       "retention": 55,
       "health": "ok",
-      "answering_now": true,
+      "answering_now": false,
       "zo_score": 52,
       "zo_rank": 2
     },
@@ -207,14 +207,14 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 50d"
+        "expires in 49d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 288.4,
-        "downloads": 4669,
+        "downloads": 4655,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -260,7 +260,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1058783,
+        "downloads": 1050000,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -293,7 +293,7 @@
       "created": 1792622765,
       "kind": "chat",
       "rank": 6,
-      "score": 21.9,
+      "score": 22,
       "quality": 24.6,
       "basis": "prior",
       "notes": [
@@ -305,7 +305,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 49593,
+        "downloads": 51087,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -355,7 +355,7 @@
       "arena": null,
       "hf": {
         "paramsB": 124.5,
-        "downloads": 76501,
+        "downloads": 78243,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -401,7 +401,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8238,
+        "downloads": 8200,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -447,7 +447,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 1043242,
+        "downloads": 1013360,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -498,7 +498,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 116202,
+        "downloads": 113314,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -573,7 +573,7 @@
       "kind": "chat",
       "rank": 12,
       "score": 7.8,
-      "quality": 8.4,
+      "quality": 8.5,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -584,7 +584,7 @@
       "arena": null,
       "hf": {
         "paramsB": 1.7,
-        "downloads": 85615,
+        "downloads": 89946,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -623,7 +623,7 @@
       "notes": [
         "benchmarks 1/3 (rest imputed)",
         "always reasons (slow first token)",
-        "expires in 2d"
+        "expires in 1d"
       ],
       "excluded": null,
       "benchmarks": {
@@ -634,7 +634,7 @@
       "arena": null,
       "hf": {
         "paramsB": 2.7,
-        "downloads": 47286,
+        "downloads": 46746,
         "pipelineTag": "text-generation"
       },
       "served_by": [

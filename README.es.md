@@ -35,14 +35,14 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Wed, 11 Nov 2026 11:43:58 UTC** · 14 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+> Última actualización: **Thu, 12 Nov 2026 12:20:40 UTC** · 14 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
 >
 > **5 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 
 | # | Modelo | Puntuación | Medido con | ¿Entrena con tus prompts? | Contexto | Salida máx. | Tools | Entrada | Hoy | Fuente |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ⚠️ degradado | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 2 | **Google: Gemma 4 31B** | 52 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 1 | **Google: Gemma 4 26B A4B** | 56 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 2 | **Google: Gemma 4 31B** | 52 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
 | 3 | **Thinking Machines: Inkling 2 Small** | 52 | benchmarks + Arena | 🔴 puede entrenar | 1M | 131K | ✓ | 🖼️ vision | — | [enlace](https://openrouter.ai/thinkingmachines/inkling-2-small:free) |
 | 4 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ se retira el 2026-12-31</sub> | 38 | estimación (tamaño) | ✅ no · retención desconocida | 512K | 461K | ✓ | 🖼️ vision | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
 | 5 | **NVIDIA: Nemotron 3 Ultra** | 35 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |

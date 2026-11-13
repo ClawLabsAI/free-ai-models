@@ -170,8 +170,14 @@ export async function fetchDataUse(modelIds) {
 
 // ── LM Arena ─────────────────────────────────────────────────────────────────
 
-const ARENA_PARQUET_URL =
-  "https://huggingface.co/api/datasets/lmarena-ai/leaderboard-dataset/parquet/text/latest/0.parquet";
+// The dataset's own file first. The second URL is Hugging Face's automatic
+// parquet conversion, which we used alone until 2026-11-13, when its job failed
+// ("terminated due to a temporary spike in resource usage") and the day's
+// ranking went out without Arena.
+const ARENA_PARQUET_URLS = [
+  "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/resolve/main/text/latest-00000-of-00001.parquet",
+  "https://huggingface.co/api/datasets/lmarena-ai/leaderboard-dataset/parquet/text/latest/0.parquet",
+];
 const ARENA_CATEGORIES = new Set(["overall", "coding", "instruction_following", "spanish"]);
 
 /**
@@ -209,8 +215,16 @@ export function sameArenaModel(want, arenaName) {
 
 /** The text leaderboard (one ~600 KB file), or null if unavailable. */
 export async function fetchArenaTable() {
+  for (const url of ARENA_PARQUET_URLS) {
+    const table = await fetchArenaParquet(url);
+    if (table) return table;
+  }
+  return null;
+}
+
+async function fetchArenaParquet(url) {
   try {
-    const res = await fetch(ARENA_PARQUET_URL, { headers: UA, signal: AbortSignal.timeout(TIMEOUT_MS) });
+    const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(TIMEOUT_MS) });
     if (!res.ok) return null;
     const rows = await parquetReadObjects({
       file: await res.arrayBuffer(),

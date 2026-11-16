@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T11:48:39.076Z",
+  "updated_at": "2026-11-16T12:31:01.017Z",
   "total_free_models": 17,
   "scoring": {
     "code": "scoring/score.js",
@@ -63,7 +63,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 5137386,
+        "downloads": 5102751,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 6435249,
+        "downloads": 6350048,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -172,7 +172,7 @@
       },
       "hf": {
         "paramsB": 594.1,
-        "downloads": 7329,
+        "downloads": 16918,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -206,19 +206,19 @@
       "created": 1786680361,
       "kind": "chat",
       "rank": 4,
-      "score": 38.1,
+      "score": 38,
       "quality": 35.2,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 46d"
+        "expires in 45d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 288.4,
-        "downloads": 4863,
+        "downloads": 4534,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -264,7 +264,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 1017410,
+        "downloads": 1018914,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -309,7 +309,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 56105,
+        "downloads": 57853,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -359,7 +359,7 @@
       "arena": null,
       "hf": {
         "paramsB": 124.5,
-        "downloads": 76856,
+        "downloads": 75577,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -405,7 +405,7 @@
       "arena": null,
       "hf": {
         "paramsB": 30.5,
-        "downloads": 8101,
+        "downloads": 8372,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -451,7 +451,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 963117,
+        "downloads": 962098,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -584,7 +584,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 103261,
+        "downloads": 100448,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -658,8 +658,8 @@
       "created": 1794009477,
       "kind": "chat",
       "rank": 14,
-      "score": 7.8,
-      "quality": 8.5,
+      "score": 7.9,
+      "quality": 8.6,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -670,7 +670,7 @@
       "arena": null,
       "hf": {
         "paramsB": 1.7,
-        "downloads": 103744,
+        "downloads": 106961,
         "pipelineTag": "text-generation"
       },
       "served_by": [

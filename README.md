@@ -34,30 +34,28 @@ No key needed to read any of it. No scraping: only public, official APIs.
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Thu, 19 Nov 2026 12:37:24 UTC** · 14 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
+> Last updated: **Fri, 20 Nov 2026 12:36:56 UTC** · 13 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
 >
 > **3 of today's top 10** are served only by providers that may train on your prompts.
 
 | # | Model | Score | Measured by | Trains on your prompts? | Context | Max output | Tools | Input | Today | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Google: Gemma 4 26B A4B** | 76 | Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ⚠️ degraded | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 2 | **Google: Gemma 4 31B** | 43 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 1 | **Google: Gemma 4 26B A4B** | 76 | Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 2 | **Google: Gemma 4 31B** | 43 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ✅ up | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
 | 3 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ retiring 2026-12-31</sub> | 38 | estimate (size) | ✅ no · retention unknown | 512K | 461K | ✓ | 🖼️ vision | ✅ up | [link](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
 | 4 | **NVIDIA: Nemotron 3 Nano Omni** | 25 | estimate (size) | 🔴 may train | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
 | 5 | **Recursive: Flint** | 22 | estimate (size) | ✅ no · retention unknown | 262K | 236K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/recursive/flint-v1.0:free) |
 | 6 | **NVIDIA: Nemotron 3.5 Super VL** | 20 | benchmarks | 🔴 may train | 1M | 131K | ✓ | 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
 | 7 | **NVIDIA: Nemotron 3 Ultra** | 17 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 8 | **inclusionAI: Ling 3.2 Flash** | 13 | estimate (size) | — | 1M | 262K | ✓ | 🖼️ vision | — | [link](https://openrouter.ai/inclusionai/ling-3.2-flash:free) |
-| 9 | **Particle AI: Particle-1** | 13 | estimate (size) | — | 1M | 131K | ✓ | 🖼️ vision | — | [link](https://openrouter.ai/particle-ai/particle-1:free) |
-| 10 | **Baidu: ERNIE-5.5-Flash-Preview** | 11 | estimate (size) | — | 1M | 922K | ✓ | 💬 text | — | [link](https://openrouter.ai/baidu/ernie-5.5-flash-preview:free) |
+| 8 | **inclusionAI: Ling 3.2 Flash** | 13 | estimate (size) | — | 1M | 262K | ✓ | 🖼️ vision | ✅ up | [link](https://openrouter.ai/inclusionai/ling-3.2-flash:free) |
+| 9 | **Particle AI: Particle-1** | 13 | estimate (size) | — | 1M | 131K | ✓ | 🖼️ vision | ⚠️ degraded | [link](https://openrouter.ai/particle-ai/particle-1:free) |
+| 10 | **Baidu: ERNIE-5.5-Flash-Preview** | 11 | estimate (size) | — | 1M | 922K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/baidu/ernie-5.5-flash-preview:free) |
 | 11 | **NVIDIA: Nemotron 3.5 Lightning** | 8 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 12 | **LiquidAI: LFM3-1.7B** | 7 | benchmarks | 🔴 may train | 262K | 8K | ✓ | 💬 text | — | [link](https://openrouter.ai/liquid/lfm-3-1.7b:free) |
-| 13 | **Cohere: North Mini Code** | 5 | benchmarks | ✅ no · kept 30 days | 256K | 64K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/cohere/north-mini-code:free) |
-| 14 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [link](https://pollinations.ai) |
+| 13 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [link](https://pollinations.ai) |
 
-3 free models that are not chat models (music, image, audio, classifiers):
+2 free models that are not chat models (music, image, audio, classifiers):
 
-- [Thinking Machines: Inkling 2 Small (free)](https://openrouter.ai/thinkingmachines/inkling-2-small:free)
 - [Google: Lyria 3 Pro Preview](https://openrouter.ai/google/lyria-3-pro-preview)
 - [Google: Lyria 3 Clip Preview](https://openrouter.ai/google/lyria-3-clip-preview)
 <!-- TABLE_END -->

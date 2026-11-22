@@ -34,7 +34,7 @@ No key needed to read any of it. No scraping: only public, official APIs.
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Sun, 22 Nov 2026 12:21:13 UTC** · 12 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
+> Last updated: **Sun, 22 Nov 2026 14:14:25 UTC** · 12 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
 >
 > **4 of today's top 10** are served only by providers that may train on your prompts.
 

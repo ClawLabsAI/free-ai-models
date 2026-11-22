@@ -34,7 +34,7 @@ No key needed to read any of it. No scraping: only public, official APIs.
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Sat, 21 Nov 2026 12:17:01 UTC** · 12 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
+> Last updated: **Sun, 22 Nov 2026 12:21:13 UTC** · 12 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
 >
 > **4 of today's top 10** are served only by providers that may train on your prompts.
 
@@ -47,7 +47,7 @@ No key needed to read any of it. No scraping: only public, official APIs.
 | 5 | **NVIDIA: Nemotron 3.5 Super VL** | 20 | benchmarks | 🔴 may train | 1M | 131K | ✓ | 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
 | 6 | **NVIDIA: Nemotron 3 Ultra** | 17 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 7 | **inclusionAI: Ling 3.2 Flash** | 13 | estimate (size) | — | 1M | 262K | ✓ | 🖼️ vision | ✅ up | [link](https://openrouter.ai/inclusionai/ling-3.2-flash:free) |
-| 8 | **Particle AI: Particle-1** | 13 | estimate (size) | — | 1M | 131K | ✓ | 🖼️ vision | — | [link](https://openrouter.ai/particle-ai/particle-1:free) |
+| 8 | **Particle AI: Particle-1** | 13 | estimate (size) | — | 1M | 131K | ✓ | 🖼️ vision | ⚠️ degraded | [link](https://openrouter.ai/particle-ai/particle-1:free) |
 | 9 | **Baidu: ERNIE-5.5-Flash-Preview** | 11 | estimate (size) | — | 1M | 922K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/baidu/ernie-5.5-flash-preview:free) |
 | 10 | **NVIDIA: Nemotron 3.5 Lightning** | 8 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 11 | **LiquidAI: LFM3-1.7B** | 7 | benchmarks | 🔴 may train | 262K | 8K | ✓ | 💬 text | — | [link](https://openrouter.ai/liquid/lfm-3-1.7b:free) |

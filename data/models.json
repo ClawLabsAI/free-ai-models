@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T12:17:01.666Z",
+  "updated_at": "2026-11-22T12:21:13.733Z",
   "total_free_models": 14,
   "scoring": {
     "code": "scoring/score.js",
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 4833741,
+        "downloads": 4767226,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 5969763,
+        "downloads": 5832821,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -168,7 +168,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 93853,
+        "downloads": 90715,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -213,7 +213,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 62399,
+        "downloads": 61297,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -263,7 +263,7 @@
       "arena": null,
       "hf": {
         "paramsB": 124.5,
-        "downloads": 80965,
+        "downloads": 79008,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -311,7 +311,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 965071,
+        "downloads": 918295,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -401,7 +401,7 @@
       ],
       "data_use": null,
       "retention": null,
-      "health": null,
+      "health": "sick",
       "answering_now": false,
       "zo_score": 13,
       "zo_rank": 8
@@ -482,7 +482,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 861240,
+        "downloads": 793684,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -531,7 +531,7 @@
       "arena": null,
       "hf": {
         "paramsB": 1.7,
-        "downloads": 135129,
+        "downloads": 142392,
         "pipelineTag": "text-generation"
       },
       "served_by": [

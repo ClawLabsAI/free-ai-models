@@ -35,7 +35,7 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Sat, 21 Nov 2026 12:17:01 UTC** · 12 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+> Última actualización: **Sun, 22 Nov 2026 12:21:13 UTC** · 12 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
 >
 > **4 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 
@@ -48,7 +48,7 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 | 5 | **NVIDIA: Nemotron 3.5 Super VL** | 20 | benchmarks | 🔴 puede entrenar | 1M | 131K | ✓ | 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
 | 6 | **NVIDIA: Nemotron 3 Ultra** | 17 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
 | 7 | **inclusionAI: Ling 3.2 Flash** | 13 | estimación (tamaño) | — | 1M | 262K | ✓ | 🖼️ vision | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.2-flash:free) |
-| 8 | **Particle AI: Particle-1** | 13 | estimación (tamaño) | — | 1M | 131K | ✓ | 🖼️ vision | — | [enlace](https://openrouter.ai/particle-ai/particle-1:free) |
+| 8 | **Particle AI: Particle-1** | 13 | estimación (tamaño) | — | 1M | 131K | ✓ | 🖼️ vision | ⚠️ degradado | [enlace](https://openrouter.ai/particle-ai/particle-1:free) |
 | 9 | **Baidu: ERNIE-5.5-Flash-Preview** | 11 | estimación (tamaño) | — | 1M | 922K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/baidu/ernie-5.5-flash-preview:free) |
 | 10 | **NVIDIA: Nemotron 3.5 Lightning** | 8 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 11 | **LiquidAI: LFM3-1.7B** | 7 | benchmarks | 🔴 puede entrenar | 262K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-3-1.7b:free) |

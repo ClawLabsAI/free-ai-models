@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22T12:21:13.733Z",
-  "total_free_models": 14,
+  "updated_at": "2026-11-23T14:11:17.184Z",
+  "total_free_models": 15,
   "scoring": {
     "code": "scoring/score.js",
     "benchmark_maxima": {
@@ -56,12 +56,12 @@
         "overall": 1434,
         "coding": 1447,
         "instruction_following": 1421,
-        "spanish": 1416,
-        "votes": 6063
+        "spanish": 1418,
+        "votes": 6060
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 4767226,
+        "downloads": 4701565,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -96,8 +96,8 @@
       "created": 1775148486,
       "kind": "chat",
       "rank": 2,
-      "score": 42.5,
-      "quality": 40.5,
+      "score": 42.7,
+      "quality": 40.6,
       "basis": "benchmarks+arena",
       "notes": [
         "benchmarks 1/3 (rest imputed)"
@@ -109,15 +109,15 @@
         "agentic": null
       },
       "arena": {
-        "overall": 1442,
+        "overall": 1443,
         "coding": 1459,
-        "instruction_following": 1432,
-        "spanish": 1443,
-        "votes": 6121
+        "instruction_following": 1434,
+        "spanish": 1444,
+        "votes": 6118
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 5832821,
+        "downloads": 5678445,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -129,6 +129,52 @@
       "answering_now": false,
       "zo_score": 43,
       "zo_rank": 2
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "provider": "Dots studio",
+      "context_window": 512000,
+      "max_output": 460800,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": true,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": "2026-12-31",
+      "source": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
+      "created": 1786680361,
+      "kind": "chat",
+      "rank": 3,
+      "score": 37.9,
+      "quality": 35.1,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "expires in 38d"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": {
+        "paramsB": 288.4,
+        "downloads": 3696,
+        "pipelineTag": "image-text-to-text"
+      },
+      "served_by": [
+        "AtlasCloud"
+      ],
+      "data_use": "no-training",
+      "retention": "unknown",
+      "health": null,
+      "answering_now": false,
+      "zo_score": 38,
+      "zo_rank": 3
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -152,7 +198,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "created": 1777393095,
       "kind": "chat",
-      "rank": 3,
+      "rank": 4,
       "score": 25,
       "quality": 23.8,
       "basis": "prior",
@@ -168,7 +214,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 90715,
+        "downloads": 88155,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -179,7 +225,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 25,
-      "zo_rank": 3
+      "zo_rank": 4
     },
     {
       "id": "recursive/flint-v1.0:free",
@@ -200,7 +246,7 @@
       "source": "https://openrouter.ai/recursive/flint-v1.0:free",
       "created": 1792622765,
       "kind": "chat",
-      "rank": 4,
+      "rank": 5,
       "score": 22.1,
       "quality": 24.7,
       "basis": "prior",
@@ -213,7 +259,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 61297,
+        "downloads": 61593,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -224,7 +270,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 22,
-      "zo_rank": 4
+      "zo_rank": 5
     },
     {
       "id": "nvidia/nemotron-3.5-super-vl:free",
@@ -247,7 +293,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
       "created": 1792076662,
       "kind": "chat",
-      "rank": 5,
+      "rank": 6,
       "score": 19.8,
       "quality": 18.3,
       "basis": "benchmarks",
@@ -263,7 +309,7 @@
       "arena": null,
       "hf": {
         "paramsB": 124.5,
-        "downloads": 79008,
+        "downloads": 77219,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -274,7 +320,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 20,
-      "zo_rank": 5
+      "zo_rank": 6
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -295,7 +341,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
       "created": 1780551208,
       "kind": "chat",
-      "rank": 6,
+      "rank": 7,
       "score": 16.7,
       "quality": 15.9,
       "basis": "benchmarks",
@@ -311,7 +357,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 918295,
+        "downloads": 849867,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -322,7 +368,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 17,
-      "zo_rank": 6
+      "zo_rank": 7
     },
     {
       "id": "inclusionai/ling-3.2-flash:free",
@@ -344,7 +390,7 @@
       "source": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
       "created": 1794591958,
       "kind": "chat",
-      "rank": 7,
+      "rank": 8,
       "score": 13,
       "quality": 12,
       "basis": "prior",
@@ -363,7 +409,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 13,
-      "zo_rank": 7
+      "zo_rank": 8
     },
     {
       "id": "particle-ai/particle-1:free",
@@ -385,7 +431,7 @@
       "source": "https://openrouter.ai/particle-ai/particle-1:free",
       "created": 1793207893,
       "kind": "chat",
-      "rank": 8,
+      "rank": 9,
       "score": 13,
       "quality": 12,
       "basis": "prior",
@@ -401,10 +447,10 @@
       ],
       "data_use": null,
       "retention": null,
-      "health": "sick",
+      "health": null,
       "answering_now": false,
       "zo_score": 13,
-      "zo_rank": 8
+      "zo_rank": 9
     },
     {
       "id": "baidu/ernie-5.5-flash-preview:free",
@@ -425,7 +471,7 @@
       "source": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
       "created": 1794333533,
       "kind": "chat",
-      "rank": 9,
+      "rank": 10,
       "score": 11,
       "quality": 12,
       "basis": "prior",
@@ -445,7 +491,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 11,
-      "zo_rank": 9
+      "zo_rank": 10
     },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
@@ -466,7 +512,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
       "created": 1786452751,
       "kind": "chat",
-      "rank": 10,
+      "rank": 11,
       "score": 7.8,
       "quality": 7.4,
       "basis": "benchmarks",
@@ -482,7 +528,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 793684,
+        "downloads": 701585,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -493,7 +539,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 8,
-      "zo_rank": 10
+      "zo_rank": 11
     },
     {
       "id": "liquid/lfm-3-1.7b:free",
@@ -514,7 +560,7 @@
       "source": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
       "created": 1794009477,
       "kind": "chat",
-      "rank": 11,
+      "rank": 12,
       "score": 7.4,
       "quality": 8.1,
       "basis": "benchmarks",
@@ -531,7 +577,7 @@
       "arena": null,
       "hf": {
         "paramsB": 1.7,
-        "downloads": 142392,
+        "downloads": 146872,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -542,7 +588,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 7,
-      "zo_rank": 11
+      "zo_rank": 12
     },
     {
       "id": "google/lyria-3-pro-preview",

@@ -35,7 +35,7 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Mon, 23 Nov 2026 14:11:17 UTC** · 13 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+> Última actualización: **Tue, 24 Nov 2026 14:39:09 UTC** · 13 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
 >
 > **3 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 
@@ -43,14 +43,14 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | **Google: Gemma 4 26B A4B** | 76 | Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ▶ respondiendo | [enlace](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
 | 2 | **Google: Gemma 4 31B** | 43 | benchmarks + Arena | ✅ no · guarda 55 días | 262K | 33K | ✓ | 🖼️ vision, video | ✅ activo | [enlace](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 3 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ se retira el 2026-12-31</sub> | 38 | estimación (tamaño) | ✅ no · retención desconocida | 512K | 461K | ✓ | 🖼️ vision | — | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
-| 4 | **NVIDIA: Nemotron 3 Nano Omni** | 25 | estimación (tamaño) | 🔴 puede entrenar | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
-| 5 | **Recursive: Flint** | 22 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 236K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/recursive/flint-v1.0:free) |
-| 6 | **NVIDIA: Nemotron 3.5 Super VL** | 20 | benchmarks | 🔴 puede entrenar | 1M | 131K | ✓ | 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
-| 7 | **NVIDIA: Nemotron 3 Ultra** | 17 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 8 | **inclusionAI: Ling 3.2 Flash** | 13 | estimación (tamaño) | — | 1M | 262K | ✓ | 🖼️ vision | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.2-flash:free) |
-| 9 | **Particle AI: Particle-1** | 13 | estimación (tamaño) | — | 1M | 131K | ✓ | 🖼️ vision | — | [enlace](https://openrouter.ai/particle-ai/particle-1:free) |
-| 10 | **Baidu: ERNIE-5.5-Flash-Preview** | 11 | estimación (tamaño) | — | 1M | 922K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/baidu/ernie-5.5-flash-preview:free) |
+| 3 | **Dots Studio: Dots3-Note Preview** <br><sub>⏳ se retira el 2026-12-31</sub> | 38 | estimación (tamaño) | ✅ no · retención desconocida | 512K | 461K | ✓ | 🖼️ vision | ✅ activo | [enlace](https://openrouter.ai/dots-studio/dots-3-note-preview:free) |
+| 4 | **Baidu: ERNIE-5.5-Flash-Preview** | 32 | estimación (tamaño) | — | 1M | 922K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/baidu/ernie-5.5-flash-preview:free) |
+| 5 | **NVIDIA: Nemotron 3 Nano Omni** | 25 | estimación (tamaño) | 🔴 puede entrenar | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
+| 6 | **Recursive: Flint** | 22 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 236K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/recursive/flint-v1.0:free) |
+| 7 | **NVIDIA: Nemotron 3.5 Super VL** | 20 | benchmarks | 🔴 puede entrenar | 1M | 131K | ✓ | 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
+| 8 | **NVIDIA: Nemotron 3 Ultra** | 17 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
+| 9 | **inclusionAI: Ling 3.2 Flash** | 13 | estimación (tamaño) | — | 1M | 262K | ✓ | 🖼️ vision | ✅ activo | [enlace](https://openrouter.ai/inclusionai/ling-3.2-flash:free) |
+| 10 | **Particle AI: Particle-1** | 13 | estimación (tamaño) | — | 1M | 131K | ✓ | 🖼️ vision | ⚠️ degradado | [enlace](https://openrouter.ai/particle-ai/particle-1:free) |
 | 11 | **NVIDIA: Nemotron 3.5 Lightning** | 8 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 12 | **LiquidAI: LFM3-1.7B** | 7 | benchmarks | 🔴 puede entrenar | 262K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-3-1.7b:free) |
 | 13 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [enlace](https://pollinations.ai) |

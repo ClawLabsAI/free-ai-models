@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T14:11:17.184Z",
+  "updated_at": "2026-11-24T14:39:09.696Z",
   "total_free_models": 15,
   "scoring": {
     "code": "scoring/score.js",
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 4701565,
+        "downloads": 4648092,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 5678445,
+        "downloads": 5561845,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -156,14 +156,14 @@
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
-        "expires in 38d"
+        "expires in 37d"
       ],
       "excluded": null,
       "benchmarks": null,
       "arena": null,
       "hf": {
         "paramsB": 288.4,
-        "downloads": 3696,
+        "downloads": 3730,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -171,10 +171,55 @@
       ],
       "data_use": "no-training",
       "retention": "unknown",
-      "health": null,
+      "health": "ok",
       "answering_now": false,
       "zo_score": 38,
       "zo_rank": 3
+    },
+    {
+      "id": "baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "provider": "Baidu",
+      "context_window": 1024000,
+      "max_output": 921600,
+      "modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "supports_tools": true,
+      "supports_structured_outputs": true,
+      "rate_limit": "20 RPM · 50 RPD",
+      "expires": null,
+      "source": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+      "created": 1794333533,
+      "kind": "chat",
+      "rank": 4,
+      "score": 31.8,
+      "quality": 34.6,
+      "basis": "prior",
+      "notes": [
+        "unmeasured: prior from size and adoption",
+        "always reasons (slow first token)"
+      ],
+      "excluded": null,
+      "benchmarks": null,
+      "arena": null,
+      "hf": {
+        "paramsB": 299.6,
+        "downloads": 75,
+        "pipelineTag": "text-generation"
+      },
+      "served_by": [
+        "Baidu"
+      ],
+      "data_use": null,
+      "retention": null,
+      "health": "ok",
+      "answering_now": false,
+      "zo_score": 32,
+      "zo_rank": 4
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -198,7 +243,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "created": 1777393095,
       "kind": "chat",
-      "rank": 4,
+      "rank": 5,
       "score": 25,
       "quality": 23.8,
       "basis": "prior",
@@ -214,7 +259,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 88155,
+        "downloads": 89751,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -225,7 +270,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 25,
-      "zo_rank": 4
+      "zo_rank": 5
     },
     {
       "id": "recursive/flint-v1.0:free",
@@ -246,7 +291,7 @@
       "source": "https://openrouter.ai/recursive/flint-v1.0:free",
       "created": 1792622765,
       "kind": "chat",
-      "rank": 5,
+      "rank": 6,
       "score": 22.1,
       "quality": 24.7,
       "basis": "prior",
@@ -259,7 +304,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 61593,
+        "downloads": 61974,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -270,7 +315,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 22,
-      "zo_rank": 5
+      "zo_rank": 6
     },
     {
       "id": "nvidia/nemotron-3.5-super-vl:free",
@@ -293,7 +338,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
       "created": 1792076662,
       "kind": "chat",
-      "rank": 6,
+      "rank": 7,
       "score": 19.8,
       "quality": 18.3,
       "basis": "benchmarks",
@@ -309,7 +354,7 @@
       "arena": null,
       "hf": {
         "paramsB": 124.5,
-        "downloads": 77219,
+        "downloads": 78311,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -320,7 +365,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 20,
-      "zo_rank": 6
+      "zo_rank": 7
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -341,7 +386,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
       "created": 1780551208,
       "kind": "chat",
-      "rank": 7,
+      "rank": 8,
       "score": 16.7,
       "quality": 15.9,
       "basis": "benchmarks",
@@ -357,7 +402,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 849867,
+        "downloads": 798730,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -368,7 +413,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 17,
-      "zo_rank": 7
+      "zo_rank": 8
     },
     {
       "id": "inclusionai/ling-3.2-flash:free",
@@ -390,7 +435,7 @@
       "source": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
       "created": 1794591958,
       "kind": "chat",
-      "rank": 8,
+      "rank": 9,
       "score": 13,
       "quality": 12,
       "basis": "prior",
@@ -409,7 +454,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 13,
-      "zo_rank": 8
+      "zo_rank": 9
     },
     {
       "id": "particle-ai/particle-1:free",
@@ -431,7 +476,7 @@
       "source": "https://openrouter.ai/particle-ai/particle-1:free",
       "created": 1793207893,
       "kind": "chat",
-      "rank": 9,
+      "rank": 10,
       "score": 13,
       "quality": 12,
       "basis": "prior",
@@ -447,50 +492,9 @@
       ],
       "data_use": null,
       "retention": null,
-      "health": null,
+      "health": "sick",
       "answering_now": false,
       "zo_score": 13,
-      "zo_rank": 9
-    },
-    {
-      "id": "baidu/ernie-5.5-flash-preview:free",
-      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
-      "provider": "Baidu",
-      "context_window": 1024000,
-      "max_output": 921600,
-      "modalities": [
-        "text"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": true,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": null,
-      "source": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
-      "created": 1794333533,
-      "kind": "chat",
-      "rank": 10,
-      "score": 11,
-      "quality": 12,
-      "basis": "prior",
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "always reasons (slow first token)"
-      ],
-      "excluded": null,
-      "benchmarks": null,
-      "arena": null,
-      "hf": null,
-      "served_by": [
-        "Baidu"
-      ],
-      "data_use": null,
-      "retention": null,
-      "health": "ok",
-      "answering_now": false,
-      "zo_score": 11,
       "zo_rank": 10
     },
     {
@@ -528,7 +532,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 701585,
+        "downloads": 616844,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -577,7 +581,7 @@
       "arena": null,
       "hf": {
         "paramsB": 1.7,
-        "downloads": 146872,
+        "downloads": 148845,
         "pipelineTag": "text-generation"
       },
       "served_by": [

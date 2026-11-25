@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-24T14:39:09.696Z",
-  "total_free_models": 15,
+  "updated_at": "2026-11-25T13:59:37.436Z",
+  "total_free_models": 14,
   "scoring": {
     "code": "scoring/score.js",
     "benchmark_maxima": {
-      "intelligence": 64.6,
+      "intelligence": 64.8,
       "coding": 1,
       "agentic": 1
     },
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 4648092,
+        "downloads": 4586487,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -69,8 +69,8 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "ok",
-      "answering_now": true,
+      "health": "sick",
+      "answering_now": false,
       "zo_score": 76,
       "zo_rank": 1
     },
@@ -96,7 +96,7 @@
       "created": 1775148486,
       "kind": "chat",
       "rank": 2,
-      "score": 42.7,
+      "score": 42.6,
       "quality": 40.6,
       "basis": "benchmarks+arena",
       "notes": [
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 5561845,
+        "downloads": 5431138,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -125,56 +125,10 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 43,
       "zo_rank": 2
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "provider": "Dots studio",
-      "context_window": 512000,
-      "max_output": 460800,
-      "modalities": [
-        "text",
-        "image"
-      ],
-      "output_modalities": [
-        "text"
-      ],
-      "supports_tools": true,
-      "supports_structured_outputs": true,
-      "rate_limit": "20 RPM · 50 RPD",
-      "expires": "2026-12-31",
-      "source": "https://openrouter.ai/dots-studio/dots-3-note-preview:free",
-      "created": 1786680361,
-      "kind": "chat",
-      "rank": 3,
-      "score": 37.9,
-      "quality": 35.1,
-      "basis": "prior",
-      "notes": [
-        "unmeasured: prior from size and adoption",
-        "expires in 37d"
-      ],
-      "excluded": null,
-      "benchmarks": null,
-      "arena": null,
-      "hf": {
-        "paramsB": 288.4,
-        "downloads": 3730,
-        "pipelineTag": "image-text-to-text"
-      },
-      "served_by": [
-        "AtlasCloud"
-      ],
-      "data_use": "no-training",
-      "retention": "unknown",
-      "health": "ok",
-      "answering_now": false,
-      "zo_score": 38,
-      "zo_rank": 3
     },
     {
       "id": "baidu/ernie-5.5-flash-preview:free",
@@ -195,9 +149,9 @@
       "source": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
       "created": 1794333533,
       "kind": "chat",
-      "rank": 4,
-      "score": 31.8,
-      "quality": 34.6,
+      "rank": 3,
+      "score": 31.9,
+      "quality": 34.7,
       "basis": "prior",
       "notes": [
         "unmeasured: prior from size and adoption",
@@ -208,7 +162,7 @@
       "arena": null,
       "hf": {
         "paramsB": 299.6,
-        "downloads": 75,
+        "downloads": 1193,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -216,10 +170,10 @@
       ],
       "data_use": null,
       "retention": null,
-      "health": "ok",
+      "health": "sick",
       "answering_now": false,
       "zo_score": 32,
-      "zo_rank": 4
+      "zo_rank": 3
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -243,7 +197,7 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
       "created": 1777393095,
       "kind": "chat",
-      "rank": 5,
+      "rank": 4,
       "score": 25,
       "quality": 23.8,
       "basis": "prior",
@@ -259,7 +213,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 89751,
+        "downloads": 89866,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -270,7 +224,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 25,
-      "zo_rank": 5
+      "zo_rank": 4
     },
     {
       "id": "recursive/flint-v1.0:free",
@@ -291,7 +245,7 @@
       "source": "https://openrouter.ai/recursive/flint-v1.0:free",
       "created": 1792622765,
       "kind": "chat",
-      "rank": 6,
+      "rank": 5,
       "score": 22.1,
       "quality": 24.7,
       "basis": "prior",
@@ -304,7 +258,7 @@
       "arena": null,
       "hf": {
         "paramsB": 39.8,
-        "downloads": 61974,
+        "downloads": 62791,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -313,9 +267,9 @@
       "data_use": "no-training",
       "retention": "unknown",
       "health": "ok",
-      "answering_now": false,
+      "answering_now": true,
       "zo_score": 22,
-      "zo_rank": 6
+      "zo_rank": 5
     },
     {
       "id": "nvidia/nemotron-3.5-super-vl:free",
@@ -338,9 +292,9 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
       "created": 1792076662,
       "kind": "chat",
-      "rank": 7,
-      "score": 19.8,
-      "quality": 18.3,
+      "rank": 6,
+      "score": 19.7,
+      "quality": 18.2,
       "basis": "benchmarks",
       "notes": [
         "benchmarks 1/3 (rest imputed)"
@@ -354,7 +308,7 @@
       "arena": null,
       "hf": {
         "paramsB": 124.5,
-        "downloads": 78311,
+        "downloads": 77863,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -365,7 +319,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 20,
-      "zo_rank": 7
+      "zo_rank": 6
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -386,9 +340,9 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
       "created": 1780551208,
       "kind": "chat",
-      "rank": 8,
-      "score": 16.7,
-      "quality": 15.9,
+      "rank": 7,
+      "score": 16.6,
+      "quality": 15.8,
       "basis": "benchmarks",
       "notes": [
         "benchmarks 1/3 (rest imputed)"
@@ -402,7 +356,7 @@
       "arena": null,
       "hf": {
         "paramsB": 560.5,
-        "downloads": 798730,
+        "downloads": 748562,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -413,7 +367,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 17,
-      "zo_rank": 8
+      "zo_rank": 7
     },
     {
       "id": "inclusionai/ling-3.2-flash:free",
@@ -435,7 +389,7 @@
       "source": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
       "created": 1794591958,
       "kind": "chat",
-      "rank": 9,
+      "rank": 8,
       "score": 13,
       "quality": 12,
       "basis": "prior",
@@ -454,7 +408,7 @@
       "health": "ok",
       "answering_now": false,
       "zo_score": 13,
-      "zo_rank": 9
+      "zo_rank": 8
     },
     {
       "id": "particle-ai/particle-1:free",
@@ -476,7 +430,7 @@
       "source": "https://openrouter.ai/particle-ai/particle-1:free",
       "created": 1793207893,
       "kind": "chat",
-      "rank": 10,
+      "rank": 9,
       "score": 13,
       "quality": 12,
       "basis": "prior",
@@ -492,10 +446,10 @@
       ],
       "data_use": null,
       "retention": null,
-      "health": "sick",
+      "health": null,
       "answering_now": false,
       "zo_score": 13,
-      "zo_rank": 10
+      "zo_rank": 9
     },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
@@ -516,8 +470,8 @@
       "source": "https://openrouter.ai/nvidia/nemotron-3.5-lightning:free",
       "created": 1786452751,
       "kind": "chat",
-      "rank": 11,
-      "score": 7.8,
+      "rank": 10,
+      "score": 7.7,
       "quality": 7.4,
       "basis": "benchmarks",
       "notes": [
@@ -532,7 +486,7 @@
       "arena": null,
       "hf": {
         "paramsB": 31.6,
-        "downloads": 616844,
+        "downloads": 541056,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -543,7 +497,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 8,
-      "zo_rank": 11
+      "zo_rank": 10
     },
     {
       "id": "liquid/lfm-3-1.7b:free",
@@ -564,7 +518,7 @@
       "source": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
       "created": 1794009477,
       "kind": "chat",
-      "rank": 12,
+      "rank": 11,
       "score": 7.4,
       "quality": 8.1,
       "basis": "benchmarks",
@@ -581,7 +535,7 @@
       "arena": null,
       "hf": {
         "paramsB": 1.7,
-        "downloads": 148845,
+        "downloads": 151534,
         "pipelineTag": "text-generation"
       },
       "served_by": [
@@ -592,7 +546,7 @@
       "health": null,
       "answering_now": false,
       "zo_score": 7,
-      "zo_rank": 12
+      "zo_rank": 11
     },
     {
       "id": "google/lyria-3-pro-preview",

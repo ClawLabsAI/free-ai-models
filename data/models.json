@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T13:59:37.436Z",
+  "updated_at": "2026-11-26T13:38:57.169Z",
   "total_free_models": 14,
   "scoring": {
     "code": "scoring/score.js",
@@ -61,7 +61,7 @@
       },
       "hf": {
         "paramsB": 25.8,
-        "downloads": 4586487,
+        "downloads": 4492260,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -69,8 +69,8 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "sick",
-      "answering_now": false,
+      "health": "ok",
+      "answering_now": true,
       "zo_score": 76,
       "zo_rank": 1
     },
@@ -117,7 +117,7 @@
       },
       "hf": {
         "paramsB": 31.3,
-        "downloads": 5431138,
+        "downloads": 5237916,
         "pipelineTag": "image-text-to-text"
       },
       "served_by": [
@@ -125,7 +125,7 @@
       ],
       "data_use": "no-training",
       "retention": 55,
-      "health": "sick",
+      "health": "ok",
       "answering_now": false,
       "zo_score": 43,
       "zo_rank": 2
@@ -170,7 +170,7 @@
       ],
       "data_use": null,
       "retention": null,
-      "health": "sick",
+      "health": "ok",
       "answering_now": false,
       "zo_score": 32,
       "zo_rank": 3
@@ -213,7 +213,7 @@
       "arena": null,
       "hf": {
         "paramsB": 33,
-        "downloads": 89866,
+        "downloads": 83083,
         "pipelineTag": "any-to-any"
       },
       "served_by": [
@@ -267,7 +267,7 @@
       "data_use": "no-training",
       "retention": "unknown",
       "health": "ok",
-      "answering_now": true,
+      "answering_now": false,
       "zo_score": 22,
       "zo_rank": 5
     },
@@ -415,7 +415,7 @@
       "name": "Particle AI: Particle-1 (free)",
       "provider": "Particle ai",
       "context_window": 1048576,
-      "max_output": 131072,
+      "max_output": 943718,
       "modalities": [
         "text",
         "image"
@@ -446,7 +446,7 @@
       ],
       "data_use": null,
       "retention": null,
-      "health": null,
+      "health": "sick",
       "answering_now": false,
       "zo_score": 13,
       "zo_rank": 9

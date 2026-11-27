@@ -34,24 +34,23 @@ No key needed to read any of it. No scraping: only public, official APIs.
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Thu, 26 Nov 2026 13:38:57 UTC** · 12 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
+> Last updated: **Fri, 27 Nov 2026 13:34:52 UTC** · 11 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
 >
-> **4 of today's top 10** are served only by providers that may train on your prompts.
+> **5 of today's top 10** are served only by providers that may train on your prompts.
 
 | # | Model | Score | Measured by | Trains on your prompts? | Context | Max output | Tools | Input | Today | Source |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | **Google: Gemma 4 26B A4B** | 76 | Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
-| 2 | **Google: Gemma 4 31B** | 43 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ✅ up | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
-| 3 | **Baidu: ERNIE-5.5-Flash-Preview** | 32 | estimate (size) | — | 1M | 922K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/baidu/ernie-5.5-flash-preview:free) |
+| 1 | **Google: Gemma 4 31B** | 43 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ✅ up | [link](https://openrouter.ai/google/gemma-4-31b-it:free) |
+| 2 | **Google: Gemma 4 26B A4B** | 41 | benchmarks + Arena | ✅ no · kept 55 days | 262K | 33K | ✓ | 🖼️ vision, video | ▶ answering | [link](https://openrouter.ai/google/gemma-4-26b-a4b-it:free) |
+| 3 | **Baidu: ERNIE-5.5-Flash-Preview** | 38 | estimate (size) | — | 1M | 922K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/baidu/ernie-5.5-flash-preview:free) |
 | 4 | **NVIDIA: Nemotron 3 Nano Omni** | 25 | estimate (size) | 🔴 may train | 256K | 66K | ✓ | audio, 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free) |
 | 5 | **Recursive: Flint** | 22 | estimate (size) | ✅ no · retention unknown | 262K | 236K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/recursive/flint-v1.0:free) |
 | 6 | **NVIDIA: Nemotron 3.5 Super VL** | 20 | benchmarks | 🔴 may train | 1M | 131K | ✓ | 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
 | 7 | **NVIDIA: Nemotron 3 Ultra** | 17 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 8 | **inclusionAI: Ling 3.2 Flash** | 13 | estimate (size) | — | 1M | 262K | ✓ | 🖼️ vision | ✅ up | [link](https://openrouter.ai/inclusionai/ling-3.2-flash:free) |
-| 9 | **Particle AI: Particle-1** | 13 | estimate (size) | — | 1M | 944K | ✓ | 🖼️ vision | ⚠️ degraded | [link](https://openrouter.ai/particle-ai/particle-1:free) |
-| 10 | **NVIDIA: Nemotron 3.5 Lightning** | 8 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
-| 11 | **LiquidAI: LFM3-1.7B** | 7 | benchmarks | 🔴 may train | 262K | 8K | ✓ | 💬 text | — | [link](https://openrouter.ai/liquid/lfm-3-1.7b:free) |
-| 12 | **GPT-OSS 20B Reasoning LLM (OVH)** | — | — | — | — | — | — | 💬 text | — | [link](https://pollinations.ai) |
+| 8 | **Particle AI: Particle-1** | 13 | estimate (size) | — | 1M | 944K | ✓ | 🖼️ vision | — | [link](https://openrouter.ai/particle-ai/particle-1:free) |
+| 9 | **NVIDIA: Nemotron 3.5 Lightning** | 8 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
+| 10 | **LiquidAI: LFM3-1.7B** | 7 | benchmarks | 🔴 may train | 262K | 8K | ✓ | 💬 text | — | [link](https://openrouter.ai/liquid/lfm-3-1.7b:free) |
+| 11 | **GPT-6 Luna, no reasoning (Azure)** | — | — | — | — | — | — | 💬 text | — | [link](https://pollinations.ai) |
 
 2 free models that are not chat models (music, image, audio, classifiers):
 

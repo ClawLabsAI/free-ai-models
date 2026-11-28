@@ -35,7 +35,7 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 ## Modelos gratis (actualizados a diario)
 
 <!-- TABLE_START -->
-> Última actualización: **Fri, 27 Nov 2026 13:34:52 UTC** · 11 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
+> Última actualización: **Sat, 28 Nov 2026 12:47:18 UTC** · 11 modelos de chat gratuitos · ordenados por la [puntuación abierta](scoring/) de este repo · los límites gratuitos son del proveedor, por cuenta
 >
 > **5 de los 10 mejores de hoy** solo los sirven proveedores que pueden entrenar con tus prompts.
 
@@ -48,7 +48,7 @@ No hace falta ninguna clave para leerlo. Sin scraping: solo APIs públicas y ofi
 | 5 | **Recursive: Flint** | 22 | estimación (tamaño) | ✅ no · retención desconocida | 262K | 236K | ✓ | 💬 text | ✅ activo | [enlace](https://openrouter.ai/recursive/flint-v1.0:free) |
 | 6 | **NVIDIA: Nemotron 3.5 Super VL** | 20 | benchmarks | 🔴 puede entrenar | 1M | 131K | ✓ | 🖼️ vision, video | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
 | 7 | **NVIDIA: Nemotron 3 Ultra** | 17 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 8 | **Particle AI: Particle-1** | 13 | estimación (tamaño) | — | 1M | 944K | ✓ | 🖼️ vision | — | [enlace](https://openrouter.ai/particle-ai/particle-1:free) |
+| 8 | **Particle AI: Particle-1** | 13 | estimación (tamaño) | — | 1M | 944K | ✓ | 🖼️ vision | ⚠️ degradado | [enlace](https://openrouter.ai/particle-ai/particle-1:free) |
 | 9 | **NVIDIA: Nemotron 3.5 Lightning** | 8 | benchmarks | 🔴 puede entrenar | 1M | 66K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 10 | **LiquidAI: LFM3-1.7B** | 7 | benchmarks | 🔴 puede entrenar | 262K | 8K | ✓ | 💬 text | — | [enlace](https://openrouter.ai/liquid/lfm-3-1.7b:free) |
 | 11 | **GPT-6 Luna, no reasoning (Azure)** | — | — | — | — | — | — | 💬 text | — | [enlace](https://pollinations.ai) |

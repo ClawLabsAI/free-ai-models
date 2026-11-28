@@ -34,7 +34,7 @@ No key needed to read any of it. No scraping: only public, official APIs.
 ## Free models (auto-updated daily)
 
 <!-- TABLE_START -->
-> Last updated: **Fri, 27 Nov 2026 13:34:52 UTC** · 11 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
+> Last updated: **Sat, 28 Nov 2026 12:47:18 UTC** · 11 free chat models · ranked by the [open score](scoring/) in this repo · free-tier limits are the provider's, per account[^or][^poll]
 >
 > **5 of today's top 10** are served only by providers that may train on your prompts.
 
@@ -47,7 +47,7 @@ No key needed to read any of it. No scraping: only public, official APIs.
 | 5 | **Recursive: Flint** | 22 | estimate (size) | ✅ no · retention unknown | 262K | 236K | ✓ | 💬 text | ✅ up | [link](https://openrouter.ai/recursive/flint-v1.0:free) |
 | 6 | **NVIDIA: Nemotron 3.5 Super VL** | 20 | benchmarks | 🔴 may train | 1M | 131K | ✓ | 🖼️ vision, video | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free) |
 | 7 | **NVIDIA: Nemotron 3 Ultra** | 17 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free) |
-| 8 | **Particle AI: Particle-1** | 13 | estimate (size) | — | 1M | 944K | ✓ | 🖼️ vision | — | [link](https://openrouter.ai/particle-ai/particle-1:free) |
+| 8 | **Particle AI: Particle-1** | 13 | estimate (size) | — | 1M | 944K | ✓ | 🖼️ vision | ⚠️ degraded | [link](https://openrouter.ai/particle-ai/particle-1:free) |
 | 9 | **NVIDIA: Nemotron 3.5 Lightning** | 8 | benchmarks | 🔴 may train | 1M | 66K | ✓ | 💬 text | — | [link](https://openrouter.ai/nvidia/nemotron-3.5-lightning:free) |
 | 10 | **LiquidAI: LFM3-1.7B** | 7 | benchmarks | 🔴 may train | 262K | 8K | ✓ | 💬 text | — | [link](https://openrouter.ai/liquid/lfm-3-1.7b:free) |
 | 11 | **GPT-6 Luna, no reasoning (Azure)** | — | — | — | — | — | — | 💬 text | — | [link](https://pollinations.ai) |
